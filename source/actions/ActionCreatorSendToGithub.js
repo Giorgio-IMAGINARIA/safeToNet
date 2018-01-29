@@ -22,11 +22,19 @@ interface GithubObject {
   since?: string
 }
 
-export default function(objectToSubmit : GithubObject): void {
+// http://food2fork.com/api/search?key={API_KEY}&q=shredded%20chicken
+// http://food2fork.com/api/search?milestone=*&state=all&assignee=*&sort=created&direction=desc
+
+export default function(objectToSubmit): void {
+  objectToSubmit = {
+
+  }
   let address = StoreAddress.getAddressRoot();
   let url = new URL(address),
     params = objectToSubmit;
   Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+console.log('url: ', url);
+url = 'http://food2fork.com/api/search?key={388a3fb91f08c545ae5f8238bc65a984}&q=shredded%20chicken';
   fetch(url, {method: 'GET'}).then((response) => {
     return response.json()
   }).then((array) => {

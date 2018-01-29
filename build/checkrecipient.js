@@ -20670,12 +20670,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (objectToSubmit) {
+  objectToSubmit = {};
   var address = _StoreAddress2.default.getAddressRoot();
   var url = new URL(address),
       params = objectToSubmit;
   Object.keys(params).forEach(function (key) {
     return url.searchParams.append(key, params[key]);
   });
+  console.log('url: ', url);
+  url = 'http://food2fork.com/api/search?key={388a3fb91f08c545ae5f8238bc65a984}&q=shredded%20chicken';
   fetch(url, { method: 'GET' }).then(function (response) {
     return response.json();
   }).then(function (array) {
@@ -20708,6 +20711,10 @@ function dispatchAction(parameter) {
   };
   _AppDispatcher2.default.dispatch(Action);
 }
+
+// http://food2fork.com/api/search?key={API_KEY}&q=shredded%20chicken
+// http://food2fork.com/api/search?milestone=*&state=all&assignee=*&sort=created&direction=desc
+
 // Stores
 
 /***/ }),
