@@ -20670,16 +20670,33 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (objectToSubmit) {
-  objectToSubmit = {};
-  var address = _StoreAddress2.default.getAddressRoot();
-  var url = new URL(address),
-      params = objectToSubmit;
-  Object.keys(params).forEach(function (key) {
-    return url.searchParams.append(key, params[key]);
+
+  // let address = StoreAddress.getAddressRoot();
+  // let url = new URL(address);
+  // let  params = objectToSubmit;
+  // Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+  // console.log('url: ', url);
+
+
+  var url = new URL('https://community-food2fork.p.mashape.com/search?key=388a3fb91f08c545ae5f8238bc65a984&q=shredded+chicken');
+  // https://community-food2fork.p.mashape.com/search?key=388a3fb91f08c545ae5f8238bc65a984&q=shredded+chicken
+
+  var header = new Headers({
+    'Access-Control-Allow-Origin': '*',
+    'Content-Type': 'multipart/form-data'
   });
-  console.log('url: ', url);
-  url = 'http://food2fork.com/api/search?key={388a3fb91f08c545ae5f8238bc65a984}&q=shredded%20chicken';
-  fetch(url, { method: 'GET' }).then(function (response) {
+
+  var sentData = {
+    method: 'GET',
+    mode: 'cors'
+    // header: header
+  };
+
+  // url = 'http://food2fork.com/api/search?key={388a3fb91f08c545ae5f8238bc65a984}&q=shredded%20chicken';
+  fetch(url, sentData).then(function (response) {
+
+    console.log(response);
+
     return response.json();
   }).then(function (array) {
     dispatchAction(array);
