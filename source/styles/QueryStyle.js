@@ -6,12 +6,6 @@ let inputInternalRowStyle = {
   display: 'flex'
 }
 
-let doubleRowInternalWrapStyle = {
-  display: 'flex',
-  alignItems: 'space-between',
-  width: '50%'
-}
-
 let panelRowStyle = {
   width: '100%',
   display: 'flex',
@@ -27,7 +21,7 @@ let style = {
     fontWeight: '200'
   },
 
-  inputInternalBoxStyle:{
+  inputInternalBoxStyle: {
     padding: '0 10px',
     display: 'flex',
     flexGrow: '1'
@@ -52,20 +46,6 @@ let style = {
     flexWrap: 'wrap'
   },
 
-  doubleRowInternalLeftWrapStyle: {
-    ...doubleRowInternalWrapStyle,
-    justifyContent: 'space-between'
-  },
-
-  doubleRowInternalRightWrapStyle: {
-    ...doubleRowInternalWrapStyle,
-    justifyContent: 'center'
-  },
-
-  radioButtonSpacedStyle: {
-    marginBottom: '16px'
-  },
-
   radioIconStyle: {
     fill: '#ffffff'
   },
@@ -80,32 +60,29 @@ let style = {
     borderColor: '#FC4482'
   },
 
-radioLabelStyle: {
+  radioLabelStyle: {
     color: '#ffffff'
   },
 
-textInputStyle: {
+  textInputStyle: {
     color: '#ffffff'
   },
 
-selectLoginElement: {
+  selectLoginElement: {
     textAlign: 'left'
   },
 
-floatingLabelStyle : {
+  floatingLabelStyle: {
     color: '#ffffff'
   },
 
-selectIconStyle: {
+  selectIconStyle: {
     fill: '#ffffff'
   },
 
-selectLabelStyle : {
+  selectLabelStyle: {
     color: '#ffffff'
   }
-
-
-
 
 }
 
