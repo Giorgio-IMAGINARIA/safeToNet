@@ -5,17 +5,15 @@ import React from 'react';
 import ActionCreatorSendToGithub from '../actions/ActionCreatorSendToGithub';
 //Material UI
 import Paper from 'material-ui/Paper';
-import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import RightArrow from 'material-ui/svg-icons/navigation/chevron-right';
-import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
-import RaisedButton from 'material-ui/RaisedButton';
 
 // Style Modules
 import GeneralStyle from '../styles/GeneralStyle';
 import QueryStyle from '../styles/QueryStyle';
+import ManualQueryStyle from '../styles/ManualQueryStyle';
 
 interface ManualFilterObject {
   state: string,
@@ -23,53 +21,24 @@ interface ManualFilterObject {
   direction: string
 }
 
-class QueryPanel extends React.Component {
+class ManualQueryPanel extends React.Component {
 
   constructor(props) {
     super(props);
     this.handleChangeStateInputSelect = this.handleChangeStateInputSelect.bind(this);
     this.handleChangeSortInputSelect = this.handleChangeSortInputSelect.bind(this);
     this.handleChangeDirectionInputSelect = this.handleChangeDirectionInputSelect.bind(this);
-    this.handleChangeMilestoneText = this.handleChangeMilestoneText.bind(this);
-    this.handleMilestoneChange = this.handleMilestoneChange.bind(this);
     this.validateDetails = this.validateDetails.bind(this);
 
     this.state = {
-      milestoneInputDisabled: true,
-      milestoneIntegerValue: '',
-
       stateInputValue: 3,
-
       sortInputValue: 1,
       directionInputValue: 2
     };
 
-    this.milestoneStringValue = '*';
     this.stateInput = 'all';
     this.sortInput = 'created';
     this.directionInput = 'desc';
-  }
-
-  handleMilestoneChange(evt : any, value : string): void {
-    if (value === 'number') {
-      this.setState({milestoneInputDisabled: false});
-      this.milestoneStringValue = null;
-    } else {
-      this.setState({milestoneInputDisabled: true, milestoneIntegerValue: ''});
-
-      switch (value) {
-        case 'all':
-          {
-            this.milestoneStringValue = '*'
-          }
-          break;
-        case 'none':
-          {
-            this.milestoneStringValue = value
-          }
-          break;
-      };
-    };
   }
 
   handleChangeStateInputSelect(event, index, value) {
@@ -130,26 +99,7 @@ class QueryPanel extends React.Component {
     };
   }
 
-  returnAbsIntValue(value : string): number {
-    return Math.abs(parseInt(value));
-  }
-
-  handleChangeMilestoneText(evt, value) {
-    this.returnAbsIntValue(value)
-      ? this.setState({milestoneIntegerValue: this.returnAbsIntValue(value)})
-      : this.setState({milestoneIntegerValue: ''});
-  }
-
   validateDetails() {
-    let milestoneDisabled: boolean = this.state.milestoneInputDisabled;
-    let milestoneValueToSend: any;
-    if (milestoneDisabled) {
-      milestoneValueToSend = this.milestoneStringValue;
-    } else {
-      this.state.milestoneIntegerValue
-        ? milestoneValueToSend = this.state.milestoneIntegerValue
-        : milestoneValueToSend = '*';
-    };
 
     let sortValueToSend: string = this.sortInput;
     let directionValueToSend: string = this.directionInput;
@@ -163,38 +113,20 @@ class QueryPanel extends React.Component {
   }
 
   render() {
-    return (<Paper style={QueryStyle.paperStyle} zDepth={2}>
+    return (<Paper style={ManualQueryStyle.paperStyle} zDepth={2}>
 
       <div style={GeneralStyle.headerStyle}>
-        <h1 style={GeneralStyle.mainTitle}>
-          Query panel
-        </h1>
-        <h2 style={GeneralStyle.subTitle}>
-          Select the kind of filters to apply to the Github (atom/atom) issues search and submit your query
-        </h2>
+        <div style={GeneralStyle.headerInnerStyle}>
+          <h1 style={GeneralStyle.mainTitle}>
+            Manual query panel
+          </h1>
+          <h2 style={GeneralStyle.subTitle}>
+            Select the kind of manual filters for the Github (atom/atom) issues search and submit your query
+          </h2>
+        </div>
       </div>
 
       <div style={GeneralStyle.paperContentWrapStyle}>
-
-        <div style={QueryStyle.inputBoxStyle}>
-          <div style={QueryStyle.inputBoxTitleRowStyle}>
-            <h3 style={QueryStyle.internalTitleStyle}>
-              AI filters
-            </h3>
-          </div>
-          <div style={QueryStyle.doubleRowStyle}>
-            <div style={QueryStyle.doubleRowInternalLeftWrapStyle}>
-              <RadioButtonGroup name='milestoneSelection' defaultSelected="all" onChange={this.handleMilestoneChange}>
-                <RadioButton labelStyle={QueryStyle.radioLabelStyle} iconStyle={QueryStyle.radioIconStyle} value="all" label="All" style={QueryStyle.radioButtonSpacedStyle}/>
-                <RadioButton labelStyle={QueryStyle.radioLabelStyle} iconStyle={QueryStyle.radioIconStyle} value="number" label="Number" style={QueryStyle.radioButtonSpacedStyle}/>
-                <RadioButton labelStyle={QueryStyle.radioLabelStyle} iconStyle={QueryStyle.radioIconStyle} value="none" label="None"/>
-              </RadioButtonGroup>
-            </div>
-            <div style={QueryStyle.doubleRowInternalRightWrapStyle}>
-              <TextField disabled={this.state.milestoneInputDisabled} inputStyle={QueryStyle.textInputStyle} value={this.state.milestoneIntegerValue} fullWidth={true} hintText="Type the milestone number" floatingLabelText="Milestone nr." floatingLabelStyle={QueryStyle.floatingLabelStyle} underlineFocusStyle={QueryStyle.underlineFocusStyle} type="number" onChange={this.handleChangeMilestoneText}/>
-            </div>
-          </div>
-        </div>
 
         <div style={QueryStyle.inputBoxStyle}>
           <div style={QueryStyle.inputBoxTitleRowStyle}>
@@ -228,7 +160,7 @@ class QueryPanel extends React.Component {
 
         <div style={QueryStyle.submitRowStyle}>
           <div>
-            <FloatingActionButton mini={true} secondary={true} onMouseDown={this.validateDetails}>
+            <FloatingActionButton backgroundColor={'#7986CB'} mini={true} onMouseDown={this.validateDetails}>
               <RightArrow/>
             </FloatingActionButton>
           </div>
@@ -240,4 +172,4 @@ class QueryPanel extends React.Component {
   }
 }
 
-export default QueryPanel;
+export default ManualQueryPanel;

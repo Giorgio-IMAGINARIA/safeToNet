@@ -4,8 +4,7 @@ let globalText = {
 
 let titles = {
   ...globalText,
-  margin: '0',
-  textIndent: '25px'
+  margin: '0'
 }
 
 let style = {
@@ -21,6 +20,12 @@ let style = {
   headerStyle: {
     width: '100%',
     height: '50px',
+    display: 'flex'
+  },
+  headerInnerStyle: {
+    padding: '25px',
+    height: 'inherit',
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',

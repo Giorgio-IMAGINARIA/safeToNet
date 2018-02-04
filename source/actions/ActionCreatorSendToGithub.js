@@ -18,6 +18,7 @@ interface ManualFilterObject {
 }
 
 export default function(objectToSubmit: ManualFilterObject): void {
+  console.log('objectToSubmit: ', objectToSubmit);
   let address = StoreAddress.getAddressRoot();
   let url = new URL(address),
     params = objectToSubmit;

@@ -12,6 +12,8 @@ import Paper from 'material-ui/Paper';
 import {List, ListItem} from 'material-ui/List';
 //Stores
 import StoreGithub from '../stores/StoreGithub';
+// Style Modules
+import GeneralStyle from '../styles/GeneralStyle';
 
 class ResultPanel extends React.Component {
 
@@ -89,14 +91,22 @@ class ResultPanel extends React.Component {
 
   render() {
     return (<Paper style={this.paperStyle} zDepth={2}>
-      <div style={this.headerStyle}>
-        <h1 style={this.mainTitle}>
-          Result panel
-        </h1>
-        <h2 style={this.subTitle}>
-          A visualisation of the Github issues filtered in the query panel
-        </h2>
+
+      <div style={GeneralStyle.headerStyle}>
+        <div style={GeneralStyle.headerInnerStyle}>
+          <h1 style={GeneralStyle.mainTitle}>
+            Result panel
+          </h1>
+          <h2 style={GeneralStyle.subTitle}>
+            A visualisation of the Github issues filtered in the query panel
+          </h2>
+        </div>
       </div>
+
+
+
+
+
       <div style={this.paperContentWrapStyle}>
         <List>
           {this.state.issueList}

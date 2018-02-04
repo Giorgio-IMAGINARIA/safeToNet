@@ -19,13 +19,10 @@ let panelRowStyle = {
 }
 
 let style = {
-  paperStyle: {
-    ...GeneralStyle.paperStyle,
-    backgroundColor: '#7986CB'
-  },
 
   internalTitleStyle: {
     ...GeneralStyle.genericTitle,
+    textIndent: '10px',
     fontSize: '10pt',
     fontWeight: '200'
   },

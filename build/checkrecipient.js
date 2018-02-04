@@ -20107,6 +20107,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (objectToSubmit) {
+  console.log('objectToSubmit: ', objectToSubmit);
   var address = _StoreAddress2.default.getAddressRoot();
   var url = new URL(address),
       params = objectToSubmit;
@@ -20466,8 +20467,7 @@ var globalText = {
 };
 
 var titles = _extends({}, globalText, {
-  margin: '0',
-  textIndent: '25px'
+  margin: '0'
 });
 
 var style = {
@@ -20481,6 +20481,12 @@ var style = {
   headerStyle: {
     width: '100%',
     height: '50px',
+    display: 'flex'
+  },
+  headerInnerStyle: {
+    padding: '25px',
+    height: 'inherit',
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
@@ -32862,13 +32868,21 @@ var _MainBarUI = __webpack_require__(444);
 
 var _MainBarUI2 = _interopRequireDefault(_MainBarUI);
 
-var _QueryPanel = __webpack_require__(497);
+var _AIQueryPanel = __webpack_require__(531);
 
-var _QueryPanel2 = _interopRequireDefault(_QueryPanel);
+var _AIQueryPanel2 = _interopRequireDefault(_AIQueryPanel);
+
+var _ManualQueryPanel = __webpack_require__(528);
+
+var _ManualQueryPanel2 = _interopRequireDefault(_ManualQueryPanel);
 
 var _ResultPanel = __webpack_require__(522);
 
 var _ResultPanel2 = _interopRequireDefault(_ResultPanel);
+
+var _AppRootStyle = __webpack_require__(532);
+
+var _AppRootStyle2 = _interopRequireDefault(_AppRootStyle);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32883,6 +32897,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 //React Modules
 
+// Style Modules
+
 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
@@ -32890,27 +32906,7 @@ var App = function (_React$Component) {
   function App(props) {
     _classCallCheck(this, App);
 
-    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-
-    _this.mainWrap = {
-      width: '100%',
-      height: 'inherit',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    };
-    _this.appWrap = {
-      display: 'flex',
-      flexDirection: 'column',
-      alignContent: 'center',
-      width: 'inherit',
-      height: 'inherit'
-    };
-    _this.topSpaceStyle = {
-      width: '100%',
-      height: '64px'
-    };
-    return _this;
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
   }
 
   _createClass(App, [{
@@ -32918,16 +32914,17 @@ var App = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         _radium.StyleRoot,
-        { style: this.mainWrap },
+        { style: _AppRootStyle2.default.mainWrap },
         _react2.default.createElement(
           _MuiThemeProvider2.default,
           { muiTheme: (0, _getMuiTheme2.default)() },
           _react2.default.createElement(
             'div',
-            { style: this.appWrap },
+            { style: _AppRootStyle2.default.appWrap },
             _react2.default.createElement(_MainBarUI2.default, null),
-            _react2.default.createElement('div', { style: this.topSpaceStyle }),
-            _react2.default.createElement(_QueryPanel2.default, null),
+            _react2.default.createElement('div', { style: _AppRootStyle2.default.topSpaceStyle }),
+            _react2.default.createElement(_AIQueryPanel2.default, null),
+            _react2.default.createElement(_ManualQueryPanel2.default, null),
             _react2.default.createElement(_ResultPanel2.default, null)
           )
         )
@@ -47550,357 +47547,7 @@ ActionHelpOutline.muiName = 'SvgIcon';
 exports.default = ActionHelpOutline;
 
 /***/ }),
-/* 497 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _ActionCreatorSendToGithub = __webpack_require__(211);
-
-var _ActionCreatorSendToGithub2 = _interopRequireDefault(_ActionCreatorSendToGithub);
-
-var _Paper = __webpack_require__(29);
-
-var _Paper2 = _interopRequireDefault(_Paper);
-
-var _TextField = __webpack_require__(212);
-
-var _TextField2 = _interopRequireDefault(_TextField);
-
-var _SelectField = __webpack_require__(506);
-
-var _SelectField2 = _interopRequireDefault(_SelectField);
-
-var _MenuItem = __webpack_require__(128);
-
-var _MenuItem2 = _interopRequireDefault(_MenuItem);
-
-var _FloatingActionButton = __webpack_require__(513);
-
-var _FloatingActionButton2 = _interopRequireDefault(_FloatingActionButton);
-
-var _chevronRight = __webpack_require__(515);
-
-var _chevronRight2 = _interopRequireDefault(_chevronRight);
-
-var _RadioButton = __webpack_require__(516);
-
-var _RaisedButton = __webpack_require__(209);
-
-var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
-
-var _GeneralStyle = __webpack_require__(214);
-
-var _GeneralStyle2 = _interopRequireDefault(_GeneralStyle);
-
-var _QueryStyle = __webpack_require__(521);
-
-var _QueryStyle2 = _interopRequireDefault(_QueryStyle);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// React
-
-//Action Creators
-
-//Material UI
-
-
-// Style Modules
-
-
-var QueryPanel = function (_React$Component) {
-  _inherits(QueryPanel, _React$Component);
-
-  function QueryPanel(props) {
-    _classCallCheck(this, QueryPanel);
-
-    var _this = _possibleConstructorReturn(this, (QueryPanel.__proto__ || Object.getPrototypeOf(QueryPanel)).call(this, props));
-
-    _this.handleChangeStateInputSelect = _this.handleChangeStateInputSelect.bind(_this);
-    _this.handleChangeSortInputSelect = _this.handleChangeSortInputSelect.bind(_this);
-    _this.handleChangeDirectionInputSelect = _this.handleChangeDirectionInputSelect.bind(_this);
-    _this.handleChangeMilestoneText = _this.handleChangeMilestoneText.bind(_this);
-    _this.handleMilestoneChange = _this.handleMilestoneChange.bind(_this);
-    _this.validateDetails = _this.validateDetails.bind(_this);
-
-    _this.state = {
-      milestoneInputDisabled: true,
-      milestoneIntegerValue: '',
-
-      stateInputValue: 3,
-
-      sortInputValue: 1,
-      directionInputValue: 2
-    };
-
-    _this.milestoneStringValue = '*';
-    _this.stateInput = 'all';
-    _this.sortInput = 'created';
-    _this.directionInput = 'desc';
-    return _this;
-  }
-
-  _createClass(QueryPanel, [{
-    key: 'handleMilestoneChange',
-    value: function handleMilestoneChange(evt, value) {
-      if (value === 'number') {
-        this.setState({ milestoneInputDisabled: false });
-        this.milestoneStringValue = null;
-      } else {
-        this.setState({ milestoneInputDisabled: true, milestoneIntegerValue: '' });
-
-        switch (value) {
-          case 'all':
-            {
-              this.milestoneStringValue = '*';
-            }
-            break;
-          case 'none':
-            {
-              this.milestoneStringValue = value;
-            }
-            break;
-        };
-      };
-    }
-  }, {
-    key: 'handleChangeStateInputSelect',
-    value: function handleChangeStateInputSelect(event, index, value) {
-      this.setState({ stateInputValue: value });
-      switch (value) {
-        case 1:
-          {
-            this.stateInput = 'open';
-          }
-          break;
-        case 2:
-          {
-            this.stateInput = 'closed';
-          }
-          break;
-        case 3:
-          {
-            this.stateInput = 'all';
-          }
-          break;
-      };
-    }
-  }, {
-    key: 'handleChangeSortInputSelect',
-    value: function handleChangeSortInputSelect(event, index, value) {
-      this.setState({ sortInputValue: value });
-      switch (value) {
-        case 1:
-          {
-            this.sortInput = 'created';
-          }
-          break;
-        case 2:
-          {
-            this.sortInput = 'updated';
-          }
-          break;
-        case 3:
-          {
-            this.sortInput = 'comments';
-          }
-          break;
-      };
-    }
-  }, {
-    key: 'handleChangeDirectionInputSelect',
-    value: function handleChangeDirectionInputSelect(event, index, value) {
-      this.setState({ directionInputValue: value });
-      switch (value) {
-        case 1:
-          {
-            this.directionInput = 'asc';
-          }
-          break;
-        case 2:
-          {
-            this.directionInput = 'desc';
-          }
-          break;
-      };
-    }
-  }, {
-    key: 'returnAbsIntValue',
-    value: function returnAbsIntValue(value) {
-      return Math.abs(parseInt(value));
-    }
-  }, {
-    key: 'handleChangeMilestoneText',
-    value: function handleChangeMilestoneText(evt, value) {
-      this.returnAbsIntValue(value) ? this.setState({ milestoneIntegerValue: this.returnAbsIntValue(value) }) : this.setState({ milestoneIntegerValue: '' });
-    }
-  }, {
-    key: 'validateDetails',
-    value: function validateDetails() {
-      var milestoneDisabled = this.state.milestoneInputDisabled;
-      var milestoneValueToSend = void 0;
-      if (milestoneDisabled) {
-        milestoneValueToSend = this.milestoneStringValue;
-      } else {
-        this.state.milestoneIntegerValue ? milestoneValueToSend = this.state.milestoneIntegerValue : milestoneValueToSend = '*';
-      };
-
-      var sortValueToSend = this.sortInput;
-      var directionValueToSend = this.directionInput;
-
-      var objectToSend = {
-        state: this.stateInput,
-        sort: sortValueToSend,
-        direction: directionValueToSend
-      };
-      (0, _ActionCreatorSendToGithub2.default)(objectToSend);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        _Paper2.default,
-        { style: _QueryStyle2.default.paperStyle, zDepth: 2 },
-        _react2.default.createElement(
-          'div',
-          { style: _GeneralStyle2.default.headerStyle },
-          _react2.default.createElement(
-            'h1',
-            { style: _GeneralStyle2.default.mainTitle },
-            'Query panel'
-          ),
-          _react2.default.createElement(
-            'h2',
-            { style: _GeneralStyle2.default.subTitle },
-            'Select the kind of filters to apply to the Github (atom/atom) issues search and submit your query'
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { style: _GeneralStyle2.default.paperContentWrapStyle },
-          _react2.default.createElement(
-            'div',
-            { style: _QueryStyle2.default.inputBoxStyle },
-            _react2.default.createElement(
-              'div',
-              { style: _QueryStyle2.default.inputBoxTitleRowStyle },
-              _react2.default.createElement(
-                'h3',
-                { style: _QueryStyle2.default.internalTitleStyle },
-                'AI filters'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { style: _QueryStyle2.default.doubleRowStyle },
-              _react2.default.createElement(
-                'div',
-                { style: _QueryStyle2.default.doubleRowInternalLeftWrapStyle },
-                _react2.default.createElement(
-                  _RadioButton.RadioButtonGroup,
-                  { name: 'milestoneSelection', defaultSelected: 'all', onChange: this.handleMilestoneChange },
-                  _react2.default.createElement(_RadioButton.RadioButton, { labelStyle: _QueryStyle2.default.radioLabelStyle, iconStyle: _QueryStyle2.default.radioIconStyle, value: 'all', label: 'All', style: _QueryStyle2.default.radioButtonSpacedStyle }),
-                  _react2.default.createElement(_RadioButton.RadioButton, { labelStyle: _QueryStyle2.default.radioLabelStyle, iconStyle: _QueryStyle2.default.radioIconStyle, value: 'number', label: 'Number', style: _QueryStyle2.default.radioButtonSpacedStyle }),
-                  _react2.default.createElement(_RadioButton.RadioButton, { labelStyle: _QueryStyle2.default.radioLabelStyle, iconStyle: _QueryStyle2.default.radioIconStyle, value: 'none', label: 'None' })
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { style: _QueryStyle2.default.doubleRowInternalRightWrapStyle },
-                _react2.default.createElement(_TextField2.default, { disabled: this.state.milestoneInputDisabled, inputStyle: _QueryStyle2.default.textInputStyle, value: this.state.milestoneIntegerValue, fullWidth: true, hintText: 'Type the milestone number', floatingLabelText: 'Milestone nr.', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, underlineFocusStyle: _QueryStyle2.default.underlineFocusStyle, type: 'number', onChange: this.handleChangeMilestoneText })
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { style: _QueryStyle2.default.inputBoxStyle },
-            _react2.default.createElement(
-              'div',
-              { style: _QueryStyle2.default.inputBoxTitleRowStyle },
-              _react2.default.createElement(
-                'h3',
-                { style: _QueryStyle2.default.internalTitleStyle },
-                'Manual filters'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { style: _QueryStyle2.default.doubleRowStyle },
-              _react2.default.createElement(
-                'div',
-                { style: _QueryStyle2.default.inputInternalBoxStyle },
-                _react2.default.createElement(
-                  _SelectField2.default,
-                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.stateInputValue, onChange: this.handleChangeStateInputSelect, floatingLabelText: 'State', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
-                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Open' }),
-                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Closed' }),
-                  _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'All' })
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { style: _QueryStyle2.default.inputInternalBoxStyle },
-                _react2.default.createElement(
-                  _SelectField2.default,
-                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.sortInputValue, onChange: this.handleChangeSortInputSelect, floatingLabelText: 'Sort by', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
-                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Created' }),
-                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Updated' }),
-                  _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'Comments' })
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { style: _QueryStyle2.default.inputInternalBoxStyle },
-                _react2.default.createElement(
-                  _SelectField2.default,
-                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.directionInputValue, onChange: this.handleChangeDirectionInputSelect, floatingLabelText: 'Direction', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
-                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Ascending' }),
-                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Descending' })
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { style: _QueryStyle2.default.submitRowStyle },
-            _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                _FloatingActionButton2.default,
-                { mini: true, secondary: true, onMouseDown: this.validateDetails },
-                _react2.default.createElement(_chevronRight2.default, null)
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return QueryPanel;
-}(_react2.default.Component);
-
-exports.default = QueryPanel;
-
-/***/ }),
+/* 497 */,
 /* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -52003,11 +51650,9 @@ var panelRowStyle = {
 };
 
 var style = {
-  paperStyle: _extends({}, _GeneralStyle2.default.paperStyle, {
-    backgroundColor: '#7986CB'
-  }),
 
   internalTitleStyle: _extends({}, _GeneralStyle2.default.genericTitle, {
+    textIndent: '10px',
     fontSize: '10pt',
     fontWeight: '200'
   }),
@@ -52126,6 +51771,10 @@ var _StoreGithub = __webpack_require__(525);
 
 var _StoreGithub2 = _interopRequireDefault(_StoreGithub);
 
+var _GeneralStyle = __webpack_require__(214);
+
+var _GeneralStyle2 = _interopRequireDefault(_GeneralStyle);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -52144,6 +51793,8 @@ var Style = _radium2.default.Style;
 //Material UI
 
 //Stores
+
+// Style Modules
 
 var ResultPanel = function (_React$Component) {
   _inherits(ResultPanel, _React$Component);
@@ -52234,16 +51885,20 @@ var ResultPanel = function (_React$Component) {
         { style: this.paperStyle, zDepth: 2 },
         _react2.default.createElement(
           'div',
-          { style: this.headerStyle },
+          { style: _GeneralStyle2.default.headerStyle },
           _react2.default.createElement(
-            'h1',
-            { style: this.mainTitle },
-            'Result panel'
-          ),
-          _react2.default.createElement(
-            'h2',
-            { style: this.subTitle },
-            'A visualisation of the Github issues filtered in the query panel'
+            'div',
+            { style: _GeneralStyle2.default.headerInnerStyle },
+            _react2.default.createElement(
+              'h1',
+              { style: _GeneralStyle2.default.mainTitle },
+              'Result panel'
+            ),
+            _react2.default.createElement(
+              'h2',
+              { style: _GeneralStyle2.default.subTitle },
+              'A visualisation of the Github issues filtered in the query panel'
+            )
           )
         ),
         _react2.default.createElement(
@@ -52624,6 +52279,730 @@ var _AppDispatcher = __webpack_require__(81);
 var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+/* 528 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _ActionCreatorSendToGithub = __webpack_require__(211);
+
+var _ActionCreatorSendToGithub2 = _interopRequireDefault(_ActionCreatorSendToGithub);
+
+var _Paper = __webpack_require__(29);
+
+var _Paper2 = _interopRequireDefault(_Paper);
+
+var _SelectField = __webpack_require__(506);
+
+var _SelectField2 = _interopRequireDefault(_SelectField);
+
+var _MenuItem = __webpack_require__(128);
+
+var _MenuItem2 = _interopRequireDefault(_MenuItem);
+
+var _FloatingActionButton = __webpack_require__(513);
+
+var _FloatingActionButton2 = _interopRequireDefault(_FloatingActionButton);
+
+var _chevronRight = __webpack_require__(515);
+
+var _chevronRight2 = _interopRequireDefault(_chevronRight);
+
+var _GeneralStyle = __webpack_require__(214);
+
+var _GeneralStyle2 = _interopRequireDefault(_GeneralStyle);
+
+var _QueryStyle = __webpack_require__(521);
+
+var _QueryStyle2 = _interopRequireDefault(_QueryStyle);
+
+var _ManualQueryStyle = __webpack_require__(529);
+
+var _ManualQueryStyle2 = _interopRequireDefault(_ManualQueryStyle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// React
+
+//Action Creators
+
+//Material UI
+
+
+// Style Modules
+
+
+var ManualQueryPanel = function (_React$Component) {
+  _inherits(ManualQueryPanel, _React$Component);
+
+  function ManualQueryPanel(props) {
+    _classCallCheck(this, ManualQueryPanel);
+
+    var _this = _possibleConstructorReturn(this, (ManualQueryPanel.__proto__ || Object.getPrototypeOf(ManualQueryPanel)).call(this, props));
+
+    _this.handleChangeStateInputSelect = _this.handleChangeStateInputSelect.bind(_this);
+    _this.handleChangeSortInputSelect = _this.handleChangeSortInputSelect.bind(_this);
+    _this.handleChangeDirectionInputSelect = _this.handleChangeDirectionInputSelect.bind(_this);
+    _this.validateDetails = _this.validateDetails.bind(_this);
+
+    _this.state = {
+      stateInputValue: 3,
+      sortInputValue: 1,
+      directionInputValue: 2
+    };
+
+    _this.stateInput = 'all';
+    _this.sortInput = 'created';
+    _this.directionInput = 'desc';
+    return _this;
+  }
+
+  _createClass(ManualQueryPanel, [{
+    key: 'handleChangeStateInputSelect',
+    value: function handleChangeStateInputSelect(event, index, value) {
+      this.setState({ stateInputValue: value });
+      switch (value) {
+        case 1:
+          {
+            this.stateInput = 'open';
+          }
+          break;
+        case 2:
+          {
+            this.stateInput = 'closed';
+          }
+          break;
+        case 3:
+          {
+            this.stateInput = 'all';
+          }
+          break;
+      };
+    }
+  }, {
+    key: 'handleChangeSortInputSelect',
+    value: function handleChangeSortInputSelect(event, index, value) {
+      this.setState({ sortInputValue: value });
+      switch (value) {
+        case 1:
+          {
+            this.sortInput = 'created';
+          }
+          break;
+        case 2:
+          {
+            this.sortInput = 'updated';
+          }
+          break;
+        case 3:
+          {
+            this.sortInput = 'comments';
+          }
+          break;
+      };
+    }
+  }, {
+    key: 'handleChangeDirectionInputSelect',
+    value: function handleChangeDirectionInputSelect(event, index, value) {
+      this.setState({ directionInputValue: value });
+      switch (value) {
+        case 1:
+          {
+            this.directionInput = 'asc';
+          }
+          break;
+        case 2:
+          {
+            this.directionInput = 'desc';
+          }
+          break;
+      };
+    }
+  }, {
+    key: 'validateDetails',
+    value: function validateDetails() {
+
+      var sortValueToSend = this.sortInput;
+      var directionValueToSend = this.directionInput;
+
+      var objectToSend = {
+        state: this.stateInput,
+        sort: sortValueToSend,
+        direction: directionValueToSend
+      };
+      (0, _ActionCreatorSendToGithub2.default)(objectToSend);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _Paper2.default,
+        { style: _ManualQueryStyle2.default.paperStyle, zDepth: 2 },
+        _react2.default.createElement(
+          'div',
+          { style: _GeneralStyle2.default.headerStyle },
+          _react2.default.createElement(
+            'div',
+            { style: _GeneralStyle2.default.headerInnerStyle },
+            _react2.default.createElement(
+              'h1',
+              { style: _GeneralStyle2.default.mainTitle },
+              'Manual query panel'
+            ),
+            _react2.default.createElement(
+              'h2',
+              { style: _GeneralStyle2.default.subTitle },
+              'Select the kind of manual filters for the Github (atom/atom) issues search and submit your query'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { style: _GeneralStyle2.default.paperContentWrapStyle },
+          _react2.default.createElement(
+            'div',
+            { style: _QueryStyle2.default.inputBoxStyle },
+            _react2.default.createElement(
+              'div',
+              { style: _QueryStyle2.default.inputBoxTitleRowStyle },
+              _react2.default.createElement(
+                'h3',
+                { style: _QueryStyle2.default.internalTitleStyle },
+                'Manual filters'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { style: _QueryStyle2.default.doubleRowStyle },
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.inputInternalBoxStyle },
+                _react2.default.createElement(
+                  _SelectField2.default,
+                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.stateInputValue, onChange: this.handleChangeStateInputSelect, floatingLabelText: 'State', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
+                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Open' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Closed' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'All' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.inputInternalBoxStyle },
+                _react2.default.createElement(
+                  _SelectField2.default,
+                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.sortInputValue, onChange: this.handleChangeSortInputSelect, floatingLabelText: 'Sort by', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
+                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Created' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Updated' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'Comments' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.inputInternalBoxStyle },
+                _react2.default.createElement(
+                  _SelectField2.default,
+                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.directionInputValue, onChange: this.handleChangeDirectionInputSelect, floatingLabelText: 'Direction', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
+                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Ascending' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Descending' })
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { style: _QueryStyle2.default.submitRowStyle },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                _FloatingActionButton2.default,
+                { backgroundColor: '#7986CB', mini: true, onMouseDown: this.validateDetails },
+                _react2.default.createElement(_chevronRight2.default, null)
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return ManualQueryPanel;
+}(_react2.default.Component);
+
+exports.default = ManualQueryPanel;
+
+/***/ }),
+/* 529 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Style Modules
+
+
+var _GeneralStyle = __webpack_require__(214);
+
+var _GeneralStyle2 = _interopRequireDefault(_GeneralStyle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var style = {
+  paperStyle: _extends({}, _GeneralStyle2.default.paperStyle, {
+    backgroundColor: '#E65100'
+  })
+};
+
+exports.default = style;
+
+/***/ }),
+/* 530 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Style Modules
+
+
+var _GeneralStyle = __webpack_require__(214);
+
+var _GeneralStyle2 = _interopRequireDefault(_GeneralStyle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var style = {
+  paperStyle: _extends({}, _GeneralStyle2.default.paperStyle, {
+    backgroundColor: '#7986CB'
+  })
+};
+
+exports.default = style;
+
+/***/ }),
+/* 531 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _ActionCreatorSendToGithub = __webpack_require__(211);
+
+var _ActionCreatorSendToGithub2 = _interopRequireDefault(_ActionCreatorSendToGithub);
+
+var _Paper = __webpack_require__(29);
+
+var _Paper2 = _interopRequireDefault(_Paper);
+
+var _TextField = __webpack_require__(212);
+
+var _TextField2 = _interopRequireDefault(_TextField);
+
+var _SelectField = __webpack_require__(506);
+
+var _SelectField2 = _interopRequireDefault(_SelectField);
+
+var _MenuItem = __webpack_require__(128);
+
+var _MenuItem2 = _interopRequireDefault(_MenuItem);
+
+var _FloatingActionButton = __webpack_require__(513);
+
+var _FloatingActionButton2 = _interopRequireDefault(_FloatingActionButton);
+
+var _chevronRight = __webpack_require__(515);
+
+var _chevronRight2 = _interopRequireDefault(_chevronRight);
+
+var _RadioButton = __webpack_require__(516);
+
+var _RaisedButton = __webpack_require__(209);
+
+var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+
+var _GeneralStyle = __webpack_require__(214);
+
+var _GeneralStyle2 = _interopRequireDefault(_GeneralStyle);
+
+var _QueryStyle = __webpack_require__(521);
+
+var _QueryStyle2 = _interopRequireDefault(_QueryStyle);
+
+var _AIQueryStyle = __webpack_require__(530);
+
+var _AIQueryStyle2 = _interopRequireDefault(_AIQueryStyle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// React
+
+//Action Creators
+
+//Material UI
+
+
+// Style Modules
+
+
+var AIQueryPanel = function (_React$Component) {
+  _inherits(AIQueryPanel, _React$Component);
+
+  function AIQueryPanel(props) {
+    _classCallCheck(this, AIQueryPanel);
+
+    var _this = _possibleConstructorReturn(this, (AIQueryPanel.__proto__ || Object.getPrototypeOf(AIQueryPanel)).call(this, props));
+
+    _this.handleChangeStateInputSelect = _this.handleChangeStateInputSelect.bind(_this);
+    _this.handleChangeSortInputSelect = _this.handleChangeSortInputSelect.bind(_this);
+    _this.handleChangeDirectionInputSelect = _this.handleChangeDirectionInputSelect.bind(_this);
+    _this.handleChangeMilestoneText = _this.handleChangeMilestoneText.bind(_this);
+    _this.handleMilestoneChange = _this.handleMilestoneChange.bind(_this);
+    _this.validateDetails = _this.validateDetails.bind(_this);
+
+    _this.state = {
+      milestoneInputDisabled: true,
+      milestoneIntegerValue: '',
+
+      stateInputValue: 3,
+
+      sortInputValue: 1,
+      directionInputValue: 2
+    };
+
+    _this.milestoneStringValue = '*';
+    _this.stateInput = 'all';
+    _this.sortInput = 'created';
+    _this.directionInput = 'desc';
+    return _this;
+  }
+
+  _createClass(AIQueryPanel, [{
+    key: 'handleMilestoneChange',
+    value: function handleMilestoneChange(evt, value) {
+      if (value === 'number') {
+        this.setState({ milestoneInputDisabled: false });
+        this.milestoneStringValue = null;
+      } else {
+        this.setState({ milestoneInputDisabled: true, milestoneIntegerValue: '' });
+
+        switch (value) {
+          case 'all':
+            {
+              this.milestoneStringValue = '*';
+            }
+            break;
+          case 'none':
+            {
+              this.milestoneStringValue = value;
+            }
+            break;
+        };
+      };
+    }
+  }, {
+    key: 'handleChangeStateInputSelect',
+    value: function handleChangeStateInputSelect(event, index, value) {
+      this.setState({ stateInputValue: value });
+      switch (value) {
+        case 1:
+          {
+            this.stateInput = 'open';
+          }
+          break;
+        case 2:
+          {
+            this.stateInput = 'closed';
+          }
+          break;
+        case 3:
+          {
+            this.stateInput = 'all';
+          }
+          break;
+      };
+    }
+  }, {
+    key: 'handleChangeSortInputSelect',
+    value: function handleChangeSortInputSelect(event, index, value) {
+      this.setState({ sortInputValue: value });
+      switch (value) {
+        case 1:
+          {
+            this.sortInput = 'created';
+          }
+          break;
+        case 2:
+          {
+            this.sortInput = 'updated';
+          }
+          break;
+        case 3:
+          {
+            this.sortInput = 'comments';
+          }
+          break;
+      };
+    }
+  }, {
+    key: 'handleChangeDirectionInputSelect',
+    value: function handleChangeDirectionInputSelect(event, index, value) {
+      this.setState({ directionInputValue: value });
+      switch (value) {
+        case 1:
+          {
+            this.directionInput = 'asc';
+          }
+          break;
+        case 2:
+          {
+            this.directionInput = 'desc';
+          }
+          break;
+      };
+    }
+  }, {
+    key: 'returnAbsIntValue',
+    value: function returnAbsIntValue(value) {
+      return Math.abs(parseInt(value));
+    }
+  }, {
+    key: 'handleChangeMilestoneText',
+    value: function handleChangeMilestoneText(evt, value) {
+      this.returnAbsIntValue(value) ? this.setState({ milestoneIntegerValue: this.returnAbsIntValue(value) }) : this.setState({ milestoneIntegerValue: '' });
+    }
+  }, {
+    key: 'validateDetails',
+    value: function validateDetails() {
+      var milestoneDisabled = this.state.milestoneInputDisabled;
+      var milestoneValueToSend = void 0;
+      if (milestoneDisabled) {
+        milestoneValueToSend = this.milestoneStringValue;
+      } else {
+        this.state.milestoneIntegerValue ? milestoneValueToSend = this.state.milestoneIntegerValue : milestoneValueToSend = '*';
+      };
+
+      var sortValueToSend = this.sortInput;
+      var directionValueToSend = this.directionInput;
+
+      var objectToSend = {
+        state: this.stateInput,
+        sort: sortValueToSend,
+        direction: directionValueToSend
+      };
+      (0, _ActionCreatorSendToGithub2.default)(objectToSend);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _Paper2.default,
+        { style: _AIQueryStyle2.default.paperStyle, zDepth: 2 },
+        _react2.default.createElement(
+          'div',
+          { style: _GeneralStyle2.default.headerStyle },
+          _react2.default.createElement(
+            'div',
+            { style: _GeneralStyle2.default.headerInnerStyle },
+            _react2.default.createElement(
+              'h1',
+              { style: _GeneralStyle2.default.mainTitle },
+              'AI query panel'
+            ),
+            _react2.default.createElement(
+              'h2',
+              { style: _GeneralStyle2.default.subTitle },
+              'Type or say your request for the Github (atom/atom) issues search and submit your query'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { style: _GeneralStyle2.default.paperContentWrapStyle },
+          _react2.default.createElement(
+            'div',
+            { style: _QueryStyle2.default.inputBoxStyle },
+            _react2.default.createElement(
+              'div',
+              { style: _QueryStyle2.default.inputBoxTitleRowStyle },
+              _react2.default.createElement(
+                'h3',
+                { style: _QueryStyle2.default.internalTitleStyle },
+                'AI filters'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { style: _QueryStyle2.default.doubleRowStyle },
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.doubleRowInternalLeftWrapStyle },
+                _react2.default.createElement(
+                  _RadioButton.RadioButtonGroup,
+                  { name: 'milestoneSelection', defaultSelected: 'all', onChange: this.handleMilestoneChange },
+                  _react2.default.createElement(_RadioButton.RadioButton, { labelStyle: _QueryStyle2.default.radioLabelStyle, iconStyle: _QueryStyle2.default.radioIconStyle, value: 'all', label: 'All', style: _QueryStyle2.default.radioButtonSpacedStyle }),
+                  _react2.default.createElement(_RadioButton.RadioButton, { labelStyle: _QueryStyle2.default.radioLabelStyle, iconStyle: _QueryStyle2.default.radioIconStyle, value: 'number', label: 'Number', style: _QueryStyle2.default.radioButtonSpacedStyle }),
+                  _react2.default.createElement(_RadioButton.RadioButton, { labelStyle: _QueryStyle2.default.radioLabelStyle, iconStyle: _QueryStyle2.default.radioIconStyle, value: 'none', label: 'None' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.doubleRowInternalRightWrapStyle },
+                _react2.default.createElement(_TextField2.default, { disabled: this.state.milestoneInputDisabled, inputStyle: _QueryStyle2.default.textInputStyle, value: this.state.milestoneIntegerValue, fullWidth: true, hintText: 'Type the milestone number', floatingLabelText: 'Milestone nr.', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, underlineFocusStyle: _QueryStyle2.default.underlineFocusStyle, type: 'number', onChange: this.handleChangeMilestoneText })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { style: _QueryStyle2.default.inputBoxStyle },
+            _react2.default.createElement(
+              'div',
+              { style: _QueryStyle2.default.inputBoxTitleRowStyle },
+              _react2.default.createElement(
+                'h3',
+                { style: _QueryStyle2.default.internalTitleStyle },
+                'Manual filters'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { style: _QueryStyle2.default.doubleRowStyle },
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.inputInternalBoxStyle },
+                _react2.default.createElement(
+                  _SelectField2.default,
+                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.stateInputValue, onChange: this.handleChangeStateInputSelect, floatingLabelText: 'State', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
+                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Open' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Closed' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'All' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.inputInternalBoxStyle },
+                _react2.default.createElement(
+                  _SelectField2.default,
+                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.sortInputValue, onChange: this.handleChangeSortInputSelect, floatingLabelText: 'Sort by', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
+                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Created' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Updated' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 3, primaryText: 'Comments' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { style: _QueryStyle2.default.inputInternalBoxStyle },
+                _react2.default.createElement(
+                  _SelectField2.default,
+                  { labelStyle: _QueryStyle2.default.selectLabelStyle, fullWidth: true, style: _QueryStyle2.default.selectLoginElement, value: this.state.directionInputValue, onChange: this.handleChangeDirectionInputSelect, floatingLabelText: 'Direction', floatingLabelStyle: _QueryStyle2.default.floatingLabelStyle, iconStyle: _QueryStyle2.default.selectIconStyle },
+                  _react2.default.createElement(_MenuItem2.default, { value: 1, primaryText: 'Ascending' }),
+                  _react2.default.createElement(_MenuItem2.default, { value: 2, primaryText: 'Descending' })
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { style: _QueryStyle2.default.submitRowStyle },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                _FloatingActionButton2.default,
+                { backgroundColor: '#E65100', mini: true, onMouseDown: this.validateDetails },
+                _react2.default.createElement(_chevronRight2.default, null)
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return AIQueryPanel;
+}(_react2.default.Component);
+
+exports.default = AIQueryPanel;
+
+/***/ }),
+/* 532 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// Style Modules
+
+var style = {
+  mainWrap: {
+    width: '100%',
+    height: 'inherit',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  appWrap: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignContent: 'center',
+    width: 'inherit',
+    height: 'inherit'
+  },
+  topSpaceStyle: {
+    width: '100%',
+    height: '64px'
+  },
+  snackBarStyle: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+};
+
+exports.default = style;
 
 /***/ })
 /******/ ]);
