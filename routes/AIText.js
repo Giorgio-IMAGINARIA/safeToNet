@@ -8,26 +8,17 @@ const client = new Wit({
   logger: new log.Logger(log.DEBUG) // optional
 });
 
+// 'set state to open, direction to ascending and sort to created'
 
-function tryWit(messageReceived) {
+function analyseText(messageReceived, res) {
   client.message(messageReceived, {}).then((data) => {
-    console.log('Yay, got Wit.ai response: ' + JSON.stringify(data));
+    res.json(JSON.stringify(data));
   }).catch(console.error);
 }
 
-/* GET API Address. */
-router.get('/', function(req, res, next) {
-
-
-  var apiAddressJson = {
-    apiAddress: ''
-  };
-
-
-  tryWit('set state to open, direction to ascending and sort to created');
-
-  res.json(apiAddressJson);
-
+/* POST API Address. */
+router.post('/', function(req, res, next) {
+  analyseText(req.body.text, res);
 });
 
 module.exports = router;

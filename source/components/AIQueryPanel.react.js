@@ -2,7 +2,7 @@
 // React
 import React from 'react';
 //Action Creators
-import ActionCreatorSendToGithub from '../actions/ActionCreatorSendToGithub';
+import ActionCreatorSendText from '../actions/ActionCreatorSendText';
 //Material UI
 import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
@@ -20,7 +20,9 @@ import GeneralStyle from '../styles/GeneralStyle';
 import QueryStyle from '../styles/QueryStyle';
 import AIQueryStyle from '../styles/AIQueryStyle';
 
-interface AIFilterObject {}
+interface AITextObject {
+  text: string
+}
 
 class AIQueryPanel extends React.Component {
 
@@ -64,8 +66,11 @@ class AIQueryPanel extends React.Component {
 
   validateDetails() {
 
-    let objectToSend: AIFilterObject = {}
-    ActionCreatorSendToGithub(objectToSend);
+
+    this.state.typeInputDisabled?
+    ActionCreatorSendText({text: this.state.typeInputValue}):
+    ActionCreatorSendText({text: this.state.typeInputValue});
+
   }
 
   render() {
