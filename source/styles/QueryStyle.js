@@ -2,7 +2,8 @@
 import GeneralStyle from './GeneralStyle';
 
 let inputInternalRowStyle = {
-  padding: '25px'
+  padding: '25px',
+  display: 'flex'
 }
 
 let doubleRowInternalWrapStyle = {
@@ -29,6 +30,12 @@ let style = {
     fontWeight: '200'
   },
 
+  inputInternalBoxStyle:{
+    padding: '0 10px',
+    display: 'flex',
+    flexGrow: '1'
+  },
+
   inputBoxStyle: {
     border: '1px solid #ffffff',
     marginBottom: '25px'
@@ -44,7 +51,8 @@ let style = {
 
   doubleRowStyle: {
     ...inputInternalRowStyle,
-    display: 'flex'
+    display: 'flex',
+    flexWrap: 'wrap'
   },
 
   doubleRowInternalLeftWrapStyle: {
@@ -73,7 +81,34 @@ let style = {
 
   underlineFocusStyle: {
     borderColor: '#FC4482'
+  },
+
+radioLabelStyle: {
+    color: '#ffffff'
+  },
+
+textInputStyle: {
+    color: '#ffffff'
+  },
+
+selectLoginElement: {
+    textAlign: 'left'
+  },
+
+floatingLabelStyle : {
+    color: '#ffffff'
+  },
+
+selectIconStyle: {
+    fill: '#ffffff'
+  },
+
+selectLabelStyle : {
+    color: '#ffffff'
   }
+
+
+
 
 }
 

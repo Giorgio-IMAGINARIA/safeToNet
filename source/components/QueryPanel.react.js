@@ -17,15 +17,10 @@ import RaisedButton from 'material-ui/RaisedButton';
 import GeneralStyle from '../styles/GeneralStyle';
 import QueryStyle from '../styles/QueryStyle';
 
-interface GithubObject {
-  milestone: any,
+interface ManualFilterObject {
   state: string,
-  assignee: string,
-  creator?: string,
-  mentioned?: string,
-  labels?: string,
   sort: string,
-  since?: string
+  direction: string
 }
 
 class QueryPanel extends React.Component {
@@ -47,170 +42,6 @@ class QueryPanel extends React.Component {
 
       sortInputValue: 1,
       directionInputValue: 2
-    };
-    // this.paperStyle = {
-    //   textAlign: 'center',
-    //   display: 'inline-block',
-    //   width: 'calc(100% - 100px)',
-    //   margin: '50px',
-    //   backgroundColor: '#7986CB'
-    // };
-    // this.headerStyle = {
-    //   width: '100%',
-    //   height: '50px',
-    //   display: 'flex',
-    //   flexDirection: 'column',
-    //   alignItems: 'flex-start',
-    //   justifyContent: 'space-around'
-    //
-    // };
-    this.globaltext = {
-      color: '#ffffff'
-    }
-    this.titles = {
-      ...this.globaltext,
-      margin: '0',
-      textIndent: '25px'
-    };
-    this.mainTitle = {
-      ...this.titles,
-      fontSize: '12pt'
-    };
-    // this.subTitle = {
-    //   ...this.titles,
-    //   fontSize: '9pt',
-    //   fontWeight: '100'
-    // };
-    // this.internalTitleStyle = {
-    //   ...this.titles,
-    //   fontSize: '10pt',
-    //   fontWeight: '200'
-    // };
-
-    // this.paperContentWrapStyle = {
-    //   display: 'flex',
-    //   flexDirection: 'column',
-    //   padding: '50px 25px 25px'
-    // };
-
-    // this.inputBoxStyle = {
-    //   border: '1px solid #ffffff',
-    //   marginBottom: '25px'
-    // };
-
-    // this.inputBoxTitleRowStyle = {
-    //   display: 'flex',
-    //   alignItems: 'center',
-    //   justifyContent: 'flex-start',
-    //   height: '20px',
-    //   borderBottom: '1px solid #ffffff'
-    // };
-
-    this.inputInternalRowStyle = {
-      padding: '25px'
-    };
-
-    this.doubleRowStyle = {
-      ...this.inputInternalRowStyle,
-      display: 'flex'
-    };
-
-    this.doubleRowInternalWrapStyle = {
-      display: 'flex',
-      alignItems: 'space-between',
-      width: '50%'
-    };
-    this.doubleRowInternalLeftWrapStyle = {
-      ...this.doubleRowInternalWrapStyle,
-      justifyContent: 'space-between'
-    };
-    this.doubleRowInternalRightWrapStyle = {
-      ...this.doubleRowInternalWrapStyle,
-      justifyContent: 'center'
-    };
-
-    this.doubleRowInternalRightTimeWrapStyle = {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-end',
-      justifyContent: 'space-around',
-      width: '50%'
-    }
-
-    this.doubleRowChipWrapStyle = {
-      width: '50%',
-      display: 'flex',
-      alignItems: 'center',
-      overflowX: 'auto',
-      border: '1px dashed #ffffff'
-    }
-
-    this.radioButtonSpacedStyle = {
-      marginBottom: '16px'
-    };
-
-    this.radioLabelStyle = {
-      color: '#ffffff'
-    }
-
-    this.radioIconStyle = {
-      fill: '#ffffff'
-    }
-
-    this.textInputStyle = {
-      color: '#ffffff'
-    }
-
-    this.checkBoxWrapStyle = {
-      display: 'flex',
-      alignItems: 'center'
-    };
-
-    this.checkBoxStyle = {
-      display: 'flex'
-    }
-    this.checkBoxIconStyle = {
-      fill: '#ffffff'
-    }
-    this.checkBoxLabelStyle = {
-      color: '#ffffff'
-    }
-
-    this.panelRowStyle = {
-      width: '100%',
-      display: 'flex',
-      alignItems: 'center'
-    };
-
-    this.submitRowStyle = {
-      ...this.panelRowStyle,
-      height: '50px',
-      justifyContent: 'center'
-    };
-    this.selectLoginElement = {
-      textAlign: 'left'
-    };
-
-    this.floatingLabelStyle = {
-      color: '#ffffff'
-    };
-    this.underlineFocusStyle = {
-      borderColor: '#FC4482'
-    };
-
-    this.selectIconStyle = {
-      fill: '#ffffff'
-    };
-
-    this.selectLabelStyle = {
-      color: '#ffffff'
-    };
-
-    this.innerDoubleRowStyle = {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-around',
-      width: '50%'
     };
 
     this.milestoneStringValue = '*';
@@ -323,8 +154,7 @@ class QueryPanel extends React.Component {
     let sortValueToSend: string = this.sortInput;
     let directionValueToSend: string = this.directionInput;
 
-    let objectToSend: GithubObject = {
-      milestone: milestoneValueToSend,
+    let objectToSend: ManualFilterObject = {
       state: this.stateInput,
       sort: sortValueToSend,
       direction: directionValueToSend
@@ -349,19 +179,19 @@ class QueryPanel extends React.Component {
         <div style={QueryStyle.inputBoxStyle}>
           <div style={QueryStyle.inputBoxTitleRowStyle}>
             <h3 style={QueryStyle.internalTitleStyle}>
-              Milestone filter
+              AI filters
             </h3>
           </div>
-          <div style={this.doubleRowStyle}>
-            <div style={this.doubleRowInternalLeftWrapStyle}>
+          <div style={QueryStyle.doubleRowStyle}>
+            <div style={QueryStyle.doubleRowInternalLeftWrapStyle}>
               <RadioButtonGroup name='milestoneSelection' defaultSelected="all" onChange={this.handleMilestoneChange}>
-                <RadioButton labelStyle={this.radioLabelStyle} iconStyle={this.radioIconStyle} value="all" label="All" style={this.radioButtonSpacedStyle}/>
-                <RadioButton labelStyle={this.radioLabelStyle} iconStyle={this.radioIconStyle} value="number" label="Number" style={this.radioButtonSpacedStyle}/>
-                <RadioButton labelStyle={this.radioLabelStyle} iconStyle={this.radioIconStyle} value="none" label="None"/>
+                <RadioButton labelStyle={QueryStyle.radioLabelStyle} iconStyle={QueryStyle.radioIconStyle} value="all" label="All" style={QueryStyle.radioButtonSpacedStyle}/>
+                <RadioButton labelStyle={QueryStyle.radioLabelStyle} iconStyle={QueryStyle.radioIconStyle} value="number" label="Number" style={QueryStyle.radioButtonSpacedStyle}/>
+                <RadioButton labelStyle={QueryStyle.radioLabelStyle} iconStyle={QueryStyle.radioIconStyle} value="none" label="None"/>
               </RadioButtonGroup>
             </div>
-            <div style={this.doubleRowInternalRightWrapStyle}>
-              <TextField disabled={this.state.milestoneInputDisabled} inputStyle={this.textInputStyle} value={this.state.milestoneIntegerValue} fullWidth={true} hintText="Type the milestone number" floatingLabelText="Milestone nr." floatingLabelStyle={this.floatingLabelStyle} underlineFocusStyle={this.underlineFocusStyle} type="number" onChange={this.handleChangeMilestoneText}/>
+            <div style={QueryStyle.doubleRowInternalRightWrapStyle}>
+              <TextField disabled={this.state.milestoneInputDisabled} inputStyle={QueryStyle.textInputStyle} value={this.state.milestoneIntegerValue} fullWidth={true} hintText="Type the milestone number" floatingLabelText="Milestone nr." floatingLabelStyle={QueryStyle.floatingLabelStyle} underlineFocusStyle={QueryStyle.underlineFocusStyle} type="number" onChange={this.handleChangeMilestoneText}/>
             </div>
           </div>
         </div>
@@ -369,48 +199,34 @@ class QueryPanel extends React.Component {
         <div style={QueryStyle.inputBoxStyle}>
           <div style={QueryStyle.inputBoxTitleRowStyle}>
             <h3 style={QueryStyle.internalTitleStyle}>
-              State filter
+              Manual filters
             </h3>
           </div>
-          <div style={this.inputInternalRowStyle}>
-            <SelectField labelStyle={this.selectLabelStyle} fullWidth={true} style={this.selectLoginElement} value={this.state.stateInputValue} onChange={this.handleChangeStateInputSelect} floatingLabelText="Selected issue state" floatingLabelStyle={this.floatingLabelStyle} iconStyle={this.selectIconStyle}>
-              <MenuItem value={1} primaryText="Open"/>
-              <MenuItem value={2} primaryText="Closed"/>
-              <MenuItem value={3} primaryText="All"/>
-            </SelectField>
+          <div style={QueryStyle.doubleRowStyle}>
+            <div style={QueryStyle.inputInternalBoxStyle}>
+              <SelectField labelStyle={QueryStyle.selectLabelStyle} fullWidth={true} style={QueryStyle.selectLoginElement} value={this.state.stateInputValue} onChange={this.handleChangeStateInputSelect} floatingLabelText="State" floatingLabelStyle={QueryStyle.floatingLabelStyle} iconStyle={QueryStyle.selectIconStyle}>
+                <MenuItem value={1} primaryText="Open"/>
+                <MenuItem value={2} primaryText="Closed"/>
+                <MenuItem value={3} primaryText="All"/>
+              </SelectField>
+            </div>
+            <div style={QueryStyle.inputInternalBoxStyle}>
+              <SelectField labelStyle={QueryStyle.selectLabelStyle} fullWidth={true} style={QueryStyle.selectLoginElement} value={this.state.sortInputValue} onChange={this.handleChangeSortInputSelect} floatingLabelText="Sort by" floatingLabelStyle={QueryStyle.floatingLabelStyle} iconStyle={QueryStyle.selectIconStyle}>
+                <MenuItem value={1} primaryText="Created"/>
+                <MenuItem value={2} primaryText="Updated"/>
+                <MenuItem value={3} primaryText="Comments"/>
+              </SelectField>
+            </div>
+            <div style={QueryStyle.inputInternalBoxStyle}>
+              <SelectField labelStyle={QueryStyle.selectLabelStyle} fullWidth={true} style={QueryStyle.selectLoginElement} value={this.state.directionInputValue} onChange={this.handleChangeDirectionInputSelect} floatingLabelText="Direction" floatingLabelStyle={QueryStyle.floatingLabelStyle} iconStyle={QueryStyle.selectIconStyle}>
+                <MenuItem value={1} primaryText="Ascending"/>
+                <MenuItem value={2} primaryText="Descending"/>
+              </SelectField>
+            </div>
           </div>
         </div>
 
-        <div style={QueryStyle.inputBoxStyle}>
-          <div style={QueryStyle.inputBoxTitleRowStyle}>
-            <h3 style={QueryStyle.internalTitleStyle}>
-              Sort filter
-            </h3>
-          </div>
-          <div style={this.inputInternalRowStyle}>
-            <SelectField labelStyle={this.selectLabelStyle} fullWidth={true} style={this.selectLoginElement} value={this.state.sortInputValue} onChange={this.handleChangeSortInputSelect} floatingLabelText="Sort by" floatingLabelStyle={this.floatingLabelStyle} iconStyle={this.selectIconStyle}>
-              <MenuItem value={1} primaryText="Created"/>
-              <MenuItem value={2} primaryText="Updated"/>
-              <MenuItem value={3} primaryText="Comments"/>
-            </SelectField>
-          </div>
-        </div>
-
-        <div style={QueryStyle.inputBoxStyle}>
-          <div style={QueryStyle.inputBoxTitleRowStyle}>
-            <h3 style={QueryStyle.internalTitleStyle}>
-              Direction filter
-            </h3>
-          </div>
-          <div style={this.inputInternalRowStyle}>
-            <SelectField labelStyle={this.selectLabelStyle} fullWidth={true} style={this.selectLoginElement} value={this.state.directionInputValue} onChange={this.handleChangeDirectionInputSelect} floatingLabelText="Sort direction" floatingLabelStyle={this.floatingLabelStyle} iconStyle={this.selectIconStyle}>
-              <MenuItem value={1} primaryText="Ascending"/>
-              <MenuItem value={2} primaryText="Descending"/>
-            </SelectField>
-          </div>
-        </div>
-
-        <div style={this.submitRowStyle}>
+        <div style={QueryStyle.submitRowStyle}>
           <div>
             <FloatingActionButton mini={true} secondary={true} onMouseDown={this.validateDetails}>
               <RightArrow/>
