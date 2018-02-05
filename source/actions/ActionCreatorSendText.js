@@ -15,6 +15,28 @@ interface AITextObject {
   text: string
 }
 
+interface ManualFilterObject {
+  state: string,
+  sort: string,
+  direction: string
+}
+
+function sendToAPI(filterObject : ManualFilterObject): void {
+  console.log('filterObject: ', filterObject);
+  let address = StoreAddress.getAddressRoot();
+  let url = new URL(address),
+    params = filterObject;
+  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+  fetch(url, {method: 'GET'}).then((response) => {
+    return response.json()
+  }).then((array) => {
+    dispatchAction(array);
+  }).catch((ex) => {
+    console.error('parsing failed', ex);
+    return false;
+  });
+}
+
 export default function(objectToSubmit : AITextObject): void {
   console.log('objectToSubmit: ', objectToSubmit);
 
@@ -26,11 +48,22 @@ export default function(objectToSubmit : AITextObject): void {
   }).then((response) => {
     return response.json()
   }).then((json) => {
-
-let parsedJason: any = JSON.parse(json);
-
-    console.log('the response: ', parsedJason.entities);
-    // dispatchAction(array);
+    let endObject: ManualFilterObject = {
+      state: '',
+      sort: '',
+      direction: ''
+    };
+    let parsedJason: any = JSON.parse(json);
+    endObject.direction = parsedJason.entities.hasOwnProperty('direction_type')
+      ? parsedJason.entities.direction_type[0].value
+      : 'desc';
+    endObject.sort = parsedJason.entities.hasOwnProperty('sort_type')
+      ? parsedJason.entities.sort_type[0].value
+      : 'created';
+    endObject.state = parsedJason.entities.hasOwnProperty('state_type')
+      ? parsedJason.entities.state_type[0].value
+      : 'all';
+      sendToAPI(endObject);
   }).catch((ex) => {
     console.error('parsing failed', ex);
     return false;
