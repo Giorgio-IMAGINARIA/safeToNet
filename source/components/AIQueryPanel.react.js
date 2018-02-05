@@ -3,6 +3,7 @@
 import React from 'react';
 //Action Creators
 import ActionCreatorSendText from '../actions/ActionCreatorSendText';
+import ActionCreatorSendVoice from '../actions/ActionCreatorSendVoice';
 //Material UI
 import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
@@ -14,11 +15,12 @@ import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import {fullWhite} from 'material-ui/styles/colors';
 import Microphone from 'material-ui/svg-icons/av/mic';
-
 // Style Modules
 import GeneralStyle from '../styles/GeneralStyle';
 import QueryStyle from '../styles/QueryStyle';
 import AIQueryStyle from '../styles/AIQueryStyle';
+// Other libraries
+import 'recordrtc';
 
 interface AITextObject {
   text: string
@@ -42,9 +44,12 @@ class AIQueryPanel extends React.Component {
       micButtonDisabled: true,
       typeInputValue: '',
       backgroundRecordButtonColor: "#a4c639",
-      validateButtonDisabled: true,
+      validateButtonDisabled: false,
       micButtonDisabledColor: "#757575"
     };
+
+    this.isRecording = false;
+    this.stream = null;
 
   }
 
@@ -52,26 +57,40 @@ class AIQueryPanel extends React.Component {
     switch (value) {
       case 'type':
         {
-          this.setState({typeInputDisabled: false, micButtonDisabled: true});
+          this.setState({typeInputDisabled: false});
+          if (!this.isRecording) {
+            this.setState({micButtonDisabled: true})
+          }
         }
         break;
       case 'talk':
         {
-          this.setState({typeInputDisabled: true, typeInputValue: '', micButtonDisabled: false});
+
+          this.setState({typeInputDisabled: true, typeInputValue: ''});
+          if (!this.isRecording) {
+            this.setState({micButtonDisabled: false})
+          }
         }
         break;
     };
   }
+
   timedButtonUndisabling() {
+
     setTimeout(() => {
-      this.setState({micButtonDisabledColor: "#757575", micButtonDisabled: false, backgroundRecordButtonColor: "#a4c639", validateButtonDisabled: false});
+      if (this.state.typeInputDisabled) {
+        this.setState({micButtonDisabled: false});
+      };
+      this.setState({micButtonDisabledColor: "#757575", validateButtonDisabled: false});
       this.stopLocalAudio();
+      this.isRecording = false;
     }, 10000)
   }
 
   grabVoice() {
+    this.isRecording = true;
     this.startLocalAudio();
-    this.setState({micButtonDisabledColor: "#B71C1C", micButtonDisabled: true, backgroundRecordButtonColor: "#B71C1C", validateButtonDisabled: true});
+    this.setState({micButtonDisabledColor: "#B71C1C", micButtonDisabled: true, validateButtonDisabled: true});
     this.timedButtonUndisabling();
   }
 
@@ -80,6 +99,7 @@ class AIQueryPanel extends React.Component {
   }
 
   gotLocalStream(localStream) {
+    this.stream = localStream;
     console.log('localstream: ', localStream);
 
     // let localAudio = document.getElementById('aubrtest-localAudio');
@@ -92,6 +112,7 @@ class AIQueryPanel extends React.Component {
 
   stopLocalAudio() {
     console.log('stop audio');
+    this.stream.getTracks().forEach(track => track.stop());
   }
 
   startLocalAudio() {
@@ -133,9 +154,9 @@ class AIQueryPanel extends React.Component {
   }
 
   validateDetails() {
-    this.state.typeInputDisabled
+    !this.state.typeInputDisabled
       ? ActionCreatorSendText({text: this.state.typeInputValue})
-      : ActionCreatorSendText({text: this.state.typeInputValue});
+      : ActionCreatorSendVoice({voice: this.stream});
   }
 
   render() {

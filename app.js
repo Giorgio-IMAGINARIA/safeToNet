@@ -5,6 +5,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var apiAddress = require('./routes/apiAddress');
+var AIVoice = require('./routes/AIVoice');
 var AIText = require('./routes/AIText');
 var all = require('./routes/all');
 
@@ -17,6 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use('/apiAddress', apiAddress);
+app.use('/AIVoice', AIVoice);
 app.use('/AIText', AIText);
 app.use('/*', all);
 

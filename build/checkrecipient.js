@@ -99,7 +99,7 @@ if (Object({"CLIENT":true}).NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(139)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(140)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -131,7 +131,7 @@ exports.default = function (instance, Constructor) {
 
 exports.__esModule = true;
 
-var _defineProperty = __webpack_require__(193);
+var _defineProperty = __webpack_require__(194);
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -397,7 +397,7 @@ exports.default = function (obj, keys) {
 
 exports.__esModule = true;
 
-var _assign = __webpack_require__(196);
+var _assign = __webpack_require__(197);
 
 var _assign2 = _interopRequireDefault(_assign);
 
@@ -614,7 +614,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var _prodInvariant = __webpack_require__(12);
 
 var DOMProperty = __webpack_require__(32);
-var ReactDOMComponentFlags = __webpack_require__(140);
+var ReactDOMComponentFlags = __webpack_require__(141);
 
 var invariant = __webpack_require__(8);
 
@@ -1319,11 +1319,11 @@ var _shallowEqual = __webpack_require__(41);
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-var _setDisplayName = __webpack_require__(202);
+var _setDisplayName = __webpack_require__(203);
 
 var _setDisplayName2 = _interopRequireDefault(_setDisplayName);
 
-var _wrapDisplayName = __webpack_require__(203);
+var _wrapDisplayName = __webpack_require__(204);
 
 var _wrapDisplayName2 = _interopRequireDefault(_wrapDisplayName);
 
@@ -1500,9 +1500,9 @@ module.exports = ReactCurrentOwner;
 var _prodInvariant = __webpack_require__(12),
     _assign = __webpack_require__(14);
 
-var CallbackQueue = __webpack_require__(144);
+var CallbackQueue = __webpack_require__(145);
 var PooledClass = __webpack_require__(37);
-var ReactFeatureFlags = __webpack_require__(145);
+var ReactFeatureFlags = __webpack_require__(146);
 var ReactReconciler = __webpack_require__(47);
 var Transaction = __webpack_require__(72);
 
@@ -2381,7 +2381,7 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(51);
-var IE8_DOM_DEFINE = __webpack_require__(181);
+var IE8_DOM_DEFINE = __webpack_require__(182);
 var toPrimitive = __webpack_require__(113);
 var dP = Object.defineProperty;
 
@@ -2421,7 +2421,7 @@ var warning = __webpack_require__(9);
 var canDefineProperty = __webpack_require__(67);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(135);
+var REACT_ELEMENT_TYPE = __webpack_require__(136);
 
 var RESERVED_PROPS = {
   key: true,
@@ -3134,7 +3134,7 @@ function lighten(color, coefficient) {
 
 exports.__esModule = true;
 
-var _shallowEqual = __webpack_require__(58);
+var _shallowEqual = __webpack_require__(60);
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -3224,7 +3224,7 @@ exports.default = style;
 
 var _assign = __webpack_require__(14);
 
-var ReactBaseClasses = __webpack_require__(133);
+var ReactBaseClasses = __webpack_require__(134);
 var ReactChildren = __webpack_require__(222);
 var ReactDOMFactories = __webpack_require__(226);
 var ReactElement = __webpack_require__(36);
@@ -3241,7 +3241,7 @@ var cloneElement = ReactElement.cloneElement;
 if (Object({"CLIENT":true}).NODE_ENV !== 'production') {
   var lowPriorityWarning = __webpack_require__(85);
   var canDefineProperty = __webpack_require__(67);
-  var ReactElementValidator = __webpack_require__(137);
+  var ReactElementValidator = __webpack_require__(138);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -3402,8 +3402,8 @@ module.exports = reactProdInvariant;
 var EventPluginHub = __webpack_require__(46);
 var EventPluginUtils = __webpack_require__(71);
 
-var accumulateInto = __webpack_require__(141);
-var forEachAccumulated = __webpack_require__(142);
+var accumulateInto = __webpack_require__(142);
+var forEachAccumulated = __webpack_require__(143);
 var warning = __webpack_require__(9);
 
 var getListener = EventPluginHub.getListener;
@@ -3542,8 +3542,8 @@ var EventPluginRegistry = __webpack_require__(70);
 var EventPluginUtils = __webpack_require__(71);
 var ReactErrorUtils = __webpack_require__(87);
 
-var accumulateInto = __webpack_require__(141);
-var forEachAccumulated = __webpack_require__(142);
+var accumulateInto = __webpack_require__(142);
+var forEachAccumulated = __webpack_require__(143);
 var invariant = __webpack_require__(8);
 
 /**
@@ -4048,7 +4048,7 @@ var DOMNamespaces = __webpack_require__(93);
 var setInnerHTML = __webpack_require__(74);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(94);
-var setTextContent = __webpack_require__(148);
+var setTextContent = __webpack_require__(149);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -4155,7 +4155,7 @@ module.exports = DOMLazyTree;
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(35);
-var createDesc = __webpack_require__(59);
+var createDesc = __webpack_require__(61);
 module.exports = __webpack_require__(38) ? function (object, key, value) {
   return dP.f(object, key, createDesc(1, value));
 } : function (object, key, value) {
@@ -4202,7 +4202,7 @@ module.exports = function (exec) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(185);
+var IObject = __webpack_require__(186);
 var defined = __webpack_require__(110);
 module.exports = function (it) {
   return IObject(defined(it));
@@ -4283,15 +4283,15 @@ var _events = __webpack_require__(128);
 
 var _events2 = _interopRequireDefault(_events);
 
-var _keycode = __webpack_require__(64);
+var _keycode = __webpack_require__(66);
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
-var _FocusRipple = __webpack_require__(205);
+var _FocusRipple = __webpack_require__(206);
 
 var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 
-var _TouchRipple = __webpack_require__(206);
+var _TouchRipple = __webpack_require__(207);
 
 var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 
@@ -4636,619 +4636,6 @@ exports.default = EnhancedButton;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
-/**
- * `ReactInstanceMap` maintains a mapping from a public facing stateful
- * instance (key) and the internal representation (value). This allows public
- * methods to accept the user facing instance as an argument and map them back
- * to internal methods.
- */
-
-// TODO: Replace this with ES6: var ReactInstanceMap = new Map();
-
-var ReactInstanceMap = {
-  /**
-   * This API should be called `delete` but we'd have to make sure to always
-   * transform these to strings for IE support. When this transform is fully
-   * supported we can rename it.
-   */
-  remove: function (key) {
-    key._reactInternalInstance = undefined;
-  },
-
-  get: function (key) {
-    return key._reactInternalInstance;
-  },
-
-  has: function (key) {
-    return key._reactInternalInstance !== undefined;
-  },
-
-  set: function (key, value) {
-    key._reactInternalInstance = value;
-  }
-};
-
-module.exports = ReactInstanceMap;
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @typechecks
- * 
- */
-
-/*eslint-disable no-self-compare */
-
-
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-/**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */
-function is(x, y) {
-  // SameValue algorithm
-  if (x === y) {
-    // Steps 1-5, 7-10
-    // Steps 6.b-6.e: +0 != -0
-    // Added the nonzero y check to make Flow happy, but it is redundant
-    return x !== 0 || y !== 0 || 1 / x === 1 / y;
-  } else {
-    // Step 6.a: NaN == NaN
-    return x !== x && y !== y;
-  }
-}
-
-/**
- * Performs equality by iterating through keys on an object and returning false
- * when any key has values which are not strictly equal between the arguments.
- * Returns true when the values of all keys are strictly equal.
- */
-function shallowEqual(objA, objB) {
-  if (is(objA, objB)) {
-    return true;
-  }
-
-  if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) {
-    return false;
-  }
-
-  var keysA = Object.keys(objA);
-  var keysB = Object.keys(objB);
-
-  if (keysA.length !== keysB.length) {
-    return false;
-  }
-
-  // Test for A's keys different from B.
-  for (var i = 0; i < keysA.length; i++) {
-    if (!hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-module.exports = shallowEqual;
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports) {
-
-module.exports = function (bitmap, value) {
-  return {
-    enumerable: !(bitmap & 1),
-    configurable: !(bitmap & 2),
-    writable: !(bitmap & 4),
-    value: value
-  };
-};
-
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports) {
-
-module.exports = {};
-
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(184);
-var enumBugKeys = __webpack_require__(118);
-
-module.exports = Object.keys || function keys(O) {
-  return $keys(O, enumBugKeys);
-};
-
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.13 ToObject(argument)
-var defined = __webpack_require__(110);
-module.exports = function (it) {
-  return Object(defined(it));
-};
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var red50 = exports.red50 = '#ffebee';
-var red100 = exports.red100 = '#ffcdd2';
-var red200 = exports.red200 = '#ef9a9a';
-var red300 = exports.red300 = '#e57373';
-var red400 = exports.red400 = '#ef5350';
-var red500 = exports.red500 = '#f44336';
-var red600 = exports.red600 = '#e53935';
-var red700 = exports.red700 = '#d32f2f';
-var red800 = exports.red800 = '#c62828';
-var red900 = exports.red900 = '#b71c1c';
-var redA100 = exports.redA100 = '#ff8a80';
-var redA200 = exports.redA200 = '#ff5252';
-var redA400 = exports.redA400 = '#ff1744';
-var redA700 = exports.redA700 = '#d50000';
-
-var pink50 = exports.pink50 = '#fce4ec';
-var pink100 = exports.pink100 = '#f8bbd0';
-var pink200 = exports.pink200 = '#f48fb1';
-var pink300 = exports.pink300 = '#f06292';
-var pink400 = exports.pink400 = '#ec407a';
-var pink500 = exports.pink500 = '#e91e63';
-var pink600 = exports.pink600 = '#d81b60';
-var pink700 = exports.pink700 = '#c2185b';
-var pink800 = exports.pink800 = '#ad1457';
-var pink900 = exports.pink900 = '#880e4f';
-var pinkA100 = exports.pinkA100 = '#ff80ab';
-var pinkA200 = exports.pinkA200 = '#ff4081';
-var pinkA400 = exports.pinkA400 = '#f50057';
-var pinkA700 = exports.pinkA700 = '#c51162';
-
-var purple50 = exports.purple50 = '#f3e5f5';
-var purple100 = exports.purple100 = '#e1bee7';
-var purple200 = exports.purple200 = '#ce93d8';
-var purple300 = exports.purple300 = '#ba68c8';
-var purple400 = exports.purple400 = '#ab47bc';
-var purple500 = exports.purple500 = '#9c27b0';
-var purple600 = exports.purple600 = '#8e24aa';
-var purple700 = exports.purple700 = '#7b1fa2';
-var purple800 = exports.purple800 = '#6a1b9a';
-var purple900 = exports.purple900 = '#4a148c';
-var purpleA100 = exports.purpleA100 = '#ea80fc';
-var purpleA200 = exports.purpleA200 = '#e040fb';
-var purpleA400 = exports.purpleA400 = '#d500f9';
-var purpleA700 = exports.purpleA700 = '#aa00ff';
-
-var deepPurple50 = exports.deepPurple50 = '#ede7f6';
-var deepPurple100 = exports.deepPurple100 = '#d1c4e9';
-var deepPurple200 = exports.deepPurple200 = '#b39ddb';
-var deepPurple300 = exports.deepPurple300 = '#9575cd';
-var deepPurple400 = exports.deepPurple400 = '#7e57c2';
-var deepPurple500 = exports.deepPurple500 = '#673ab7';
-var deepPurple600 = exports.deepPurple600 = '#5e35b1';
-var deepPurple700 = exports.deepPurple700 = '#512da8';
-var deepPurple800 = exports.deepPurple800 = '#4527a0';
-var deepPurple900 = exports.deepPurple900 = '#311b92';
-var deepPurpleA100 = exports.deepPurpleA100 = '#b388ff';
-var deepPurpleA200 = exports.deepPurpleA200 = '#7c4dff';
-var deepPurpleA400 = exports.deepPurpleA400 = '#651fff';
-var deepPurpleA700 = exports.deepPurpleA700 = '#6200ea';
-
-var indigo50 = exports.indigo50 = '#e8eaf6';
-var indigo100 = exports.indigo100 = '#c5cae9';
-var indigo200 = exports.indigo200 = '#9fa8da';
-var indigo300 = exports.indigo300 = '#7986cb';
-var indigo400 = exports.indigo400 = '#5c6bc0';
-var indigo500 = exports.indigo500 = '#3f51b5';
-var indigo600 = exports.indigo600 = '#3949ab';
-var indigo700 = exports.indigo700 = '#303f9f';
-var indigo800 = exports.indigo800 = '#283593';
-var indigo900 = exports.indigo900 = '#1a237e';
-var indigoA100 = exports.indigoA100 = '#8c9eff';
-var indigoA200 = exports.indigoA200 = '#536dfe';
-var indigoA400 = exports.indigoA400 = '#3d5afe';
-var indigoA700 = exports.indigoA700 = '#304ffe';
-
-var blue50 = exports.blue50 = '#e3f2fd';
-var blue100 = exports.blue100 = '#bbdefb';
-var blue200 = exports.blue200 = '#90caf9';
-var blue300 = exports.blue300 = '#64b5f6';
-var blue400 = exports.blue400 = '#42a5f5';
-var blue500 = exports.blue500 = '#2196f3';
-var blue600 = exports.blue600 = '#1e88e5';
-var blue700 = exports.blue700 = '#1976d2';
-var blue800 = exports.blue800 = '#1565c0';
-var blue900 = exports.blue900 = '#0d47a1';
-var blueA100 = exports.blueA100 = '#82b1ff';
-var blueA200 = exports.blueA200 = '#448aff';
-var blueA400 = exports.blueA400 = '#2979ff';
-var blueA700 = exports.blueA700 = '#2962ff';
-
-var lightBlue50 = exports.lightBlue50 = '#e1f5fe';
-var lightBlue100 = exports.lightBlue100 = '#b3e5fc';
-var lightBlue200 = exports.lightBlue200 = '#81d4fa';
-var lightBlue300 = exports.lightBlue300 = '#4fc3f7';
-var lightBlue400 = exports.lightBlue400 = '#29b6f6';
-var lightBlue500 = exports.lightBlue500 = '#03a9f4';
-var lightBlue600 = exports.lightBlue600 = '#039be5';
-var lightBlue700 = exports.lightBlue700 = '#0288d1';
-var lightBlue800 = exports.lightBlue800 = '#0277bd';
-var lightBlue900 = exports.lightBlue900 = '#01579b';
-var lightBlueA100 = exports.lightBlueA100 = '#80d8ff';
-var lightBlueA200 = exports.lightBlueA200 = '#40c4ff';
-var lightBlueA400 = exports.lightBlueA400 = '#00b0ff';
-var lightBlueA700 = exports.lightBlueA700 = '#0091ea';
-
-var cyan50 = exports.cyan50 = '#e0f7fa';
-var cyan100 = exports.cyan100 = '#b2ebf2';
-var cyan200 = exports.cyan200 = '#80deea';
-var cyan300 = exports.cyan300 = '#4dd0e1';
-var cyan400 = exports.cyan400 = '#26c6da';
-var cyan500 = exports.cyan500 = '#00bcd4';
-var cyan600 = exports.cyan600 = '#00acc1';
-var cyan700 = exports.cyan700 = '#0097a7';
-var cyan800 = exports.cyan800 = '#00838f';
-var cyan900 = exports.cyan900 = '#006064';
-var cyanA100 = exports.cyanA100 = '#84ffff';
-var cyanA200 = exports.cyanA200 = '#18ffff';
-var cyanA400 = exports.cyanA400 = '#00e5ff';
-var cyanA700 = exports.cyanA700 = '#00b8d4';
-
-var teal50 = exports.teal50 = '#e0f2f1';
-var teal100 = exports.teal100 = '#b2dfdb';
-var teal200 = exports.teal200 = '#80cbc4';
-var teal300 = exports.teal300 = '#4db6ac';
-var teal400 = exports.teal400 = '#26a69a';
-var teal500 = exports.teal500 = '#009688';
-var teal600 = exports.teal600 = '#00897b';
-var teal700 = exports.teal700 = '#00796b';
-var teal800 = exports.teal800 = '#00695c';
-var teal900 = exports.teal900 = '#004d40';
-var tealA100 = exports.tealA100 = '#a7ffeb';
-var tealA200 = exports.tealA200 = '#64ffda';
-var tealA400 = exports.tealA400 = '#1de9b6';
-var tealA700 = exports.tealA700 = '#00bfa5';
-
-var green50 = exports.green50 = '#e8f5e9';
-var green100 = exports.green100 = '#c8e6c9';
-var green200 = exports.green200 = '#a5d6a7';
-var green300 = exports.green300 = '#81c784';
-var green400 = exports.green400 = '#66bb6a';
-var green500 = exports.green500 = '#4caf50';
-var green600 = exports.green600 = '#43a047';
-var green700 = exports.green700 = '#388e3c';
-var green800 = exports.green800 = '#2e7d32';
-var green900 = exports.green900 = '#1b5e20';
-var greenA100 = exports.greenA100 = '#b9f6ca';
-var greenA200 = exports.greenA200 = '#69f0ae';
-var greenA400 = exports.greenA400 = '#00e676';
-var greenA700 = exports.greenA700 = '#00c853';
-
-var lightGreen50 = exports.lightGreen50 = '#f1f8e9';
-var lightGreen100 = exports.lightGreen100 = '#dcedc8';
-var lightGreen200 = exports.lightGreen200 = '#c5e1a5';
-var lightGreen300 = exports.lightGreen300 = '#aed581';
-var lightGreen400 = exports.lightGreen400 = '#9ccc65';
-var lightGreen500 = exports.lightGreen500 = '#8bc34a';
-var lightGreen600 = exports.lightGreen600 = '#7cb342';
-var lightGreen700 = exports.lightGreen700 = '#689f38';
-var lightGreen800 = exports.lightGreen800 = '#558b2f';
-var lightGreen900 = exports.lightGreen900 = '#33691e';
-var lightGreenA100 = exports.lightGreenA100 = '#ccff90';
-var lightGreenA200 = exports.lightGreenA200 = '#b2ff59';
-var lightGreenA400 = exports.lightGreenA400 = '#76ff03';
-var lightGreenA700 = exports.lightGreenA700 = '#64dd17';
-
-var lime50 = exports.lime50 = '#f9fbe7';
-var lime100 = exports.lime100 = '#f0f4c3';
-var lime200 = exports.lime200 = '#e6ee9c';
-var lime300 = exports.lime300 = '#dce775';
-var lime400 = exports.lime400 = '#d4e157';
-var lime500 = exports.lime500 = '#cddc39';
-var lime600 = exports.lime600 = '#c0ca33';
-var lime700 = exports.lime700 = '#afb42b';
-var lime800 = exports.lime800 = '#9e9d24';
-var lime900 = exports.lime900 = '#827717';
-var limeA100 = exports.limeA100 = '#f4ff81';
-var limeA200 = exports.limeA200 = '#eeff41';
-var limeA400 = exports.limeA400 = '#c6ff00';
-var limeA700 = exports.limeA700 = '#aeea00';
-
-var yellow50 = exports.yellow50 = '#fffde7';
-var yellow100 = exports.yellow100 = '#fff9c4';
-var yellow200 = exports.yellow200 = '#fff59d';
-var yellow300 = exports.yellow300 = '#fff176';
-var yellow400 = exports.yellow400 = '#ffee58';
-var yellow500 = exports.yellow500 = '#ffeb3b';
-var yellow600 = exports.yellow600 = '#fdd835';
-var yellow700 = exports.yellow700 = '#fbc02d';
-var yellow800 = exports.yellow800 = '#f9a825';
-var yellow900 = exports.yellow900 = '#f57f17';
-var yellowA100 = exports.yellowA100 = '#ffff8d';
-var yellowA200 = exports.yellowA200 = '#ffff00';
-var yellowA400 = exports.yellowA400 = '#ffea00';
-var yellowA700 = exports.yellowA700 = '#ffd600';
-
-var amber50 = exports.amber50 = '#fff8e1';
-var amber100 = exports.amber100 = '#ffecb3';
-var amber200 = exports.amber200 = '#ffe082';
-var amber300 = exports.amber300 = '#ffd54f';
-var amber400 = exports.amber400 = '#ffca28';
-var amber500 = exports.amber500 = '#ffc107';
-var amber600 = exports.amber600 = '#ffb300';
-var amber700 = exports.amber700 = '#ffa000';
-var amber800 = exports.amber800 = '#ff8f00';
-var amber900 = exports.amber900 = '#ff6f00';
-var amberA100 = exports.amberA100 = '#ffe57f';
-var amberA200 = exports.amberA200 = '#ffd740';
-var amberA400 = exports.amberA400 = '#ffc400';
-var amberA700 = exports.amberA700 = '#ffab00';
-
-var orange50 = exports.orange50 = '#fff3e0';
-var orange100 = exports.orange100 = '#ffe0b2';
-var orange200 = exports.orange200 = '#ffcc80';
-var orange300 = exports.orange300 = '#ffb74d';
-var orange400 = exports.orange400 = '#ffa726';
-var orange500 = exports.orange500 = '#ff9800';
-var orange600 = exports.orange600 = '#fb8c00';
-var orange700 = exports.orange700 = '#f57c00';
-var orange800 = exports.orange800 = '#ef6c00';
-var orange900 = exports.orange900 = '#e65100';
-var orangeA100 = exports.orangeA100 = '#ffd180';
-var orangeA200 = exports.orangeA200 = '#ffab40';
-var orangeA400 = exports.orangeA400 = '#ff9100';
-var orangeA700 = exports.orangeA700 = '#ff6d00';
-
-var deepOrange50 = exports.deepOrange50 = '#fbe9e7';
-var deepOrange100 = exports.deepOrange100 = '#ffccbc';
-var deepOrange200 = exports.deepOrange200 = '#ffab91';
-var deepOrange300 = exports.deepOrange300 = '#ff8a65';
-var deepOrange400 = exports.deepOrange400 = '#ff7043';
-var deepOrange500 = exports.deepOrange500 = '#ff5722';
-var deepOrange600 = exports.deepOrange600 = '#f4511e';
-var deepOrange700 = exports.deepOrange700 = '#e64a19';
-var deepOrange800 = exports.deepOrange800 = '#d84315';
-var deepOrange900 = exports.deepOrange900 = '#bf360c';
-var deepOrangeA100 = exports.deepOrangeA100 = '#ff9e80';
-var deepOrangeA200 = exports.deepOrangeA200 = '#ff6e40';
-var deepOrangeA400 = exports.deepOrangeA400 = '#ff3d00';
-var deepOrangeA700 = exports.deepOrangeA700 = '#dd2c00';
-
-var brown50 = exports.brown50 = '#efebe9';
-var brown100 = exports.brown100 = '#d7ccc8';
-var brown200 = exports.brown200 = '#bcaaa4';
-var brown300 = exports.brown300 = '#a1887f';
-var brown400 = exports.brown400 = '#8d6e63';
-var brown500 = exports.brown500 = '#795548';
-var brown600 = exports.brown600 = '#6d4c41';
-var brown700 = exports.brown700 = '#5d4037';
-var brown800 = exports.brown800 = '#4e342e';
-var brown900 = exports.brown900 = '#3e2723';
-
-var blueGrey50 = exports.blueGrey50 = '#eceff1';
-var blueGrey100 = exports.blueGrey100 = '#cfd8dc';
-var blueGrey200 = exports.blueGrey200 = '#b0bec5';
-var blueGrey300 = exports.blueGrey300 = '#90a4ae';
-var blueGrey400 = exports.blueGrey400 = '#78909c';
-var blueGrey500 = exports.blueGrey500 = '#607d8b';
-var blueGrey600 = exports.blueGrey600 = '#546e7a';
-var blueGrey700 = exports.blueGrey700 = '#455a64';
-var blueGrey800 = exports.blueGrey800 = '#37474f';
-var blueGrey900 = exports.blueGrey900 = '#263238';
-
-var grey50 = exports.grey50 = '#fafafa';
-var grey100 = exports.grey100 = '#f5f5f5';
-var grey200 = exports.grey200 = '#eeeeee';
-var grey300 = exports.grey300 = '#e0e0e0';
-var grey400 = exports.grey400 = '#bdbdbd';
-var grey500 = exports.grey500 = '#9e9e9e';
-var grey600 = exports.grey600 = '#757575';
-var grey700 = exports.grey700 = '#616161';
-var grey800 = exports.grey800 = '#424242';
-var grey900 = exports.grey900 = '#212121';
-
-var black = exports.black = '#000000';
-var white = exports.white = '#ffffff';
-
-var transparent = exports.transparent = 'rgba(0, 0, 0, 0)';
-var fullBlack = exports.fullBlack = 'rgba(0, 0, 0, 1)';
-var darkBlack = exports.darkBlack = 'rgba(0, 0, 0, 0.87)';
-var lightBlack = exports.lightBlack = 'rgba(0, 0, 0, 0.54)';
-var minBlack = exports.minBlack = 'rgba(0, 0, 0, 0.26)';
-var faintBlack = exports.faintBlack = 'rgba(0, 0, 0, 0.12)';
-var fullWhite = exports.fullWhite = 'rgba(255, 255, 255, 1)';
-var darkWhite = exports.darkWhite = 'rgba(255, 255, 255, 0.87)';
-var lightWhite = exports.lightWhite = 'rgba(255, 255, 255, 0.54)';
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports) {
-
-// Source: http://jsfiddle.net/vWx8V/
-// http://stackoverflow.com/questions/5603195/full-list-of-javascript-keycodes
-
-/**
- * Conenience method returns corresponding value for given keyName or keyCode.
- *
- * @param {Mixed} keyCode {Number} or keyName {String}
- * @return {Mixed}
- * @api public
- */
-
-exports = module.exports = function(searchInput) {
-  // Keyboard Events
-  if (searchInput && 'object' === typeof searchInput) {
-    var hasKeyCode = searchInput.which || searchInput.keyCode || searchInput.charCode
-    if (hasKeyCode) searchInput = hasKeyCode
-  }
-
-  // Numbers
-  if ('number' === typeof searchInput) return names[searchInput]
-
-  // Everything else (cast to string)
-  var search = String(searchInput)
-
-  // check codes
-  var foundNamedKey = codes[search.toLowerCase()]
-  if (foundNamedKey) return foundNamedKey
-
-  // check aliases
-  var foundNamedKey = aliases[search.toLowerCase()]
-  if (foundNamedKey) return foundNamedKey
-
-  // weird character?
-  if (search.length === 1) return search.charCodeAt(0)
-
-  return undefined
-}
-
-/**
- * Get by name
- *
- *   exports.code['enter'] // => 13
- */
-
-var codes = exports.code = exports.codes = {
-  'backspace': 8,
-  'tab': 9,
-  'enter': 13,
-  'shift': 16,
-  'ctrl': 17,
-  'alt': 18,
-  'pause/break': 19,
-  'caps lock': 20,
-  'esc': 27,
-  'space': 32,
-  'page up': 33,
-  'page down': 34,
-  'end': 35,
-  'home': 36,
-  'left': 37,
-  'up': 38,
-  'right': 39,
-  'down': 40,
-  'insert': 45,
-  'delete': 46,
-  'command': 91,
-  'left command': 91,
-  'right command': 93,
-  'numpad *': 106,
-  'numpad +': 107,
-  'numpad -': 109,
-  'numpad .': 110,
-  'numpad /': 111,
-  'num lock': 144,
-  'scroll lock': 145,
-  'my computer': 182,
-  'my calculator': 183,
-  ';': 186,
-  '=': 187,
-  ',': 188,
-  '-': 189,
-  '.': 190,
-  '/': 191,
-  '`': 192,
-  '[': 219,
-  '\\': 220,
-  ']': 221,
-  "'": 222
-}
-
-// Helper aliases
-
-var aliases = exports.aliases = {
-  'windows': 91,
-  '⇧': 16,
-  '⌥': 18,
-  '⌃': 17,
-  '⌘': 91,
-  'ctl': 17,
-  'control': 17,
-  'option': 18,
-  'pause': 19,
-  'break': 19,
-  'caps': 20,
-  'return': 13,
-  'escape': 27,
-  'spc': 32,
-  'pgup': 33,
-  'pgdn': 34,
-  'ins': 45,
-  'del': 46,
-  'cmd': 91
-}
-
-
-/*!
- * Programatically add the following
- */
-
-// lower case chars
-for (i = 97; i < 123; i++) codes[String.fromCharCode(i)] = i - 32
-
-// numbers
-for (var i = 48; i < 58; i++) codes[i - 48] = i
-
-// function keys
-for (i = 1; i < 13; i++) codes['f'+i] = i + 111
-
-// numpad keys
-for (i = 0; i < 10; i++) codes['numpad '+i] = i + 96
-
-/**
- * Get by code
- *
- *   exports.name[13] // => 'Enter'
- */
-
-var names = exports.names = exports.title = {} // title for backward compat
-
-// Create reverse mapping
-for (i in codes) names[codes[i]] = i
-
-// Add aliases
-for (var alias in aliases) {
-  codes[alias] = aliases[alias]
-}
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -5260,7 +4647,7 @@ var _flux = __webpack_require__(504);
 exports.default = new _flux.Dispatcher();
 
 /***/ }),
-/* 66 */
+/* 58 */
 /***/ (function(module, exports) {
 
 (function(self) {
@@ -5724,6 +5111,619 @@ exports.default = new _flux.Dispatcher();
   }
   self.fetch.polyfill = true
 })(typeof self !== 'undefined' ? self : this);
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+
+
+/**
+ * `ReactInstanceMap` maintains a mapping from a public facing stateful
+ * instance (key) and the internal representation (value). This allows public
+ * methods to accept the user facing instance as an argument and map them back
+ * to internal methods.
+ */
+
+// TODO: Replace this with ES6: var ReactInstanceMap = new Map();
+
+var ReactInstanceMap = {
+  /**
+   * This API should be called `delete` but we'd have to make sure to always
+   * transform these to strings for IE support. When this transform is fully
+   * supported we can rename it.
+   */
+  remove: function (key) {
+    key._reactInternalInstance = undefined;
+  },
+
+  get: function (key) {
+    return key._reactInternalInstance;
+  },
+
+  has: function (key) {
+    return key._reactInternalInstance !== undefined;
+  },
+
+  set: function (key, value) {
+    key._reactInternalInstance = value;
+  }
+};
+
+module.exports = ReactInstanceMap;
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @typechecks
+ * 
+ */
+
+/*eslint-disable no-self-compare */
+
+
+
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+/**
+ * inlined Object.is polyfill to avoid requiring consumers ship their own
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+ */
+function is(x, y) {
+  // SameValue algorithm
+  if (x === y) {
+    // Steps 1-5, 7-10
+    // Steps 6.b-6.e: +0 != -0
+    // Added the nonzero y check to make Flow happy, but it is redundant
+    return x !== 0 || y !== 0 || 1 / x === 1 / y;
+  } else {
+    // Step 6.a: NaN == NaN
+    return x !== x && y !== y;
+  }
+}
+
+/**
+ * Performs equality by iterating through keys on an object and returning false
+ * when any key has values which are not strictly equal between the arguments.
+ * Returns true when the values of all keys are strictly equal.
+ */
+function shallowEqual(objA, objB) {
+  if (is(objA, objB)) {
+    return true;
+  }
+
+  if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) {
+    return false;
+  }
+
+  var keysA = Object.keys(objA);
+  var keysB = Object.keys(objB);
+
+  if (keysA.length !== keysB.length) {
+    return false;
+  }
+
+  // Test for A's keys different from B.
+  for (var i = 0; i < keysA.length; i++) {
+    if (!hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+module.exports = shallowEqual;
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports) {
+
+module.exports = function (bitmap, value) {
+  return {
+    enumerable: !(bitmap & 1),
+    configurable: !(bitmap & 2),
+    writable: !(bitmap & 4),
+    value: value
+  };
+};
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports) {
+
+module.exports = {};
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+var $keys = __webpack_require__(185);
+var enumBugKeys = __webpack_require__(118);
+
+module.exports = Object.keys || function keys(O) {
+  return $keys(O, enumBugKeys);
+};
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.1.13 ToObject(argument)
+var defined = __webpack_require__(110);
+module.exports = function (it) {
+  return Object(defined(it));
+};
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var red50 = exports.red50 = '#ffebee';
+var red100 = exports.red100 = '#ffcdd2';
+var red200 = exports.red200 = '#ef9a9a';
+var red300 = exports.red300 = '#e57373';
+var red400 = exports.red400 = '#ef5350';
+var red500 = exports.red500 = '#f44336';
+var red600 = exports.red600 = '#e53935';
+var red700 = exports.red700 = '#d32f2f';
+var red800 = exports.red800 = '#c62828';
+var red900 = exports.red900 = '#b71c1c';
+var redA100 = exports.redA100 = '#ff8a80';
+var redA200 = exports.redA200 = '#ff5252';
+var redA400 = exports.redA400 = '#ff1744';
+var redA700 = exports.redA700 = '#d50000';
+
+var pink50 = exports.pink50 = '#fce4ec';
+var pink100 = exports.pink100 = '#f8bbd0';
+var pink200 = exports.pink200 = '#f48fb1';
+var pink300 = exports.pink300 = '#f06292';
+var pink400 = exports.pink400 = '#ec407a';
+var pink500 = exports.pink500 = '#e91e63';
+var pink600 = exports.pink600 = '#d81b60';
+var pink700 = exports.pink700 = '#c2185b';
+var pink800 = exports.pink800 = '#ad1457';
+var pink900 = exports.pink900 = '#880e4f';
+var pinkA100 = exports.pinkA100 = '#ff80ab';
+var pinkA200 = exports.pinkA200 = '#ff4081';
+var pinkA400 = exports.pinkA400 = '#f50057';
+var pinkA700 = exports.pinkA700 = '#c51162';
+
+var purple50 = exports.purple50 = '#f3e5f5';
+var purple100 = exports.purple100 = '#e1bee7';
+var purple200 = exports.purple200 = '#ce93d8';
+var purple300 = exports.purple300 = '#ba68c8';
+var purple400 = exports.purple400 = '#ab47bc';
+var purple500 = exports.purple500 = '#9c27b0';
+var purple600 = exports.purple600 = '#8e24aa';
+var purple700 = exports.purple700 = '#7b1fa2';
+var purple800 = exports.purple800 = '#6a1b9a';
+var purple900 = exports.purple900 = '#4a148c';
+var purpleA100 = exports.purpleA100 = '#ea80fc';
+var purpleA200 = exports.purpleA200 = '#e040fb';
+var purpleA400 = exports.purpleA400 = '#d500f9';
+var purpleA700 = exports.purpleA700 = '#aa00ff';
+
+var deepPurple50 = exports.deepPurple50 = '#ede7f6';
+var deepPurple100 = exports.deepPurple100 = '#d1c4e9';
+var deepPurple200 = exports.deepPurple200 = '#b39ddb';
+var deepPurple300 = exports.deepPurple300 = '#9575cd';
+var deepPurple400 = exports.deepPurple400 = '#7e57c2';
+var deepPurple500 = exports.deepPurple500 = '#673ab7';
+var deepPurple600 = exports.deepPurple600 = '#5e35b1';
+var deepPurple700 = exports.deepPurple700 = '#512da8';
+var deepPurple800 = exports.deepPurple800 = '#4527a0';
+var deepPurple900 = exports.deepPurple900 = '#311b92';
+var deepPurpleA100 = exports.deepPurpleA100 = '#b388ff';
+var deepPurpleA200 = exports.deepPurpleA200 = '#7c4dff';
+var deepPurpleA400 = exports.deepPurpleA400 = '#651fff';
+var deepPurpleA700 = exports.deepPurpleA700 = '#6200ea';
+
+var indigo50 = exports.indigo50 = '#e8eaf6';
+var indigo100 = exports.indigo100 = '#c5cae9';
+var indigo200 = exports.indigo200 = '#9fa8da';
+var indigo300 = exports.indigo300 = '#7986cb';
+var indigo400 = exports.indigo400 = '#5c6bc0';
+var indigo500 = exports.indigo500 = '#3f51b5';
+var indigo600 = exports.indigo600 = '#3949ab';
+var indigo700 = exports.indigo700 = '#303f9f';
+var indigo800 = exports.indigo800 = '#283593';
+var indigo900 = exports.indigo900 = '#1a237e';
+var indigoA100 = exports.indigoA100 = '#8c9eff';
+var indigoA200 = exports.indigoA200 = '#536dfe';
+var indigoA400 = exports.indigoA400 = '#3d5afe';
+var indigoA700 = exports.indigoA700 = '#304ffe';
+
+var blue50 = exports.blue50 = '#e3f2fd';
+var blue100 = exports.blue100 = '#bbdefb';
+var blue200 = exports.blue200 = '#90caf9';
+var blue300 = exports.blue300 = '#64b5f6';
+var blue400 = exports.blue400 = '#42a5f5';
+var blue500 = exports.blue500 = '#2196f3';
+var blue600 = exports.blue600 = '#1e88e5';
+var blue700 = exports.blue700 = '#1976d2';
+var blue800 = exports.blue800 = '#1565c0';
+var blue900 = exports.blue900 = '#0d47a1';
+var blueA100 = exports.blueA100 = '#82b1ff';
+var blueA200 = exports.blueA200 = '#448aff';
+var blueA400 = exports.blueA400 = '#2979ff';
+var blueA700 = exports.blueA700 = '#2962ff';
+
+var lightBlue50 = exports.lightBlue50 = '#e1f5fe';
+var lightBlue100 = exports.lightBlue100 = '#b3e5fc';
+var lightBlue200 = exports.lightBlue200 = '#81d4fa';
+var lightBlue300 = exports.lightBlue300 = '#4fc3f7';
+var lightBlue400 = exports.lightBlue400 = '#29b6f6';
+var lightBlue500 = exports.lightBlue500 = '#03a9f4';
+var lightBlue600 = exports.lightBlue600 = '#039be5';
+var lightBlue700 = exports.lightBlue700 = '#0288d1';
+var lightBlue800 = exports.lightBlue800 = '#0277bd';
+var lightBlue900 = exports.lightBlue900 = '#01579b';
+var lightBlueA100 = exports.lightBlueA100 = '#80d8ff';
+var lightBlueA200 = exports.lightBlueA200 = '#40c4ff';
+var lightBlueA400 = exports.lightBlueA400 = '#00b0ff';
+var lightBlueA700 = exports.lightBlueA700 = '#0091ea';
+
+var cyan50 = exports.cyan50 = '#e0f7fa';
+var cyan100 = exports.cyan100 = '#b2ebf2';
+var cyan200 = exports.cyan200 = '#80deea';
+var cyan300 = exports.cyan300 = '#4dd0e1';
+var cyan400 = exports.cyan400 = '#26c6da';
+var cyan500 = exports.cyan500 = '#00bcd4';
+var cyan600 = exports.cyan600 = '#00acc1';
+var cyan700 = exports.cyan700 = '#0097a7';
+var cyan800 = exports.cyan800 = '#00838f';
+var cyan900 = exports.cyan900 = '#006064';
+var cyanA100 = exports.cyanA100 = '#84ffff';
+var cyanA200 = exports.cyanA200 = '#18ffff';
+var cyanA400 = exports.cyanA400 = '#00e5ff';
+var cyanA700 = exports.cyanA700 = '#00b8d4';
+
+var teal50 = exports.teal50 = '#e0f2f1';
+var teal100 = exports.teal100 = '#b2dfdb';
+var teal200 = exports.teal200 = '#80cbc4';
+var teal300 = exports.teal300 = '#4db6ac';
+var teal400 = exports.teal400 = '#26a69a';
+var teal500 = exports.teal500 = '#009688';
+var teal600 = exports.teal600 = '#00897b';
+var teal700 = exports.teal700 = '#00796b';
+var teal800 = exports.teal800 = '#00695c';
+var teal900 = exports.teal900 = '#004d40';
+var tealA100 = exports.tealA100 = '#a7ffeb';
+var tealA200 = exports.tealA200 = '#64ffda';
+var tealA400 = exports.tealA400 = '#1de9b6';
+var tealA700 = exports.tealA700 = '#00bfa5';
+
+var green50 = exports.green50 = '#e8f5e9';
+var green100 = exports.green100 = '#c8e6c9';
+var green200 = exports.green200 = '#a5d6a7';
+var green300 = exports.green300 = '#81c784';
+var green400 = exports.green400 = '#66bb6a';
+var green500 = exports.green500 = '#4caf50';
+var green600 = exports.green600 = '#43a047';
+var green700 = exports.green700 = '#388e3c';
+var green800 = exports.green800 = '#2e7d32';
+var green900 = exports.green900 = '#1b5e20';
+var greenA100 = exports.greenA100 = '#b9f6ca';
+var greenA200 = exports.greenA200 = '#69f0ae';
+var greenA400 = exports.greenA400 = '#00e676';
+var greenA700 = exports.greenA700 = '#00c853';
+
+var lightGreen50 = exports.lightGreen50 = '#f1f8e9';
+var lightGreen100 = exports.lightGreen100 = '#dcedc8';
+var lightGreen200 = exports.lightGreen200 = '#c5e1a5';
+var lightGreen300 = exports.lightGreen300 = '#aed581';
+var lightGreen400 = exports.lightGreen400 = '#9ccc65';
+var lightGreen500 = exports.lightGreen500 = '#8bc34a';
+var lightGreen600 = exports.lightGreen600 = '#7cb342';
+var lightGreen700 = exports.lightGreen700 = '#689f38';
+var lightGreen800 = exports.lightGreen800 = '#558b2f';
+var lightGreen900 = exports.lightGreen900 = '#33691e';
+var lightGreenA100 = exports.lightGreenA100 = '#ccff90';
+var lightGreenA200 = exports.lightGreenA200 = '#b2ff59';
+var lightGreenA400 = exports.lightGreenA400 = '#76ff03';
+var lightGreenA700 = exports.lightGreenA700 = '#64dd17';
+
+var lime50 = exports.lime50 = '#f9fbe7';
+var lime100 = exports.lime100 = '#f0f4c3';
+var lime200 = exports.lime200 = '#e6ee9c';
+var lime300 = exports.lime300 = '#dce775';
+var lime400 = exports.lime400 = '#d4e157';
+var lime500 = exports.lime500 = '#cddc39';
+var lime600 = exports.lime600 = '#c0ca33';
+var lime700 = exports.lime700 = '#afb42b';
+var lime800 = exports.lime800 = '#9e9d24';
+var lime900 = exports.lime900 = '#827717';
+var limeA100 = exports.limeA100 = '#f4ff81';
+var limeA200 = exports.limeA200 = '#eeff41';
+var limeA400 = exports.limeA400 = '#c6ff00';
+var limeA700 = exports.limeA700 = '#aeea00';
+
+var yellow50 = exports.yellow50 = '#fffde7';
+var yellow100 = exports.yellow100 = '#fff9c4';
+var yellow200 = exports.yellow200 = '#fff59d';
+var yellow300 = exports.yellow300 = '#fff176';
+var yellow400 = exports.yellow400 = '#ffee58';
+var yellow500 = exports.yellow500 = '#ffeb3b';
+var yellow600 = exports.yellow600 = '#fdd835';
+var yellow700 = exports.yellow700 = '#fbc02d';
+var yellow800 = exports.yellow800 = '#f9a825';
+var yellow900 = exports.yellow900 = '#f57f17';
+var yellowA100 = exports.yellowA100 = '#ffff8d';
+var yellowA200 = exports.yellowA200 = '#ffff00';
+var yellowA400 = exports.yellowA400 = '#ffea00';
+var yellowA700 = exports.yellowA700 = '#ffd600';
+
+var amber50 = exports.amber50 = '#fff8e1';
+var amber100 = exports.amber100 = '#ffecb3';
+var amber200 = exports.amber200 = '#ffe082';
+var amber300 = exports.amber300 = '#ffd54f';
+var amber400 = exports.amber400 = '#ffca28';
+var amber500 = exports.amber500 = '#ffc107';
+var amber600 = exports.amber600 = '#ffb300';
+var amber700 = exports.amber700 = '#ffa000';
+var amber800 = exports.amber800 = '#ff8f00';
+var amber900 = exports.amber900 = '#ff6f00';
+var amberA100 = exports.amberA100 = '#ffe57f';
+var amberA200 = exports.amberA200 = '#ffd740';
+var amberA400 = exports.amberA400 = '#ffc400';
+var amberA700 = exports.amberA700 = '#ffab00';
+
+var orange50 = exports.orange50 = '#fff3e0';
+var orange100 = exports.orange100 = '#ffe0b2';
+var orange200 = exports.orange200 = '#ffcc80';
+var orange300 = exports.orange300 = '#ffb74d';
+var orange400 = exports.orange400 = '#ffa726';
+var orange500 = exports.orange500 = '#ff9800';
+var orange600 = exports.orange600 = '#fb8c00';
+var orange700 = exports.orange700 = '#f57c00';
+var orange800 = exports.orange800 = '#ef6c00';
+var orange900 = exports.orange900 = '#e65100';
+var orangeA100 = exports.orangeA100 = '#ffd180';
+var orangeA200 = exports.orangeA200 = '#ffab40';
+var orangeA400 = exports.orangeA400 = '#ff9100';
+var orangeA700 = exports.orangeA700 = '#ff6d00';
+
+var deepOrange50 = exports.deepOrange50 = '#fbe9e7';
+var deepOrange100 = exports.deepOrange100 = '#ffccbc';
+var deepOrange200 = exports.deepOrange200 = '#ffab91';
+var deepOrange300 = exports.deepOrange300 = '#ff8a65';
+var deepOrange400 = exports.deepOrange400 = '#ff7043';
+var deepOrange500 = exports.deepOrange500 = '#ff5722';
+var deepOrange600 = exports.deepOrange600 = '#f4511e';
+var deepOrange700 = exports.deepOrange700 = '#e64a19';
+var deepOrange800 = exports.deepOrange800 = '#d84315';
+var deepOrange900 = exports.deepOrange900 = '#bf360c';
+var deepOrangeA100 = exports.deepOrangeA100 = '#ff9e80';
+var deepOrangeA200 = exports.deepOrangeA200 = '#ff6e40';
+var deepOrangeA400 = exports.deepOrangeA400 = '#ff3d00';
+var deepOrangeA700 = exports.deepOrangeA700 = '#dd2c00';
+
+var brown50 = exports.brown50 = '#efebe9';
+var brown100 = exports.brown100 = '#d7ccc8';
+var brown200 = exports.brown200 = '#bcaaa4';
+var brown300 = exports.brown300 = '#a1887f';
+var brown400 = exports.brown400 = '#8d6e63';
+var brown500 = exports.brown500 = '#795548';
+var brown600 = exports.brown600 = '#6d4c41';
+var brown700 = exports.brown700 = '#5d4037';
+var brown800 = exports.brown800 = '#4e342e';
+var brown900 = exports.brown900 = '#3e2723';
+
+var blueGrey50 = exports.blueGrey50 = '#eceff1';
+var blueGrey100 = exports.blueGrey100 = '#cfd8dc';
+var blueGrey200 = exports.blueGrey200 = '#b0bec5';
+var blueGrey300 = exports.blueGrey300 = '#90a4ae';
+var blueGrey400 = exports.blueGrey400 = '#78909c';
+var blueGrey500 = exports.blueGrey500 = '#607d8b';
+var blueGrey600 = exports.blueGrey600 = '#546e7a';
+var blueGrey700 = exports.blueGrey700 = '#455a64';
+var blueGrey800 = exports.blueGrey800 = '#37474f';
+var blueGrey900 = exports.blueGrey900 = '#263238';
+
+var grey50 = exports.grey50 = '#fafafa';
+var grey100 = exports.grey100 = '#f5f5f5';
+var grey200 = exports.grey200 = '#eeeeee';
+var grey300 = exports.grey300 = '#e0e0e0';
+var grey400 = exports.grey400 = '#bdbdbd';
+var grey500 = exports.grey500 = '#9e9e9e';
+var grey600 = exports.grey600 = '#757575';
+var grey700 = exports.grey700 = '#616161';
+var grey800 = exports.grey800 = '#424242';
+var grey900 = exports.grey900 = '#212121';
+
+var black = exports.black = '#000000';
+var white = exports.white = '#ffffff';
+
+var transparent = exports.transparent = 'rgba(0, 0, 0, 0)';
+var fullBlack = exports.fullBlack = 'rgba(0, 0, 0, 1)';
+var darkBlack = exports.darkBlack = 'rgba(0, 0, 0, 0.87)';
+var lightBlack = exports.lightBlack = 'rgba(0, 0, 0, 0.54)';
+var minBlack = exports.minBlack = 'rgba(0, 0, 0, 0.26)';
+var faintBlack = exports.faintBlack = 'rgba(0, 0, 0, 0.12)';
+var fullWhite = exports.fullWhite = 'rgba(255, 255, 255, 1)';
+var darkWhite = exports.darkWhite = 'rgba(255, 255, 255, 0.87)';
+var lightWhite = exports.lightWhite = 'rgba(255, 255, 255, 0.54)';
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports) {
+
+// Source: http://jsfiddle.net/vWx8V/
+// http://stackoverflow.com/questions/5603195/full-list-of-javascript-keycodes
+
+/**
+ * Conenience method returns corresponding value for given keyName or keyCode.
+ *
+ * @param {Mixed} keyCode {Number} or keyName {String}
+ * @return {Mixed}
+ * @api public
+ */
+
+exports = module.exports = function(searchInput) {
+  // Keyboard Events
+  if (searchInput && 'object' === typeof searchInput) {
+    var hasKeyCode = searchInput.which || searchInput.keyCode || searchInput.charCode
+    if (hasKeyCode) searchInput = hasKeyCode
+  }
+
+  // Numbers
+  if ('number' === typeof searchInput) return names[searchInput]
+
+  // Everything else (cast to string)
+  var search = String(searchInput)
+
+  // check codes
+  var foundNamedKey = codes[search.toLowerCase()]
+  if (foundNamedKey) return foundNamedKey
+
+  // check aliases
+  var foundNamedKey = aliases[search.toLowerCase()]
+  if (foundNamedKey) return foundNamedKey
+
+  // weird character?
+  if (search.length === 1) return search.charCodeAt(0)
+
+  return undefined
+}
+
+/**
+ * Get by name
+ *
+ *   exports.code['enter'] // => 13
+ */
+
+var codes = exports.code = exports.codes = {
+  'backspace': 8,
+  'tab': 9,
+  'enter': 13,
+  'shift': 16,
+  'ctrl': 17,
+  'alt': 18,
+  'pause/break': 19,
+  'caps lock': 20,
+  'esc': 27,
+  'space': 32,
+  'page up': 33,
+  'page down': 34,
+  'end': 35,
+  'home': 36,
+  'left': 37,
+  'up': 38,
+  'right': 39,
+  'down': 40,
+  'insert': 45,
+  'delete': 46,
+  'command': 91,
+  'left command': 91,
+  'right command': 93,
+  'numpad *': 106,
+  'numpad +': 107,
+  'numpad -': 109,
+  'numpad .': 110,
+  'numpad /': 111,
+  'num lock': 144,
+  'scroll lock': 145,
+  'my computer': 182,
+  'my calculator': 183,
+  ';': 186,
+  '=': 187,
+  ',': 188,
+  '-': 189,
+  '.': 190,
+  '/': 191,
+  '`': 192,
+  '[': 219,
+  '\\': 220,
+  ']': 221,
+  "'": 222
+}
+
+// Helper aliases
+
+var aliases = exports.aliases = {
+  'windows': 91,
+  '⇧': 16,
+  '⌥': 18,
+  '⌃': 17,
+  '⌘': 91,
+  'ctl': 17,
+  'control': 17,
+  'option': 18,
+  'pause': 19,
+  'break': 19,
+  'caps': 20,
+  'return': 13,
+  'escape': 27,
+  'spc': 32,
+  'pgup': 33,
+  'pgdn': 34,
+  'ins': 45,
+  'del': 46,
+  'cmd': 91
+}
+
+
+/*!
+ * Programatically add the following
+ */
+
+// lower case chars
+for (i = 97; i < 123; i++) codes[String.fromCharCode(i)] = i - 32
+
+// numbers
+for (var i = 48; i < 58; i++) codes[i - 48] = i
+
+// function keys
+for (i = 1; i < 13; i++) codes['f'+i] = i + 111
+
+// numpad keys
+for (i = 0; i < 10; i++) codes['numpad '+i] = i + 96
+
+/**
+ * Get by code
+ *
+ *   exports.name[13] // => 'Enter'
+ */
+
+var names = exports.names = exports.title = {} // title for backward compat
+
+// Create reverse mapping
+for (i in codes) names[codes[i]] = i
+
+// Add aliases
+for (var alias in aliases) {
+  codes[alias] = aliases[alias]
+}
 
 
 /***/ }),
@@ -7426,7 +7426,7 @@ var _objectWithoutProperties2 = __webpack_require__(10);
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _assign = __webpack_require__(196);
+var _assign = __webpack_require__(197);
 
 var _assign2 = _interopRequireDefault(_assign);
 
@@ -7440,7 +7440,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _shallowEqual = __webpack_require__(58);
+var _shallowEqual = __webpack_require__(60);
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -7611,7 +7611,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _MenuItem = __webpack_require__(201);
+var _MenuItem = __webpack_require__(202);
 
 var _MenuItem2 = _interopRequireDefault(_MenuItem);
 
@@ -8279,7 +8279,7 @@ var ReactInstrumentation = __webpack_require__(20);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(94);
 var setInnerHTML = __webpack_require__(74);
-var setTextContent = __webpack_require__(148);
+var setTextContent = __webpack_require__(149);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -8561,8 +8561,8 @@ module.exports = createMicrosoftUnsafeLocalFunction;
 
 var _prodInvariant = __webpack_require__(12);
 
-var ReactPropTypesSecret = __webpack_require__(152);
-var propTypesFactory = __webpack_require__(138);
+var ReactPropTypesSecret = __webpack_require__(153);
+var propTypesFactory = __webpack_require__(139);
 
 var React = __webpack_require__(43);
 var PropTypes = propTypesFactory(React.isValidElement);
@@ -8857,7 +8857,7 @@ module.exports = KeyEscapeUtils;
 var _prodInvariant = __webpack_require__(12);
 
 var ReactCurrentOwner = __webpack_require__(26);
-var ReactInstanceMap = __webpack_require__(57);
+var ReactInstanceMap = __webpack_require__(59);
 var ReactInstrumentation = __webpack_require__(20);
 var ReactUpdates = __webpack_require__(27);
 
@@ -9588,7 +9588,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = cssRuleSetToString;
 
-var _appendPxIfNeeded = __webpack_require__(167);
+var _appendPxIfNeeded = __webpack_require__(168);
 
 var _appendPxIfNeeded2 = _interopRequireDefault(_appendPxIfNeeded);
 
@@ -9596,7 +9596,7 @@ var _camelCasePropsToDashCase = __webpack_require__(330);
 
 var _camelCasePropsToDashCase2 = _interopRequireDefault(_camelCasePropsToDashCase);
 
-var _mapObject = __webpack_require__(168);
+var _mapObject = __webpack_require__(169);
 
 var _mapObject2 = _interopRequireDefault(_mapObject);
 
@@ -9887,7 +9887,7 @@ var PROTOTYPE = 'prototype';
 // Create object with fake `null` prototype: use iframe Object with cleared prototype
 var createDict = function () {
   // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(182)('iframe');
+  var iframe = __webpack_require__(183)('iframe');
   var i = enumBugKeys.length;
   var lt = '<';
   var gt = '>';
@@ -10104,7 +10104,7 @@ var _reactEventListener = __webpack_require__(81);
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _RenderToLayer = __webpack_require__(197);
+var _RenderToLayer = __webpack_require__(198);
 
 var _RenderToLayer2 = _interopRequireDefault(_RenderToLayer);
 
@@ -10595,7 +10595,7 @@ var _objectWithoutProperties2 = __webpack_require__(10);
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _toArray2 = __webpack_require__(200);
+var _toArray2 = __webpack_require__(201);
 
 var _toArray3 = _interopRequireDefault(_toArray2);
 
@@ -10643,7 +10643,7 @@ var _ClickAwayListener = __webpack_require__(460);
 
 var _ClickAwayListener2 = _interopRequireDefault(_ClickAwayListener);
 
-var _keycode = __webpack_require__(64);
+var _keycode = __webpack_require__(66);
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -11488,6 +11488,90 @@ exports.default = _FlatButton2.default;
 
 /***/ }),
 /* 132 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _AppDispatcher = __webpack_require__(57);
+
+var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
+
+var _events = __webpack_require__(133);
+
+var _events2 = _interopRequireDefault(_events);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CHANGE_EVENT = 'change';
+
+var StoreAddress = function (_EventEmitter) {
+  _inherits(StoreAddress, _EventEmitter);
+
+  function StoreAddress() {
+    _classCallCheck(this, StoreAddress);
+
+    var _this = _possibleConstructorReturn(this, (StoreAddress.__proto__ || Object.getPrototypeOf(StoreAddress)).call(this));
+
+    _this.addressRoot = null;
+    _this.dispatchToken = _AppDispatcher2.default.register(_this.handleAction.bind(_this));
+    return _this;
+  }
+
+  _createClass(StoreAddress, [{
+    key: 'addChangeListener',
+    value: function addChangeListener(callback) {
+      this.on(CHANGE_EVENT, callback);
+    }
+  }, {
+    key: 'removeChangeListener',
+    value: function removeChangeListener(callback) {
+      this.removeListener(CHANGE_EVENT, callback);
+    }
+  }, {
+    key: 'getAddressRoot',
+    value: function getAddressRoot() {
+      return this.addressRoot;
+    }
+  }, {
+    key: 'setAddressRoot',
+    value: function setAddressRoot(parameter) {
+      this.addressRoot = parameter;
+    }
+  }, {
+    key: 'handleAction',
+    value: function handleAction(Action) {
+      if (Action.type === 'set_api_address') {
+        this.setAddressRoot(Action.parameter);
+        this.emitChange();
+      }
+    }
+  }, {
+    key: 'emitChange',
+    value: function emitChange() {
+      this.emit(CHANGE_EVENT);
+    }
+  }]);
+
+  return StoreAddress;
+}(_events2.default);
+
+exports.default = new StoreAddress();
+
+/***/ }),
+/* 133 */
 /***/ (function(module, exports) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -11795,7 +11879,7 @@ function isUndefined(arg) {
 
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11812,7 +11896,7 @@ function isUndefined(arg) {
 var _prodInvariant = __webpack_require__(44),
     _assign = __webpack_require__(14);
 
-var ReactNoopUpdateQueue = __webpack_require__(134);
+var ReactNoopUpdateQueue = __webpack_require__(135);
 
 var canDefineProperty = __webpack_require__(67);
 var emptyObject = __webpack_require__(68);
@@ -11941,7 +12025,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12039,7 +12123,7 @@ var ReactNoopUpdateQueue = {
 module.exports = ReactNoopUpdateQueue;
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12062,7 +12146,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12106,7 +12190,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12134,7 +12218,7 @@ var ReactElement = __webpack_require__(36);
 var checkReactTypeSpec = __webpack_require__(227);
 
 var canDefineProperty = __webpack_require__(67);
-var getIteratorFn = __webpack_require__(136);
+var getIteratorFn = __webpack_require__(137);
 var warning = __webpack_require__(9);
 var lowPriorityWarning = __webpack_require__(85);
 
@@ -12364,7 +12448,7 @@ var ReactElementValidator = {
 module.exports = ReactElementValidator;
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12381,7 +12465,7 @@ module.exports = ReactElementValidator;
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(139);
+var factory = __webpack_require__(140);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -12390,7 +12474,7 @@ module.exports = function(isValidElement) {
 
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12939,7 +13023,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12960,7 +13044,7 @@ var ReactDOMComponentFlags = {
 module.exports = ReactDOMComponentFlags;
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13021,7 +13105,7 @@ function accumulateInto(current, next) {
 module.exports = accumulateInto;
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13055,7 +13139,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13091,7 +13175,7 @@ function getTextContentAccessor() {
 module.exports = getTextContentAccessor;
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13213,7 +13297,7 @@ var CallbackQueue = function () {
 module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13238,7 +13322,7 @@ var ReactFeatureFlags = {
 module.exports = ReactFeatureFlags;
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13364,7 +13448,7 @@ var inputValueTracking = {
 module.exports = inputValueTracking;
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13418,7 +13502,7 @@ function isTextInputElement(elem) {
 module.exports = isTextInputElement;
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13473,7 +13557,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setTextContent;
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13503,7 +13587,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13661,7 +13745,7 @@ var CSSProperty = {
 module.exports = CSSProperty;
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13899,7 +13983,7 @@ var DOMPropertyOperations = {
 module.exports = DOMPropertyOperations;
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13919,7 +14003,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14122,7 +14206,7 @@ function _handleChange(event) {
 module.exports = ReactDOMSelect;
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14140,8 +14224,8 @@ var _prodInvariant = __webpack_require__(12),
     _assign = __webpack_require__(14);
 
 var ReactCompositeComponent = __webpack_require__(277);
-var ReactEmptyComponent = __webpack_require__(156);
-var ReactHostComponent = __webpack_require__(157);
+var ReactEmptyComponent = __webpack_require__(157);
+var ReactHostComponent = __webpack_require__(158);
 
 var getNextDebugID = __webpack_require__(280);
 var invariant = __webpack_require__(8);
@@ -14254,7 +14338,7 @@ _assign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent, {
 module.exports = instantiateReactComponent;
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14297,7 +14381,7 @@ var ReactNodeTypes = {
 module.exports = ReactNodeTypes;
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14330,7 +14414,7 @@ ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 module.exports = ReactEmptyComponent;
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14401,7 +14485,7 @@ var ReactHostComponent = {
 module.exports = ReactHostComponent;
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14580,7 +14664,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 module.exports = traverseAllChildren;
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14660,7 +14744,7 @@ var EventListener = {
 module.exports = EventListener;
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14677,8 +14761,8 @@ module.exports = EventListener;
 var ReactDOMSelection = __webpack_require__(294);
 
 var containsNode = __webpack_require__(296);
-var focusNode = __webpack_require__(149);
-var getActiveElement = __webpack_require__(161);
+var focusNode = __webpack_require__(150);
+var getActiveElement = __webpack_require__(162);
 
 function isInDocument(node) {
   return containsNode(document.documentElement, node);
@@ -14786,7 +14870,7 @@ var ReactInputSelection = {
 module.exports = ReactInputSelection;
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14828,7 +14912,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14852,8 +14936,8 @@ var ReactCurrentOwner = __webpack_require__(26);
 var ReactDOMComponentTree = __webpack_require__(15);
 var ReactDOMContainerInfo = __webpack_require__(311);
 var ReactDOMFeatureFlags = __webpack_require__(312);
-var ReactFeatureFlags = __webpack_require__(145);
-var ReactInstanceMap = __webpack_require__(57);
+var ReactFeatureFlags = __webpack_require__(146);
+var ReactInstanceMap = __webpack_require__(59);
 var ReactInstrumentation = __webpack_require__(20);
 var ReactMarkupChecksum = __webpack_require__(313);
 var ReactReconciler = __webpack_require__(47);
@@ -14861,7 +14945,7 @@ var ReactUpdateQueue = __webpack_require__(99);
 var ReactUpdates = __webpack_require__(27);
 
 var emptyObject = __webpack_require__(68);
-var instantiateReactComponent = __webpack_require__(154);
+var instantiateReactComponent = __webpack_require__(155);
 var invariant = __webpack_require__(8);
 var setInnerHTML = __webpack_require__(74);
 var shouldUpdateReactComponent = __webpack_require__(97);
@@ -15369,7 +15453,7 @@ var ReactMount = {
 module.exports = ReactMount;
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15383,7 +15467,7 @@ module.exports = ReactMount;
 
 
 
-var ReactNodeTypes = __webpack_require__(155);
+var ReactNodeTypes = __webpack_require__(156);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -15402,7 +15486,7 @@ function getHostComponentFromComposite(inst) {
 module.exports = getHostComponentFromComposite;
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15412,11 +15496,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _enhancer = __webpack_require__(165);
+var _enhancer = __webpack_require__(166);
 
 var _enhancer2 = _interopRequireDefault(_enhancer);
 
-var _plugins = __webpack_require__(175);
+var _plugins = __webpack_require__(176);
 
 var _plugins2 = _interopRequireDefault(_plugins);
 
@@ -15428,7 +15512,7 @@ var _styleRoot = __webpack_require__(370);
 
 var _styleRoot2 = _interopRequireDefault(_styleRoot);
 
-var _getState = __webpack_require__(172);
+var _getState = __webpack_require__(173);
 
 var _getState2 = _interopRequireDefault(_getState);
 
@@ -15436,7 +15520,7 @@ var _keyframes = __webpack_require__(372);
 
 var _keyframes2 = _interopRequireDefault(_keyframes);
 
-var _resolveStyles = __webpack_require__(166);
+var _resolveStyles = __webpack_require__(167);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15462,7 +15546,7 @@ exports.default = Radium;
 module.exports = exports['default'];
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15488,7 +15572,7 @@ var _styleKeeper = __webpack_require__(102);
 
 var _styleKeeper2 = _interopRequireDefault(_styleKeeper);
 
-var _resolveStyles = __webpack_require__(166);
+var _resolveStyles = __webpack_require__(167);
 
 var _resolveStyles2 = _interopRequireDefault(_resolveStyles);
 
@@ -15706,7 +15790,7 @@ function enhanceWithRadium(configOrComposedComponent) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15728,21 +15812,21 @@ var _cssRuleSetToString = __webpack_require__(103);
 
 var _cssRuleSetToString2 = _interopRequireDefault(_cssRuleSetToString);
 
-var _getState = __webpack_require__(172);
+var _getState = __webpack_require__(173);
 
 var _getState2 = _interopRequireDefault(_getState);
 
-var _getStateKey = __webpack_require__(173);
+var _getStateKey = __webpack_require__(174);
 
 var _getStateKey2 = _interopRequireDefault(_getStateKey);
 
-var _hash = __webpack_require__(174);
+var _hash = __webpack_require__(175);
 
 var _hash2 = _interopRequireDefault(_hash);
 
 var _mergeStyles = __webpack_require__(358);
 
-var _plugins = __webpack_require__(175);
+var _plugins = __webpack_require__(176);
 
 var _plugins2 = _interopRequireDefault(_plugins);
 
@@ -16072,7 +16156,7 @@ exports.default = resolveStyles;
 module.exports = exports['default'];
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16127,7 +16211,7 @@ function appendPxIfNeeded(propertyName, value) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16146,7 +16230,7 @@ function mapObject(object, mapper) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16159,7 +16243,7 @@ exports.default = { "Webkit": { "transform": true, "transformOrigin": true, "tra
 module.exports = exports["default"];
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16192,7 +16276,7 @@ function sortPrefixedStyle(style) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -16818,7 +16902,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16828,7 +16912,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getStateKey = __webpack_require__(173);
+var _getStateKey = __webpack_require__(174);
 
 var _getStateKey2 = _interopRequireDefault(_getStateKey);
 
@@ -16844,7 +16928,7 @@ exports.default = getState;
 module.exports = exports['default'];
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16861,7 +16945,7 @@ exports.default = getStateKey;
 module.exports = exports['default'];
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16894,7 +16978,7 @@ function hash(text) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16953,7 +17037,7 @@ exports.default = {
 module.exports = exports['default'];
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16963,7 +17047,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _toConsumableArray2 = __webpack_require__(177);
+var _toConsumableArray2 = __webpack_require__(178);
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
@@ -17003,7 +17087,7 @@ var _typography = __webpack_require__(420);
 
 var _typography2 = _interopRequireDefault(_typography);
 
-var _colors = __webpack_require__(63);
+var _colors = __webpack_require__(65);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17341,7 +17425,7 @@ function getMuiTheme(muiTheme) {
 }
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17349,7 +17433,7 @@ function getMuiTheme(muiTheme) {
 
 exports.__esModule = true;
 
-var _from = __webpack_require__(178);
+var _from = __webpack_require__(179);
 
 var _from2 = _interopRequireDefault(_from);
 
@@ -17368,13 +17452,13 @@ exports.default = function (arr) {
 };
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(373), __esModule: true };
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17382,7 +17466,7 @@ module.exports = { "default": __webpack_require__(373), __esModule: true };
 var $at = __webpack_require__(374)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(180)(String, 'String', function (iterated) {
+__webpack_require__(181)(String, 'String', function (iterated) {
   this._t = String(iterated); // target
   this._i = 0;                // next index
 // 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -17398,20 +17482,20 @@ __webpack_require__(180)(String, 'String', function (iterated) {
 
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var LIBRARY = __webpack_require__(111);
 var $export = __webpack_require__(33);
-var redefine = __webpack_require__(183);
+var redefine = __webpack_require__(184);
 var hide = __webpack_require__(50);
 var has = __webpack_require__(39);
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(62);
 var $iterCreate = __webpack_require__(376);
 var setToStringTag = __webpack_require__(119);
-var getPrototypeOf = __webpack_require__(187);
+var getPrototypeOf = __webpack_require__(188);
 var ITERATOR = __webpack_require__(28)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
@@ -17475,16 +17559,16 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = !__webpack_require__(38) && !__webpack_require__(53)(function () {
-  return Object.defineProperty(__webpack_require__(182)('div'), 'a', { get: function () { return 7; } }).a != 7;
+  return Object.defineProperty(__webpack_require__(183)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(52);
@@ -17497,14 +17581,14 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(50);
 
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var has = __webpack_require__(39);
@@ -17527,7 +17611,7 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -17539,7 +17623,7 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
@@ -17551,12 +17635,12 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 var has = __webpack_require__(39);
-var toObject = __webpack_require__(62);
+var toObject = __webpack_require__(64);
 var IE_PROTO = __webpack_require__(116)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
@@ -17570,7 +17654,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17594,7 +17678,7 @@ function prefixValue(plugins, property, value, style, metaData) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17622,7 +17706,7 @@ function addNewValuesOnly(list, values) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17638,7 +17722,7 @@ function isObject(value) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17661,7 +17745,7 @@ function hyphenateProperty(property) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // most Object methods by ES6 should accept primitives
@@ -17677,17 +17761,17 @@ module.exports = function (KEY, exec) {
 
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(424), __esModule: true };
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-var $keys = __webpack_require__(184);
+var $keys = __webpack_require__(185);
 var hiddenKeys = __webpack_require__(118).concat('length', 'prototype');
 
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
@@ -17696,15 +17780,15 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pIE = __webpack_require__(80);
-var createDesc = __webpack_require__(59);
+var createDesc = __webpack_require__(61);
 var toIObject = __webpack_require__(54);
 var toPrimitive = __webpack_require__(113);
 var has = __webpack_require__(39);
-var IE8_DOM_DEFINE = __webpack_require__(181);
+var IE8_DOM_DEFINE = __webpack_require__(182);
 var gOPD = Object.getOwnPropertyDescriptor;
 
 exports.f = __webpack_require__(38) ? gOPD : function getOwnPropertyDescriptor(O, P) {
@@ -17718,13 +17802,13 @@ exports.f = __webpack_require__(38) ? gOPD : function getOwnPropertyDescriptor(O
 
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(452), __esModule: true };
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17762,7 +17846,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactDom = __webpack_require__(17);
 
-var _dom = __webpack_require__(198);
+var _dom = __webpack_require__(199);
 
 var _dom2 = _interopRequireDefault(_dom);
 
@@ -17909,7 +17993,7 @@ RenderToLayer.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = RenderToLayer;
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17939,7 +18023,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18092,7 +18176,7 @@ PopoverAnimationVertical.propTypes = Object({"CLIENT":true}).NODE_ENV !== "produ
 exports.default = PopoverAnimationVertical;
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18100,7 +18184,7 @@ exports.default = PopoverAnimationVertical;
 
 exports.__esModule = true;
 
-var _from = __webpack_require__(178);
+var _from = __webpack_require__(179);
 
 var _from2 = _interopRequireDefault(_from);
 
@@ -18111,7 +18195,7 @@ exports.default = function (arr) {
 };
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18177,7 +18261,7 @@ var _check = __webpack_require__(464);
 
 var _check2 = _interopRequireDefault(_check);
 
-var _ListItem = __webpack_require__(204);
+var _ListItem = __webpack_require__(205);
 
 var _ListItem2 = _interopRequireDefault(_ListItem);
 
@@ -18523,7 +18607,7 @@ MenuItem.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = MenuItem;
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18544,7 +18628,7 @@ var setDisplayName = function setDisplayName(displayName) {
 exports.default = setDisplayName;
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18565,7 +18649,7 @@ var wrapDisplayName = function wrapDisplayName(BaseComponent, hocName) {
 exports.default = wrapDisplayName;
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19327,7 +19411,7 @@ ListItem.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = ListItem;
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19532,7 +19616,7 @@ FocusRipple.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = FocusRipple;
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19542,7 +19626,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _toConsumableArray2 = __webpack_require__(177);
+var _toConsumableArray2 = __webpack_require__(178);
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
@@ -19566,7 +19650,7 @@ var _inherits2 = __webpack_require__(6);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _toArray2 = __webpack_require__(200);
+var _toArray2 = __webpack_require__(201);
 
 var _toArray3 = _interopRequireDefault(_toArray2);
 
@@ -19590,7 +19674,7 @@ var _TransitionGroup = __webpack_require__(83);
 
 var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-var _dom = __webpack_require__(198);
+var _dom = __webpack_require__(199);
 
 var _dom2 = _interopRequireDefault(_dom);
 
@@ -19849,7 +19933,7 @@ TouchRipple.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = TouchRipple;
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19869,7 +19953,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _FontIcon2.default;
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19901,7 +19985,7 @@ function extendChildren(children, extendedProps, extendedChildren) {
 }
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20103,7 +20187,7 @@ StepLabel.contextTypes = {
 exports.default = StepLabel;
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20123,7 +20207,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _RaisedButton2.default;
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20161,90 +20245,6 @@ NavigationMenu.muiName = 'SvgIcon';
 exports.default = NavigationMenu;
 
 /***/ }),
-/* 212 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _AppDispatcher = __webpack_require__(65);
-
-var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
-
-var _events = __webpack_require__(132);
-
-var _events2 = _interopRequireDefault(_events);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CHANGE_EVENT = 'change';
-
-var StoreAddress = function (_EventEmitter) {
-  _inherits(StoreAddress, _EventEmitter);
-
-  function StoreAddress() {
-    _classCallCheck(this, StoreAddress);
-
-    var _this = _possibleConstructorReturn(this, (StoreAddress.__proto__ || Object.getPrototypeOf(StoreAddress)).call(this));
-
-    _this.addressRoot = null;
-    _this.dispatchToken = _AppDispatcher2.default.register(_this.handleAction.bind(_this));
-    return _this;
-  }
-
-  _createClass(StoreAddress, [{
-    key: 'addChangeListener',
-    value: function addChangeListener(callback) {
-      this.on(CHANGE_EVENT, callback);
-    }
-  }, {
-    key: 'removeChangeListener',
-    value: function removeChangeListener(callback) {
-      this.removeListener(CHANGE_EVENT, callback);
-    }
-  }, {
-    key: 'getAddressRoot',
-    value: function getAddressRoot() {
-      return this.addressRoot;
-    }
-  }, {
-    key: 'setAddressRoot',
-    value: function setAddressRoot(parameter) {
-      this.addressRoot = parameter;
-    }
-  }, {
-    key: 'handleAction',
-    value: function handleAction(Action) {
-      if (Action.type === 'set_api_address') {
-        this.setAddressRoot(Action.parameter);
-        this.emitChange();
-      }
-    }
-  }, {
-    key: 'emitChange',
-    value: function emitChange() {
-      this.emit(CHANGE_EVENT);
-    }
-  }]);
-
-  return StoreAddress;
-}(_events2.default);
-
-exports.default = new StoreAddress();
-
-/***/ }),
 /* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20256,7 +20256,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _TextField = __webpack_require__(506);
+var _TextField = __webpack_require__(507);
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
@@ -20276,7 +20276,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _SelectField = __webpack_require__(511);
+var _SelectField = __webpack_require__(512);
 
 var _SelectField2 = _interopRequireDefault(_SelectField);
 
@@ -20296,7 +20296,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _FloatingActionButton = __webpack_require__(517);
+var _FloatingActionButton = __webpack_require__(518);
 
 var _FloatingActionButton2 = _interopRequireDefault(_FloatingActionButton);
 
@@ -20397,15 +20397,15 @@ var _transitions = __webpack_require__(13);
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _EnhancedSwitch = __webpack_require__(519);
+var _EnhancedSwitch = __webpack_require__(520);
 
 var _EnhancedSwitch2 = _interopRequireDefault(_EnhancedSwitch);
 
-var _radioButtonUnchecked = __webpack_require__(520);
+var _radioButtonUnchecked = __webpack_require__(521);
 
 var _radioButtonUnchecked2 = _interopRequireDefault(_radioButtonUnchecked);
 
-var _radioButtonChecked = __webpack_require__(521);
+var _radioButtonChecked = __webpack_require__(522);
 
 var _radioButtonChecked2 = _interopRequireDefault(_radioButtonChecked);
 
@@ -20756,15 +20756,15 @@ exports.default = function (objectToSubmit) {
   });
 };
 
-var _AppDispatcher = __webpack_require__(65);
+var _AppDispatcher = __webpack_require__(57);
 
 var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 
-var _StoreAddress = __webpack_require__(212);
+var _StoreAddress = __webpack_require__(132);
 
 var _StoreAddress2 = _interopRequireDefault(_StoreAddress);
 
-__webpack_require__(66);
+__webpack_require__(58);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20784,7 +20784,7 @@ function dispatchAction(parameter) {
 /* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(66);
+__webpack_require__(58);
 module.exports = __webpack_require__(221);
 
 
@@ -20811,11 +20811,11 @@ var _App = __webpack_require__(327);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _SetClientEnvironment = __webpack_require__(533);
+var _SetClientEnvironment = __webpack_require__(534);
 
 var _SetClientEnvironment2 = _interopRequireDefault(_SetClientEnvironment);
 
-var _events = __webpack_require__(132);
+var _events = __webpack_require__(133);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -21160,9 +21160,9 @@ module.exports = PooledClass;
 var _prodInvariant = __webpack_require__(44);
 
 var ReactCurrentOwner = __webpack_require__(26);
-var REACT_ELEMENT_TYPE = __webpack_require__(135);
+var REACT_ELEMENT_TYPE = __webpack_require__(136);
 
-var getIteratorFn = __webpack_require__(136);
+var getIteratorFn = __webpack_require__(137);
 var invariant = __webpack_require__(8);
 var KeyEscapeUtils = __webpack_require__(225);
 var warning = __webpack_require__(9);
@@ -21407,7 +21407,7 @@ var ReactElement = __webpack_require__(36);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (Object({"CLIENT":true}).NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(137);
+  var ReactElementValidator = __webpack_require__(138);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -21712,7 +21712,7 @@ module.exports = ReactPropTypesSecret;
 var _require = __webpack_require__(36),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(138);
+var factory = __webpack_require__(139);
 
 module.exports = factory(isValidElement);
 
@@ -21814,13 +21814,13 @@ module.exports = '15.6.2';
 
 
 
-var _require = __webpack_require__(133),
+var _require = __webpack_require__(134),
     Component = _require.Component;
 
 var _require2 = __webpack_require__(36),
     isValidElement = _require2.isValidElement;
 
-var ReactNoopUpdateQueue = __webpack_require__(134);
+var ReactNoopUpdateQueue = __webpack_require__(135);
 var factory = __webpack_require__(234);
 
 module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
@@ -22762,13 +22762,13 @@ module.exports = onlyChild;
 
 var ReactDOMComponentTree = __webpack_require__(15);
 var ReactDefaultInjection = __webpack_require__(237);
-var ReactMount = __webpack_require__(162);
+var ReactMount = __webpack_require__(163);
 var ReactReconciler = __webpack_require__(47);
 var ReactUpdates = __webpack_require__(27);
 var ReactVersion = __webpack_require__(315);
 
 var findDOMNode = __webpack_require__(316);
-var getHostComponentFromComposite = __webpack_require__(163);
+var getHostComponentFromComposite = __webpack_require__(164);
 var renderSubtreeIntoContainer = __webpack_require__(317);
 var warning = __webpack_require__(9);
 
@@ -23429,7 +23429,7 @@ var _assign = __webpack_require__(14);
 
 var PooledClass = __webpack_require__(37);
 
-var getTextContentAccessor = __webpack_require__(143);
+var getTextContentAccessor = __webpack_require__(144);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -23609,10 +23609,10 @@ var ReactDOMComponentTree = __webpack_require__(15);
 var ReactUpdates = __webpack_require__(27);
 var SyntheticEvent = __webpack_require__(30);
 
-var inputValueTracking = __webpack_require__(146);
+var inputValueTracking = __webpack_require__(147);
 var getEventTarget = __webpack_require__(88);
 var isEventSupported = __webpack_require__(89);
-var isTextInputElement = __webpack_require__(147);
+var isTextInputElement = __webpack_require__(148);
 
 var eventTypes = {
   change: {
@@ -25420,15 +25420,15 @@ var CSSPropertyOperations = __webpack_require__(262);
 var DOMLazyTree = __webpack_require__(49);
 var DOMNamespaces = __webpack_require__(93);
 var DOMProperty = __webpack_require__(32);
-var DOMPropertyOperations = __webpack_require__(151);
+var DOMPropertyOperations = __webpack_require__(152);
 var EventPluginHub = __webpack_require__(46);
 var EventPluginRegistry = __webpack_require__(70);
 var ReactBrowserEventEmitter = __webpack_require__(76);
-var ReactDOMComponentFlags = __webpack_require__(140);
+var ReactDOMComponentFlags = __webpack_require__(141);
 var ReactDOMComponentTree = __webpack_require__(15);
 var ReactDOMInput = __webpack_require__(272);
 var ReactDOMOption = __webpack_require__(273);
-var ReactDOMSelect = __webpack_require__(153);
+var ReactDOMSelect = __webpack_require__(154);
 var ReactDOMTextarea = __webpack_require__(274);
 var ReactInstrumentation = __webpack_require__(20);
 var ReactMultiChild = __webpack_require__(275);
@@ -25438,8 +25438,8 @@ var emptyFunction = __webpack_require__(19);
 var escapeTextContentForBrowser = __webpack_require__(75);
 var invariant = __webpack_require__(8);
 var isEventSupported = __webpack_require__(89);
-var shallowEqual = __webpack_require__(58);
-var inputValueTracking = __webpack_require__(146);
+var shallowEqual = __webpack_require__(60);
+var inputValueTracking = __webpack_require__(147);
 var validateDOMNesting = __webpack_require__(100);
 var warning = __webpack_require__(9);
 
@@ -26429,7 +26429,7 @@ module.exports = ReactDOMComponent;
 
 var ReactDOMComponentTree = __webpack_require__(15);
 
-var focusNode = __webpack_require__(149);
+var focusNode = __webpack_require__(150);
 
 var AutoFocusUtils = {
   focusDOMComponent: function () {
@@ -26454,7 +26454,7 @@ module.exports = AutoFocusUtils;
 
 
 
-var CSSProperty = __webpack_require__(150);
+var CSSProperty = __webpack_require__(151);
 var ExecutionEnvironment = __webpack_require__(16);
 var ReactInstrumentation = __webpack_require__(20);
 
@@ -26750,7 +26750,7 @@ module.exports = camelize;
 
 
 
-var CSSProperty = __webpack_require__(150);
+var CSSProperty = __webpack_require__(151);
 var warning = __webpack_require__(9);
 
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -27114,7 +27114,7 @@ module.exports = getVendorPrefixedEventName;
 var _prodInvariant = __webpack_require__(12),
     _assign = __webpack_require__(14);
 
-var DOMPropertyOperations = __webpack_require__(151);
+var DOMPropertyOperations = __webpack_require__(152);
 var LinkedValueUtils = __webpack_require__(95);
 var ReactDOMComponentTree = __webpack_require__(15);
 var ReactUpdates = __webpack_require__(27);
@@ -27405,7 +27405,7 @@ var _assign = __webpack_require__(14);
 
 var React = __webpack_require__(43);
 var ReactDOMComponentTree = __webpack_require__(15);
-var ReactDOMSelect = __webpack_require__(153);
+var ReactDOMSelect = __webpack_require__(154);
 
 var warning = __webpack_require__(9);
 var didWarnInvalidOptionChildren = false;
@@ -27692,7 +27692,7 @@ module.exports = ReactDOMTextarea;
 var _prodInvariant = __webpack_require__(12);
 
 var ReactComponentEnvironment = __webpack_require__(96);
-var ReactInstanceMap = __webpack_require__(57);
+var ReactInstanceMap = __webpack_require__(59);
 var ReactInstrumentation = __webpack_require__(20);
 
 var ReactCurrentOwner = __webpack_require__(26);
@@ -28140,10 +28140,10 @@ module.exports = ReactMultiChild;
 
 var ReactReconciler = __webpack_require__(47);
 
-var instantiateReactComponent = __webpack_require__(154);
+var instantiateReactComponent = __webpack_require__(155);
 var KeyEscapeUtils = __webpack_require__(98);
 var shouldUpdateReactComponent = __webpack_require__(97);
-var traverseAllChildren = __webpack_require__(158);
+var traverseAllChildren = __webpack_require__(159);
 var warning = __webpack_require__(9);
 
 var ReactComponentTreeHook;
@@ -28302,9 +28302,9 @@ var React = __webpack_require__(43);
 var ReactComponentEnvironment = __webpack_require__(96);
 var ReactCurrentOwner = __webpack_require__(26);
 var ReactErrorUtils = __webpack_require__(87);
-var ReactInstanceMap = __webpack_require__(57);
+var ReactInstanceMap = __webpack_require__(59);
 var ReactInstrumentation = __webpack_require__(20);
-var ReactNodeTypes = __webpack_require__(155);
+var ReactNodeTypes = __webpack_require__(156);
 var ReactReconciler = __webpack_require__(47);
 
 if (Object({"CLIENT":true}).NODE_ENV !== 'production') {
@@ -28313,7 +28313,7 @@ if (Object({"CLIENT":true}).NODE_ENV !== 'production') {
 
 var emptyObject = __webpack_require__(68);
 var invariant = __webpack_require__(8);
-var shallowEqual = __webpack_require__(58);
+var shallowEqual = __webpack_require__(60);
 var shouldUpdateReactComponent = __webpack_require__(97);
 var warning = __webpack_require__(9);
 
@@ -29201,7 +29201,7 @@ module.exports = ReactCompositeComponent;
 var _prodInvariant = __webpack_require__(12);
 
 var ReactPropTypeLocationNames = __webpack_require__(279);
-var ReactPropTypesSecret = __webpack_require__(152);
+var ReactPropTypesSecret = __webpack_require__(153);
 
 var invariant = __webpack_require__(8);
 var warning = __webpack_require__(9);
@@ -29410,7 +29410,7 @@ module.exports = getIteratorFn;
 
 
 var KeyEscapeUtils = __webpack_require__(98);
-var traverseAllChildren = __webpack_require__(158);
+var traverseAllChildren = __webpack_require__(159);
 var warning = __webpack_require__(9);
 
 var ReactComponentTreeHook;
@@ -30163,7 +30163,7 @@ module.exports = ReactDefaultBatchingStrategy;
 
 var _assign = __webpack_require__(14);
 
-var EventListener = __webpack_require__(159);
+var EventListener = __webpack_require__(160);
 var ExecutionEnvironment = __webpack_require__(16);
 var PooledClass = __webpack_require__(37);
 var ReactDOMComponentTree = __webpack_require__(15);
@@ -30365,9 +30365,9 @@ var DOMProperty = __webpack_require__(32);
 var EventPluginHub = __webpack_require__(46);
 var EventPluginUtils = __webpack_require__(71);
 var ReactComponentEnvironment = __webpack_require__(96);
-var ReactEmptyComponent = __webpack_require__(156);
+var ReactEmptyComponent = __webpack_require__(157);
 var ReactBrowserEventEmitter = __webpack_require__(76);
-var ReactHostComponent = __webpack_require__(157);
+var ReactHostComponent = __webpack_require__(158);
 var ReactUpdates = __webpack_require__(27);
 
 var ReactInjection = {
@@ -30400,10 +30400,10 @@ module.exports = ReactInjection;
 
 var _assign = __webpack_require__(14);
 
-var CallbackQueue = __webpack_require__(144);
+var CallbackQueue = __webpack_require__(145);
 var PooledClass = __webpack_require__(37);
 var ReactBrowserEventEmitter = __webpack_require__(76);
-var ReactInputSelection = __webpack_require__(160);
+var ReactInputSelection = __webpack_require__(161);
 var ReactInstrumentation = __webpack_require__(20);
 var Transaction = __webpack_require__(72);
 var ReactUpdateQueue = __webpack_require__(99);
@@ -30582,7 +30582,7 @@ module.exports = ReactReconcileTransaction;
 var ExecutionEnvironment = __webpack_require__(16);
 
 var getNodeForCharacterOffset = __webpack_require__(295);
-var getTextContentAccessor = __webpack_require__(143);
+var getTextContentAccessor = __webpack_require__(144);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -31278,12 +31278,12 @@ module.exports = SVGDOMPropertyConfig;
 var EventPropagators = __webpack_require__(45);
 var ExecutionEnvironment = __webpack_require__(16);
 var ReactDOMComponentTree = __webpack_require__(15);
-var ReactInputSelection = __webpack_require__(160);
+var ReactInputSelection = __webpack_require__(161);
 var SyntheticEvent = __webpack_require__(30);
 
-var getActiveElement = __webpack_require__(161);
-var isTextInputElement = __webpack_require__(147);
-var shallowEqual = __webpack_require__(58);
+var getActiveElement = __webpack_require__(162);
+var isTextInputElement = __webpack_require__(148);
+var shallowEqual = __webpack_require__(60);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
 
@@ -31469,7 +31469,7 @@ module.exports = SelectEventPlugin;
 
 var _prodInvariant = __webpack_require__(12);
 
-var EventListener = __webpack_require__(159);
+var EventListener = __webpack_require__(160);
 var EventPropagators = __webpack_require__(45);
 var ReactDOMComponentTree = __webpack_require__(15);
 var SyntheticAnimationEvent = __webpack_require__(302);
@@ -32381,9 +32381,9 @@ var _prodInvariant = __webpack_require__(12);
 
 var ReactCurrentOwner = __webpack_require__(26);
 var ReactDOMComponentTree = __webpack_require__(15);
-var ReactInstanceMap = __webpack_require__(57);
+var ReactInstanceMap = __webpack_require__(59);
 
-var getHostComponentFromComposite = __webpack_require__(163);
+var getHostComponentFromComposite = __webpack_require__(164);
 var invariant = __webpack_require__(8);
 var warning = __webpack_require__(9);
 
@@ -32440,7 +32440,7 @@ module.exports = findDOMNode;
 
 
 
-var ReactMount = __webpack_require__(162);
+var ReactMount = __webpack_require__(163);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
@@ -33120,9 +33120,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _radium = __webpack_require__(164);
+var _radium = __webpack_require__(165);
 
-var _getMuiTheme = __webpack_require__(176);
+var _getMuiTheme = __webpack_require__(177);
 
 var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
@@ -33138,15 +33138,15 @@ var _AIQueryPanel = __webpack_require__(502);
 
 var _AIQueryPanel2 = _interopRequireDefault(_AIQueryPanel);
 
-var _ManualQueryPanel = __webpack_require__(525);
+var _ManualQueryPanel = __webpack_require__(526);
 
 var _ManualQueryPanel2 = _interopRequireDefault(_ManualQueryPanel);
 
-var _ResultPanel = __webpack_require__(527);
+var _ResultPanel = __webpack_require__(528);
 
 var _ResultPanel2 = _interopRequireDefault(_ResultPanel);
 
-var _AppRootStyle = __webpack_require__(532);
+var _AppRootStyle = __webpack_require__(533);
 
 var _AppRootStyle2 = _interopRequireDefault(_AppRootStyle);
 
@@ -33280,11 +33280,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = appendImportantToEachValue;
 
-var _appendPxIfNeeded = __webpack_require__(167);
+var _appendPxIfNeeded = __webpack_require__(168);
 
 var _appendPxIfNeeded2 = _interopRequireDefault(_appendPxIfNeeded);
 
-var _mapObject = __webpack_require__(168);
+var _mapObject = __webpack_require__(169);
 
 var _mapObject2 = _interopRequireDefault(_mapObject);
 
@@ -33367,7 +33367,7 @@ var _capitalizeString = __webpack_require__(106);
 
 var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 
-var _sortPrefixedStyle = __webpack_require__(170);
+var _sortPrefixedStyle = __webpack_require__(171);
 
 var _sortPrefixedStyle2 = _interopRequireDefault(_sortPrefixedStyle);
 
@@ -33583,7 +33583,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = prefixAll;
 
-var _prefixProps = __webpack_require__(169);
+var _prefixProps = __webpack_require__(170);
 
 var _prefixProps2 = _interopRequireDefault(_prefixProps);
 
@@ -33591,7 +33591,7 @@ var _capitalizeString = __webpack_require__(106);
 
 var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 
-var _sortPrefixedStyle = __webpack_require__(170);
+var _sortPrefixedStyle = __webpack_require__(171);
 
 var _sortPrefixedStyle2 = _interopRequireDefault(_sortPrefixedStyle);
 
@@ -33909,7 +33909,7 @@ var _isPrefixedValue = __webpack_require__(107);
 
 var _isPrefixedValue2 = _interopRequireDefault(_isPrefixedValue);
 
-var _prefixProps = __webpack_require__(169);
+var _prefixProps = __webpack_require__(170);
 
 var _prefixProps2 = _interopRequireDefault(_prefixProps);
 
@@ -34064,7 +34064,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _bowser = __webpack_require__(171);
+var _bowser = __webpack_require__(172);
 
 var _bowser2 = _interopRequireDefault(_bowser);
 
@@ -35532,7 +35532,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _enhancer = __webpack_require__(165);
+var _enhancer = __webpack_require__(166);
 
 var _enhancer2 = _interopRequireDefault(_enhancer);
 
@@ -35708,7 +35708,7 @@ var _cssRuleSetToString = __webpack_require__(103);
 
 var _cssRuleSetToString2 = _interopRequireDefault(_cssRuleSetToString);
 
-var _hash = __webpack_require__(174);
+var _hash = __webpack_require__(175);
 
 var _hash2 = _interopRequireDefault(_hash);
 
@@ -35737,7 +35737,7 @@ module.exports = exports['default'];
 /* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(179);
+__webpack_require__(180);
 __webpack_require__(381);
 module.exports = __webpack_require__(21).Array.from;
 
@@ -35782,7 +35782,7 @@ module.exports = function (it) {
 "use strict";
 
 var create = __webpack_require__(114);
-var descriptor = __webpack_require__(59);
+var descriptor = __webpack_require__(61);
 var setToStringTag = __webpack_require__(119);
 var IteratorPrototype = {};
 
@@ -35801,7 +35801,7 @@ module.exports = function (Constructor, NAME, next) {
 
 var dP = __webpack_require__(35);
 var anObject = __webpack_require__(51);
-var getKeys = __webpack_require__(61);
+var getKeys = __webpack_require__(63);
 
 module.exports = __webpack_require__(38) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
@@ -35821,7 +35821,7 @@ module.exports = __webpack_require__(38) ? Object.defineProperties : function de
 // false -> Array#indexOf
 // true  -> Array#includes
 var toIObject = __webpack_require__(54);
-var toLength = __webpack_require__(186);
+var toLength = __webpack_require__(187);
 var toAbsoluteIndex = __webpack_require__(379);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
@@ -35872,10 +35872,10 @@ module.exports = document && document.documentElement;
 
 var ctx = __webpack_require__(112);
 var $export = __webpack_require__(33);
-var toObject = __webpack_require__(62);
+var toObject = __webpack_require__(64);
 var call = __webpack_require__(382);
 var isArrayIter = __webpack_require__(383);
-var toLength = __webpack_require__(186);
+var toLength = __webpack_require__(187);
 var createProperty = __webpack_require__(384);
 var getIterFn = __webpack_require__(385);
 
@@ -35931,7 +35931,7 @@ module.exports = function (iterator, fn, value, entries) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(62);
 var ITERATOR = __webpack_require__(28)('iterator');
 var ArrayProto = Array.prototype;
 
@@ -35947,7 +35947,7 @@ module.exports = function (it) {
 "use strict";
 
 var $defineProperty = __webpack_require__(35);
-var createDesc = __webpack_require__(59);
+var createDesc = __webpack_require__(61);
 
 module.exports = function (object, index, value) {
   if (index in object) $defineProperty.f(object, index, createDesc(0, value));
@@ -35961,7 +35961,7 @@ module.exports = function (object, index, value) {
 
 var classof = __webpack_require__(386);
 var ITERATOR = __webpack_require__(28)('iterator');
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(62);
 module.exports = __webpack_require__(21).getIteratorMethod = function (it) {
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
@@ -38279,7 +38279,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _colors = __webpack_require__(63);
+var _colors = __webpack_require__(65);
 
 var _colorManipulator = __webpack_require__(40);
 
@@ -38468,15 +38468,15 @@ var _prefixProperty = __webpack_require__(395);
 
 var _prefixProperty2 = _interopRequireDefault(_prefixProperty);
 
-var _prefixValue = __webpack_require__(188);
+var _prefixValue = __webpack_require__(189);
 
 var _prefixValue2 = _interopRequireDefault(_prefixValue);
 
-var _addNewValuesOnly = __webpack_require__(189);
+var _addNewValuesOnly = __webpack_require__(190);
 
 var _addNewValuesOnly2 = _interopRequireDefault(_addNewValuesOnly);
 
-var _isObject = __webpack_require__(190);
+var _isObject = __webpack_require__(191);
 
 var _isObject2 = _interopRequireDefault(_isObject);
 
@@ -38582,15 +38582,15 @@ var _capitalizeString = __webpack_require__(120);
 
 var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 
-var _addNewValuesOnly = __webpack_require__(189);
+var _addNewValuesOnly = __webpack_require__(190);
 
 var _addNewValuesOnly2 = _interopRequireDefault(_addNewValuesOnly);
 
-var _isObject = __webpack_require__(190);
+var _isObject = __webpack_require__(191);
 
 var _isObject2 = _interopRequireDefault(_isObject);
 
-var _prefixValue = __webpack_require__(188);
+var _prefixValue = __webpack_require__(189);
 
 var _prefixValue2 = _interopRequireDefault(_prefixValue);
 
@@ -38748,7 +38748,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = getBrowserInformation;
 
-var _bowser = __webpack_require__(171);
+var _bowser = __webpack_require__(172);
 
 var _bowser2 = _interopRequireDefault(_bowser);
 
@@ -39230,7 +39230,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = transition;
 
-var _hyphenateProperty = __webpack_require__(191);
+var _hyphenateProperty = __webpack_require__(192);
 
 var _hyphenateProperty2 = _interopRequireDefault(_hyphenateProperty);
 
@@ -39536,7 +39536,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = transition;
 
-var _hyphenateProperty = __webpack_require__(191);
+var _hyphenateProperty = __webpack_require__(192);
 
 var _hyphenateProperty2 = _interopRequireDefault(_hyphenateProperty);
 
@@ -39771,10 +39771,10 @@ module.exports = __webpack_require__(21).Object.keys;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(62);
-var $keys = __webpack_require__(61);
+var toObject = __webpack_require__(64);
+var $keys = __webpack_require__(63);
 
-__webpack_require__(192)('keys', function () {
+__webpack_require__(193)('keys', function () {
   return function keys(it) {
     return $keys(toObject(it));
   };
@@ -39827,7 +39827,7 @@ var _classCallCheck2 = __webpack_require__(2);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _colors = __webpack_require__(63);
+var _colors = __webpack_require__(65);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39890,7 +39890,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _getMuiTheme = __webpack_require__(176);
+var _getMuiTheme = __webpack_require__(177);
 
 var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
@@ -39942,10 +39942,10 @@ module.exports = __webpack_require__(21).Object.getPrototypeOf;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 Object.getPrototypeOf(O)
-var toObject = __webpack_require__(62);
-var $getPrototypeOf = __webpack_require__(187);
+var toObject = __webpack_require__(64);
+var $getPrototypeOf = __webpack_require__(188);
 
-__webpack_require__(192)('getPrototypeOf', function () {
+__webpack_require__(193)('getPrototypeOf', function () {
   return function getPrototypeOf(it) {
     return $getPrototypeOf(toObject(it));
   };
@@ -39982,7 +39982,7 @@ module.exports = { "default": __webpack_require__(427), __esModule: true };
 /* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(179);
+__webpack_require__(180);
 __webpack_require__(428);
 module.exports = __webpack_require__(123).f('iterator');
 
@@ -39994,7 +39994,7 @@ module.exports = __webpack_require__(123).f('iterator');
 __webpack_require__(429);
 var global = __webpack_require__(34);
 var hide = __webpack_require__(50);
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(62);
 var TO_STRING_TAG = __webpack_require__(28)('toStringTag');
 
 var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
@@ -40020,14 +40020,14 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 var addToUnscopables = __webpack_require__(430);
 var step = __webpack_require__(431);
-var Iterators = __webpack_require__(60);
+var Iterators = __webpack_require__(62);
 var toIObject = __webpack_require__(54);
 
 // 22.1.3.4 Array.prototype.entries()
 // 22.1.3.13 Array.prototype.keys()
 // 22.1.3.29 Array.prototype.values()
 // 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(180)(Array, 'Array', function (iterated, kind) {
+module.exports = __webpack_require__(181)(Array, 'Array', function (iterated, kind) {
   this._t = toIObject(iterated); // target
   this._i = 0;                   // next index
   this._k = kind;                // kind
@@ -40097,7 +40097,7 @@ var global = __webpack_require__(34);
 var has = __webpack_require__(39);
 var DESCRIPTORS = __webpack_require__(38);
 var $export = __webpack_require__(33);
-var redefine = __webpack_require__(183);
+var redefine = __webpack_require__(184);
 var META = __webpack_require__(435).KEY;
 var $fails = __webpack_require__(53);
 var shared = __webpack_require__(117);
@@ -40112,12 +40112,12 @@ var anObject = __webpack_require__(51);
 var isObject = __webpack_require__(52);
 var toIObject = __webpack_require__(54);
 var toPrimitive = __webpack_require__(113);
-var createDesc = __webpack_require__(59);
+var createDesc = __webpack_require__(61);
 var _create = __webpack_require__(114);
 var gOPNExt = __webpack_require__(438);
-var $GOPD = __webpack_require__(195);
+var $GOPD = __webpack_require__(196);
 var $DP = __webpack_require__(35);
-var $keys = __webpack_require__(61);
+var $keys = __webpack_require__(63);
 var gOPD = $GOPD.f;
 var dP = $DP.f;
 var gOPN = gOPNExt.f;
@@ -40240,7 +40240,7 @@ if (!USE_NATIVE) {
 
   $GOPD.f = $getOwnPropertyDescriptor;
   $DP.f = $defineProperty;
-  __webpack_require__(194).f = gOPNExt.f = $getOwnPropertyNames;
+  __webpack_require__(195).f = gOPNExt.f = $getOwnPropertyNames;
   __webpack_require__(80).f = $propertyIsEnumerable;
   __webpack_require__(125).f = $getOwnPropertySymbols;
 
@@ -40391,7 +40391,7 @@ var meta = module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
-var getKeys = __webpack_require__(61);
+var getKeys = __webpack_require__(63);
 var gOPS = __webpack_require__(125);
 var pIE = __webpack_require__(80);
 module.exports = function (it) {
@@ -40424,7 +40424,7 @@ module.exports = Array.isArray || function isArray(arg) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
 var toIObject = __webpack_require__(54);
-var gOPN = __webpack_require__(194).f;
+var gOPN = __webpack_require__(195).f;
 var toString = {}.toString;
 
 var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -40502,7 +40502,7 @@ module.exports = {
   set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
     function (test, buggy, set) {
       try {
-        set = __webpack_require__(112)(Function.call, __webpack_require__(195).f(Object.prototype, '__proto__').set, 2);
+        set = __webpack_require__(112)(Function.call, __webpack_require__(196).f(Object.prototype, '__proto__').set, 2);
         set(test, []);
         buggy = !(test instanceof Array);
       } catch (e) { buggy = true; }
@@ -40584,7 +40584,7 @@ var _AppBar = __webpack_require__(499);
 
 var _AppBar2 = _interopRequireDefault(_AppBar);
 
-var _menu = __webpack_require__(211);
+var _menu = __webpack_require__(212);
 
 var _menu2 = _interopRequireDefault(_menu);
 
@@ -40709,7 +40709,7 @@ var _FlatButton = __webpack_require__(131);
 
 var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
-var _colors = __webpack_require__(63);
+var _colors = __webpack_require__(65);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40813,7 +40813,7 @@ var _Popover2 = __webpack_require__(126);
 
 var _Popover3 = _interopRequireDefault(_Popover2);
 
-var _PopoverAnimationVertical2 = __webpack_require__(199);
+var _PopoverAnimationVertical2 = __webpack_require__(200);
 
 var _PopoverAnimationVertical3 = _interopRequireDefault(_PopoverAnimationVertical2);
 
@@ -40848,11 +40848,11 @@ $export($export.S + $export.F, 'Object', { assign: __webpack_require__(454) });
 "use strict";
 
 // 19.1.2.1 Object.assign(target, source, ...)
-var getKeys = __webpack_require__(61);
+var getKeys = __webpack_require__(63);
 var gOPS = __webpack_require__(125);
 var pIE = __webpack_require__(80);
-var toObject = __webpack_require__(62);
-var IObject = __webpack_require__(185);
+var toObject = __webpack_require__(64);
+var IObject = __webpack_require__(186);
 var $assign = Object.assign;
 
 // should work with symbols and should have deterministic property order (V8 bug)
@@ -40894,7 +40894,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.passiveOption = undefined;
 
-var _defineProperty = __webpack_require__(193);
+var _defineProperty = __webpack_require__(194);
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -42079,11 +42079,11 @@ exports.__esModule = true;
 
 var _react = __webpack_require__(0);
 
-var _setDisplayName = __webpack_require__(202);
+var _setDisplayName = __webpack_require__(203);
 
 var _setDisplayName2 = _interopRequireDefault(_setDisplayName);
 
-var _wrapDisplayName = __webpack_require__(203);
+var _wrapDisplayName = __webpack_require__(204);
 
 var _wrapDisplayName2 = _interopRequireDefault(_wrapDisplayName);
 
@@ -43014,7 +43014,7 @@ var _EnhancedButton = __webpack_require__(56);
 
 var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-var _FontIcon = __webpack_require__(207);
+var _FontIcon = __webpack_require__(208);
 
 var _FontIcon2 = _interopRequireDefault(_FontIcon);
 
@@ -43022,7 +43022,7 @@ var _Tooltip = __webpack_require__(476);
 
 var _Tooltip2 = _interopRequireDefault(_Tooltip);
 
-var _childUtils = __webpack_require__(208);
+var _childUtils = __webpack_require__(209);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -44537,7 +44537,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _Stepper = __webpack_require__(485);
 
-var _RaisedButton = __webpack_require__(210);
+var _RaisedButton = __webpack_require__(211);
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
@@ -44742,7 +44742,7 @@ var _StepContent2 = __webpack_require__(489);
 
 var _StepContent3 = _interopRequireDefault(_StepContent2);
 
-var _StepLabel2 = __webpack_require__(209);
+var _StepLabel2 = __webpack_require__(210);
 
 var _StepLabel3 = _interopRequireDefault(_StepLabel2);
 
@@ -44985,7 +44985,7 @@ var _EnhancedButton = __webpack_require__(56);
 
 var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-var _StepLabel = __webpack_require__(209);
+var _StepLabel = __webpack_require__(210);
 
 var _StepLabel2 = _interopRequireDefault(_StepLabel);
 
@@ -46530,7 +46530,7 @@ var _reactEventListener = __webpack_require__(81);
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = __webpack_require__(64);
+var _keycode = __webpack_require__(66);
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -46542,7 +46542,7 @@ var _Overlay = __webpack_require__(497);
 
 var _Overlay2 = _interopRequireDefault(_Overlay);
 
-var _RenderToLayer = __webpack_require__(197);
+var _RenderToLayer = __webpack_require__(198);
 
 var _RenderToLayer2 = _interopRequireDefault(_RenderToLayer);
 
@@ -47445,7 +47445,7 @@ var _IconButton = __webpack_require__(84);
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
-var _menu = __webpack_require__(211);
+var _menu = __webpack_require__(212);
 
 var _menu2 = _interopRequireDefault(_menu);
 
@@ -47833,6 +47833,10 @@ var _ActionCreatorSendText = __webpack_require__(503);
 
 var _ActionCreatorSendText2 = _interopRequireDefault(_ActionCreatorSendText);
 
+var _ActionCreatorSendVoice = __webpack_require__(506);
+
+var _ActionCreatorSendVoice2 = _interopRequireDefault(_ActionCreatorSendVoice);
+
 var _Paper = __webpack_require__(25);
 
 var _Paper2 = _interopRequireDefault(_Paper);
@@ -47857,15 +47861,15 @@ var _chevronRight = __webpack_require__(216);
 
 var _chevronRight2 = _interopRequireDefault(_chevronRight);
 
-var _RadioButton = __webpack_require__(518);
+var _RadioButton = __webpack_require__(519);
 
-var _RaisedButton = __webpack_require__(210);
+var _RaisedButton = __webpack_require__(211);
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
-var _colors = __webpack_require__(63);
+var _colors = __webpack_require__(65);
 
-var _mic = __webpack_require__(523);
+var _mic = __webpack_require__(524);
 
 var _mic2 = _interopRequireDefault(_mic);
 
@@ -47877,9 +47881,11 @@ var _QueryStyle = __webpack_require__(218);
 
 var _QueryStyle2 = _interopRequireDefault(_QueryStyle);
 
-var _AIQueryStyle = __webpack_require__(524);
+var _AIQueryStyle = __webpack_require__(525);
 
 var _AIQueryStyle2 = _interopRequireDefault(_AIQueryStyle);
+
+__webpack_require__(536);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47894,8 +47900,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 //Material UI
 
-
 // Style Modules
+
+// Other libraries
 
 
 var AIQueryPanel = function (_React$Component) {
@@ -47919,9 +47926,12 @@ var AIQueryPanel = function (_React$Component) {
       micButtonDisabled: true,
       typeInputValue: '',
       backgroundRecordButtonColor: "#a4c639",
-      validateButtonDisabled: true,
+      validateButtonDisabled: false,
       micButtonDisabledColor: "#757575"
     };
+
+    _this.isRecording = false;
+    _this.stream = null;
 
     return _this;
   }
@@ -47932,12 +47942,19 @@ var AIQueryPanel = function (_React$Component) {
       switch (value) {
         case 'type':
           {
-            this.setState({ typeInputDisabled: false, micButtonDisabled: true });
+            this.setState({ typeInputDisabled: false });
+            if (!this.isRecording) {
+              this.setState({ micButtonDisabled: true });
+            }
           }
           break;
         case 'talk':
           {
-            this.setState({ typeInputDisabled: true, typeInputValue: '', micButtonDisabled: false });
+
+            this.setState({ typeInputDisabled: true, typeInputValue: '' });
+            if (!this.isRecording) {
+              this.setState({ micButtonDisabled: false });
+            }
           }
           break;
       };
@@ -47948,15 +47965,20 @@ var AIQueryPanel = function (_React$Component) {
       var _this2 = this;
 
       setTimeout(function () {
-        _this2.setState({ micButtonDisabledColor: "#757575", micButtonDisabled: false, backgroundRecordButtonColor: "#a4c639", validateButtonDisabled: false });
+        if (_this2.state.typeInputDisabled) {
+          _this2.setState({ micButtonDisabled: false });
+        };
+        _this2.setState({ micButtonDisabledColor: "#757575", validateButtonDisabled: false });
         _this2.stopLocalAudio();
+        _this2.isRecording = false;
       }, 10000);
     }
   }, {
     key: 'grabVoice',
     value: function grabVoice() {
+      this.isRecording = true;
       this.startLocalAudio();
-      this.setState({ micButtonDisabledColor: "#B71C1C", micButtonDisabled: true, backgroundRecordButtonColor: "#B71C1C", validateButtonDisabled: true });
+      this.setState({ micButtonDisabledColor: "#B71C1C", micButtonDisabled: true, validateButtonDisabled: true });
       this.timedButtonUndisabling();
     }
   }, {
@@ -47967,6 +47989,7 @@ var AIQueryPanel = function (_React$Component) {
   }, {
     key: 'gotLocalStream',
     value: function gotLocalStream(localStream) {
+      this.stream = localStream;
       console.log('localstream: ', localStream);
 
       // let localAudio = document.getElementById('aubrtest-localAudio');
@@ -47980,6 +48003,9 @@ var AIQueryPanel = function (_React$Component) {
     key: 'stopLocalAudio',
     value: function stopLocalAudio() {
       console.log('stop audio');
+      this.stream.getTracks().forEach(function (track) {
+        return track.stop();
+      });
     }
   }, {
     key: 'startLocalAudio',
@@ -48023,7 +48049,7 @@ var AIQueryPanel = function (_React$Component) {
   }, {
     key: 'validateDetails',
     value: function validateDetails() {
-      this.state.typeInputDisabled ? (0, _ActionCreatorSendText2.default)({ text: this.state.typeInputValue }) : (0, _ActionCreatorSendText2.default)({ text: this.state.typeInputValue });
+      !this.state.typeInputDisabled ? (0, _ActionCreatorSendText2.default)({ text: this.state.typeInputValue }) : (0, _ActionCreatorSendVoice2.default)({ voice: this.stream });
     }
   }, {
     key: 'render',
@@ -48147,15 +48173,15 @@ exports.default = function (objectToSubmit) {
   });
 };
 
-var _AppDispatcher = __webpack_require__(65);
+var _AppDispatcher = __webpack_require__(57);
 
 var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 
-var _StoreAddress = __webpack_require__(212);
+var _StoreAddress = __webpack_require__(132);
 
 var _StoreAddress2 = _interopRequireDefault(_StoreAddress);
 
-__webpack_require__(66);
+__webpack_require__(58);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48454,6 +48480,89 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+exports.default = function (objectToSubmit) {
+  console.log('sendVoice');
+  console.log('objectToSubmit: ', objectToSubmit);
+
+  var address = '/AIVoice';
+  fetch(address, {
+    method: 'POST',
+    body: JSON.stringify(objectToSubmit),
+    headers: new Headers({ 'Content-Type': 'audio/mpeg3' })
+  }).then(function (response) {
+    return response.json();
+  }).then(function (json) {
+    console.log('response: ', json);
+    var endObject = {
+      state: '',
+      sort: '',
+      direction: ''
+    };
+    var parsedJason = JSON.parse(json);
+    endObject.direction = parsedJason.entities.hasOwnProperty('direction_type') ? parsedJason.entities.direction_type[0].value : 'desc';
+    endObject.sort = parsedJason.entities.hasOwnProperty('sort_type') ? parsedJason.entities.sort_type[0].value : 'created';
+    endObject.state = parsedJason.entities.hasOwnProperty('state_type') ? parsedJason.entities.state_type[0].value : 'all';
+    sendToAPI(endObject);
+  }).catch(function (ex) {
+    console.error('parsing failed', ex);
+    return false;
+  });
+};
+
+var _AppDispatcher = __webpack_require__(57);
+
+var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
+
+var _StoreAddress = __webpack_require__(132);
+
+var _StoreAddress2 = _interopRequireDefault(_StoreAddress);
+
+__webpack_require__(58);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Stores
+function sendToAPI(filterObject) {
+  console.log('filterObject: ', filterObject);
+  var address = _StoreAddress2.default.getAddressRoot();
+  var url = new URL(address),
+      params = filterObject;
+  Object.keys(params).forEach(function (key) {
+    return url.searchParams.append(key, params[key]);
+  });
+  fetch(url, { method: 'GET' }).then(function (response) {
+    return response.json();
+  }).then(function (array) {
+    dispatchAction(array);
+  }).catch(function (ex) {
+    console.error('parsing failed', ex);
+    return false;
+  });
+}
+// Other libraries
+
+// Dispatcher
+
+
+function dispatchAction(parameter) {
+  var Action = {
+    type: 'update_github_array',
+    parameter: parameter
+  };
+  _AppDispatcher2.default.dispatch(Action);
+}
+
+/***/ }),
+/* 507 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _extends2 = __webpack_require__(11);
 
 var _extends3 = _interopRequireDefault(_extends2);
@@ -48506,19 +48615,19 @@ var _transitions = __webpack_require__(13);
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _EnhancedTextarea = __webpack_require__(507);
+var _EnhancedTextarea = __webpack_require__(508);
 
 var _EnhancedTextarea2 = _interopRequireDefault(_EnhancedTextarea);
 
-var _TextFieldHint = __webpack_require__(508);
+var _TextFieldHint = __webpack_require__(509);
 
 var _TextFieldHint2 = _interopRequireDefault(_TextFieldHint);
 
-var _TextFieldLabel = __webpack_require__(509);
+var _TextFieldLabel = __webpack_require__(510);
 
 var _TextFieldLabel2 = _interopRequireDefault(_TextFieldLabel);
 
-var _TextFieldUnderline = __webpack_require__(510);
+var _TextFieldUnderline = __webpack_require__(511);
 
 var _TextFieldUnderline2 = _interopRequireDefault(_TextFieldUnderline);
 
@@ -49041,7 +49150,7 @@ TextField.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = TextField;
 
 /***/ }),
-/* 507 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49304,7 +49413,7 @@ EnhancedTextarea.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ?
 exports.default = EnhancedTextarea;
 
 /***/ }),
-/* 508 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49390,7 +49499,7 @@ TextFieldHint.defaultProps = {
 exports.default = TextFieldHint;
 
 /***/ }),
-/* 509 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49513,7 +49622,7 @@ TextFieldLabel.defaultProps = {
 exports.default = TextFieldLabel;
 
 /***/ }),
-/* 510 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49658,7 +49767,7 @@ TextFieldUnderline.defaultProps = defaultProps;
 exports.default = TextFieldUnderline;
 
 /***/ }),
-/* 511 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49712,7 +49821,7 @@ var _TextField = __webpack_require__(213);
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
-var _DropDownMenu = __webpack_require__(512);
+var _DropDownMenu = __webpack_require__(513);
 
 var _DropDownMenu2 = _interopRequireDefault(_DropDownMenu);
 
@@ -49985,7 +50094,7 @@ SelectField.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = SelectField;
 
 /***/ }),
-/* 512 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49996,11 +50105,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.MenuItem = exports.DropDownMenu = undefined;
 
-var _DropDownMenu2 = __webpack_require__(513);
+var _DropDownMenu2 = __webpack_require__(514);
 
 var _DropDownMenu3 = _interopRequireDefault(_DropDownMenu2);
 
-var _MenuItem2 = __webpack_require__(201);
+var _MenuItem2 = __webpack_require__(202);
 
 var _MenuItem3 = _interopRequireDefault(_MenuItem2);
 
@@ -50011,7 +50120,7 @@ exports.MenuItem = _MenuItem3.default;
 exports.default = _DropDownMenu3.default;
 
 /***/ }),
-/* 513 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50069,7 +50178,7 @@ var _transitions = __webpack_require__(13);
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _arrowDropDown = __webpack_require__(514);
+var _arrowDropDown = __webpack_require__(515);
 
 var _arrowDropDown2 = _interopRequireDefault(_arrowDropDown);
 
@@ -50077,7 +50186,7 @@ var _Menu = __webpack_require__(127);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _ClearFix = __webpack_require__(515);
+var _ClearFix = __webpack_require__(516);
 
 var _ClearFix2 = _interopRequireDefault(_ClearFix);
 
@@ -50085,11 +50194,11 @@ var _Popover = __webpack_require__(126);
 
 var _Popover2 = _interopRequireDefault(_Popover);
 
-var _PopoverAnimationVertical = __webpack_require__(199);
+var _PopoverAnimationVertical = __webpack_require__(200);
 
 var _PopoverAnimationVertical2 = _interopRequireDefault(_PopoverAnimationVertical);
 
-var _keycode = __webpack_require__(64);
+var _keycode = __webpack_require__(66);
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -50609,7 +50718,7 @@ DropDownMenu.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = DropDownMenu;
 
 /***/ }),
-/* 514 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50647,7 +50756,7 @@ NavigationArrowDropDown.muiName = 'SvgIcon';
 exports.default = NavigationArrowDropDown;
 
 /***/ }),
-/* 515 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50673,7 +50782,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _BeforeAfterWrapper = __webpack_require__(516);
+var _BeforeAfterWrapper = __webpack_require__(517);
 
 var _BeforeAfterWrapper2 = _interopRequireDefault(_BeforeAfterWrapper);
 
@@ -50719,7 +50828,7 @@ ClearFix.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = ClearFix;
 
 /***/ }),
-/* 516 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50879,7 +50988,7 @@ BeforeAfterWrapper.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production"
 exports.default = BeforeAfterWrapper;
 
 /***/ }),
-/* 517 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50939,7 +51048,7 @@ var _EnhancedButton = __webpack_require__(56);
 
 var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-var _FontIcon = __webpack_require__(207);
+var _FontIcon = __webpack_require__(208);
 
 var _FontIcon2 = _interopRequireDefault(_FontIcon);
 
@@ -50947,7 +51056,7 @@ var _Paper = __webpack_require__(25);
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
-var _childUtils = __webpack_require__(208);
+var _childUtils = __webpack_require__(209);
 
 var _warning = __webpack_require__(24);
 
@@ -51277,7 +51386,7 @@ FloatingActionButton.propTypes = Object({"CLIENT":true}).NODE_ENV !== "productio
 exports.default = FloatingActionButton;
 
 /***/ }),
-/* 518 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51292,7 +51401,7 @@ var _RadioButton2 = __webpack_require__(217);
 
 var _RadioButton3 = _interopRequireDefault(_RadioButton2);
 
-var _RadioButtonGroup2 = __webpack_require__(522);
+var _RadioButtonGroup2 = __webpack_require__(523);
 
 var _RadioButtonGroup3 = _interopRequireDefault(_RadioButtonGroup2);
 
@@ -51303,7 +51412,7 @@ exports.RadioButtonGroup = _RadioButtonGroup3.default;
 exports.default = _RadioButton3.default;
 
 /***/ }),
-/* 519 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51357,7 +51466,7 @@ var _reactEventListener = __webpack_require__(81);
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = __webpack_require__(64);
+var _keycode = __webpack_require__(66);
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -51365,11 +51474,11 @@ var _transitions = __webpack_require__(13);
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _FocusRipple = __webpack_require__(205);
+var _FocusRipple = __webpack_require__(206);
 
 var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 
-var _TouchRipple = __webpack_require__(206);
+var _TouchRipple = __webpack_require__(207);
 
 var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 
@@ -51773,7 +51882,7 @@ EnhancedSwitch.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ? {
 exports.default = EnhancedSwitch;
 
 /***/ }),
-/* 520 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51811,7 +51920,7 @@ ToggleRadioButtonUnchecked.muiName = 'SvgIcon';
 exports.default = ToggleRadioButtonUnchecked;
 
 /***/ }),
-/* 521 */
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51849,7 +51958,7 @@ ToggleRadioButtonChecked.muiName = 'SvgIcon';
 exports.default = ToggleRadioButtonChecked;
 
 /***/ }),
-/* 522 */
+/* 523 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52094,7 +52203,7 @@ RadioButtonGroup.propTypes = Object({"CLIENT":true}).NODE_ENV !== "production" ?
 exports.default = RadioButtonGroup;
 
 /***/ }),
-/* 523 */
+/* 524 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52132,7 +52241,7 @@ AvMic.muiName = 'SvgIcon';
 exports.default = AvMic;
 
 /***/ }),
-/* 524 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52181,7 +52290,7 @@ var style = {
 exports.default = style;
 
 /***/ }),
-/* 525 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52229,7 +52338,7 @@ var _QueryStyle = __webpack_require__(218);
 
 var _QueryStyle2 = _interopRequireDefault(_QueryStyle);
 
-var _ManualQueryStyle = __webpack_require__(526);
+var _ManualQueryStyle = __webpack_require__(527);
 
 var _ManualQueryStyle2 = _interopRequireDefault(_ManualQueryStyle);
 
@@ -52450,7 +52559,7 @@ var ManualQueryPanel = function (_React$Component) {
 exports.default = ManualQueryPanel;
 
 /***/ }),
-/* 526 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52478,7 +52587,7 @@ var style = {
 exports.default = style;
 
 /***/ }),
-/* 527 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52494,7 +52603,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _radium = __webpack_require__(164);
+var _radium = __webpack_require__(165);
 
 var _radium2 = _interopRequireDefault(_radium);
 
@@ -52506,9 +52615,9 @@ var _Paper = __webpack_require__(25);
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
-var _List = __webpack_require__(528);
+var _List = __webpack_require__(529);
 
-var _StoreGithub = __webpack_require__(530);
+var _StoreGithub = __webpack_require__(531);
 
 var _StoreGithub2 = _interopRequireDefault(_StoreGithub);
 
@@ -52516,7 +52625,7 @@ var _GeneralStyle = __webpack_require__(42);
 
 var _GeneralStyle2 = _interopRequireDefault(_GeneralStyle);
 
-var _ResultStyle = __webpack_require__(531);
+var _ResultStyle = __webpack_require__(532);
 
 var _ResultStyle2 = _interopRequireDefault(_ResultStyle);
 
@@ -52633,7 +52742,7 @@ var ResultPanel = function (_React$Component) {
 exports.default = (0, _radium2.default)(ResultPanel);
 
 /***/ }),
-/* 528 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52648,11 +52757,11 @@ var _List2 = __webpack_require__(129);
 
 var _List3 = _interopRequireDefault(_List2);
 
-var _ListItem2 = __webpack_require__(204);
+var _ListItem2 = __webpack_require__(205);
 
 var _ListItem3 = _interopRequireDefault(_ListItem2);
 
-var _makeSelectable2 = __webpack_require__(529);
+var _makeSelectable2 = __webpack_require__(530);
 
 var _makeSelectable3 = _interopRequireDefault(_makeSelectable2);
 
@@ -52664,7 +52773,7 @@ exports.makeSelectable = _makeSelectable3.default;
 exports.default = _List3.default;
 
 /***/ }),
-/* 529 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52842,7 +52951,7 @@ exports.makeSelectable = makeSelectable;
 exports.default = makeSelectable;
 
 /***/ }),
-/* 530 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52854,11 +52963,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _AppDispatcher = __webpack_require__(65);
+var _AppDispatcher = __webpack_require__(57);
 
 var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 
-var _events = __webpack_require__(132);
+var _events = __webpack_require__(133);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -52926,7 +53035,7 @@ var StoreGithub = function (_EventEmitter) {
 exports.default = new StoreGithub();
 
 /***/ }),
-/* 531 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52958,7 +53067,7 @@ var style = {
 exports.default = style;
 
 /***/ }),
-/* 532 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52998,7 +53107,7 @@ var style = {
 exports.default = style;
 
 /***/ }),
-/* 533 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53020,16 +53129,16 @@ exports.default = function () {
   });
 };
 
-var _ActionCreatorSetApiAddress = __webpack_require__(534);
+var _ActionCreatorSetApiAddress = __webpack_require__(535);
 
 var _ActionCreatorSetApiAddress2 = _interopRequireDefault(_ActionCreatorSetApiAddress);
 
-__webpack_require__(66);
+__webpack_require__(58);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 534 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53049,11 +53158,5592 @@ exports.default = function (parameter) {
   _AppDispatcher2.default.dispatch(Action);
 };
 
-var _AppDispatcher = __webpack_require__(65);
+var _AppDispatcher = __webpack_require__(57);
 
 var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+/* 536 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global, process) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+// Last time updated: 2017-12-13 5:07:29 AM UTC
+
+// ________________
+// RecordRTC v5.4.6
+
+// Open-Sourced: https://github.com/muaz-khan/RecordRTC
+
+// --------------------------------------------------
+// Muaz Khan     - www.MuazKhan.com
+// MIT License   - www.WebRTC-Experiment.com/licence
+// --------------------------------------------------
+
+// ____________
+// RecordRTC.js
+
+/**
+ * {@link https://github.com/muaz-khan/RecordRTC|RecordRTC} is a WebRTC JavaScript library for audio/video as well as screen activity recording. It supports Chrome, Firefox, Opera, Android, and Microsoft Edge. Platforms: Linux, Mac and Windows. 
+ * @summary Record audio, video or screen inside the browser.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef RecordRTC
+ * @class
+ * @example
+ * var recorder = RecordRTC(mediaStream or [arrayOfMediaStream], {
+ *     type: 'video', // audio or video or gif or canvas
+ *     recorderType: MediaStreamRecorder || CanvasRecorder || StereoAudioRecorder || Etc
+ * });
+ * recorder.startRecording();
+ * @see For further information:
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - Single media-stream object, array of media-streams, html-canvas-element, etc.
+ * @param {object} config - {type:"video", recorderType: MediaStreamRecorder, disableLogs: true, numberOfAudioChannels: 1, bufferSize: 0, sampleRate: 0, desiredSampRate: 16000, video: HTMLVideoElement, etc.}
+ */
+
+function RecordRTC(mediaStream, config) {
+    if (!mediaStream) {
+        throw 'First parameter is required.';
+    }
+
+    config = config || {
+        type: 'video'
+    };
+
+    config = new RecordRTCConfiguration(mediaStream, config);
+
+    // a reference to user's recordRTC object
+    var self = this;
+
+    function startRecording(config2) {
+        if (!!config2) {
+            // allow users to set options using startRecording method
+            // config2 is similar to main "config" object (second parameter over RecordRTC constructor)
+            config = new RecordRTCConfiguration(mediaStream, config2);
+        }
+
+        if (!config.disableLogs) {
+            console.log('started recording ' + config.type + ' stream.');
+        }
+
+        if (mediaRecorder) {
+            mediaRecorder.clearRecordedData();
+            mediaRecorder.record();
+
+            setState('recording');
+
+            if (self.recordingDuration) {
+                handleRecordingDuration();
+            }
+            return self;
+        }
+
+        initRecorder(function() {
+            if (self.recordingDuration) {
+                handleRecordingDuration();
+            }
+        });
+
+        return self;
+    }
+
+    function initRecorder(initCallback) {
+        if (initCallback) {
+            config.initCallback = function() {
+                initCallback();
+                initCallback = config.initCallback = null; // recorder.initRecorder should be call-backed once.
+            };
+        }
+
+        var Recorder = new GetRecorderType(mediaStream, config);
+
+        mediaRecorder = new Recorder(mediaStream, config);
+        mediaRecorder.record();
+
+        setState('recording');
+
+        if (!config.disableLogs) {
+            console.log('Initialized recorderType:', mediaRecorder.constructor.name, 'for output-type:', config.type);
+        }
+    }
+
+    function stopRecording(callback) {
+        callback = callback || function() {};
+
+        if (!mediaRecorder) {
+            warningLog();
+            return;
+        }
+
+        if (self.state === 'paused') {
+            self.resumeRecording();
+
+            setTimeout(function() {
+                stopRecording(callback);
+            }, 1);
+            return;
+        }
+
+        if (self.state !== 'recording' && !config.disableLogs) {
+            console.warn('Recording state should be: "recording", however current state is: ', self.state);
+        }
+
+        if (!config.disableLogs) {
+            console.log('Stopped recording ' + config.type + ' stream.');
+        }
+
+        if (config.type !== 'gif') {
+            mediaRecorder.stop(_callback);
+        } else {
+            mediaRecorder.stop();
+            _callback();
+        }
+
+        setState('stopped');
+
+        function _callback(__blob) {
+            if (!mediaRecorder) {
+                if (typeof callback.call === 'function') {
+                    callback.call(self, '');
+                } else {
+                    callback('');
+                }
+                return;
+            }
+
+            Object.keys(mediaRecorder).forEach(function(key) {
+                if (typeof mediaRecorder[key] === 'function') {
+                    return;
+                }
+
+                self[key] = mediaRecorder[key];
+            });
+
+            var blob = mediaRecorder.blob;
+
+            if (!blob) {
+                if (__blob) {
+                    mediaRecorder.blob = blob = __blob;
+                } else {
+                    throw 'Recording failed.';
+                }
+            }
+
+            if (blob && !config.disableLogs) {
+                console.log(blob.type, '->', bytesToSize(blob.size));
+            }
+
+            if (callback) {
+                var url = URL.createObjectURL(blob);
+
+                if (typeof callback.call === 'function') {
+                    callback.call(self, url);
+                } else {
+                    callback(url);
+                }
+            }
+
+            if (!config.autoWriteToDisk) {
+                return;
+            }
+
+            getDataURL(function(dataURL) {
+                var parameter = {};
+                parameter[config.type + 'Blob'] = dataURL;
+                DiskStorage.Store(parameter);
+            });
+        }
+    }
+
+    function pauseRecording() {
+        if (!mediaRecorder) {
+            warningLog();
+            return;
+        }
+
+        if (self.state !== 'recording') {
+            if (!config.disableLogs) {
+                console.warn('Unable to pause the recording. Recording state: ', self.state);
+            }
+            return;
+        }
+
+        setState('paused');
+
+        mediaRecorder.pause();
+
+        if (!config.disableLogs) {
+            console.log('Paused recording.');
+        }
+    }
+
+    function resumeRecording() {
+        if (!mediaRecorder) {
+            warningLog();
+            return;
+        }
+
+        if (self.state !== 'paused') {
+            if (!config.disableLogs) {
+                console.warn('Unable to resume the recording. Recording state: ', self.state);
+            }
+            return;
+        }
+
+        setState('recording');
+
+        // not all libs have this method yet
+        mediaRecorder.resume();
+
+        if (!config.disableLogs) {
+            console.log('Resumed recording.');
+        }
+    }
+
+    function readFile(_blob) {
+        postMessage(new FileReaderSync().readAsDataURL(_blob));
+    }
+
+    function getDataURL(callback, _mediaRecorder) {
+        if (!callback) {
+            throw 'Pass a callback function over getDataURL.';
+        }
+
+        var blob = _mediaRecorder ? _mediaRecorder.blob : (mediaRecorder || {}).blob;
+
+        if (!blob) {
+            if (!config.disableLogs) {
+                console.warn('Blob encoder did not finish its job yet.');
+            }
+
+            setTimeout(function() {
+                getDataURL(callback, _mediaRecorder);
+            }, 1000);
+            return;
+        }
+
+        if (typeof Worker !== 'undefined' && !navigator.mozGetUserMedia) {
+            var webWorker = processInWebWorker(readFile);
+
+            webWorker.onmessage = function(event) {
+                callback(event.data);
+            };
+
+            webWorker.postMessage(blob);
+        } else {
+            var reader = new FileReader();
+            reader.readAsDataURL(blob);
+            reader.onload = function(event) {
+                callback(event.target.result);
+            };
+        }
+
+        function processInWebWorker(_function) {
+            var blob = URL.createObjectURL(new Blob([_function.toString(),
+                'this.onmessage =  function (e) {' + _function.name + '(e.data);}'
+            ], {
+                type: 'application/javascript'
+            }));
+
+            var worker = new Worker(blob);
+            URL.revokeObjectURL(blob);
+            return worker;
+        }
+    }
+
+    function handleRecordingDuration(counter) {
+        counter = counter || 0;
+
+        if (self.state === 'paused') {
+            setTimeout(function() {
+                handleRecordingDuration(counter);
+            }, 1000);
+            return;
+        }
+
+        if (self.state === 'stopped') {
+            return;
+        }
+
+        if (counter >= self.recordingDuration) {
+            stopRecording(self.onRecordingStopped);
+            return;
+        }
+
+        counter += 1000; // 1-second
+
+        setTimeout(function() {
+            handleRecordingDuration(counter);
+        }, 1000);
+    }
+
+    function setState(state) {
+        if (!self) {
+            return;
+        }
+
+        self.state = state;
+
+        if (typeof self.onStateChanged.call === 'function') {
+            self.onStateChanged.call(self, state);
+        } else {
+            self.onStateChanged(state);
+        }
+    }
+
+    var WARNING = 'It seems that recorder is destroyed or "startRecording" is not invoked for ' + config.type + ' recorder.';
+
+    function warningLog() {
+        if (config.disableLogs === true) {
+            return;
+        }
+
+        console.warn(WARNING);
+    }
+
+    var mediaRecorder;
+
+    var returnObject = {
+        /**
+         * This method starts the recording.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * var recorder = RecordRTC(mediaStream, {
+         *     type: 'video'
+         * });
+         * recorder.startRecording();
+         */
+        startRecording: startRecording,
+
+        /**
+         * This method stops the recording. It is strongly recommended to get "blob" or "URI" inside the callback to make sure all recorders finished their job.
+         * @param {function} callback - Callback to get the recorded blob.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.stopRecording(function() {
+         *     // use either "this" or "recorder" object; both are identical
+         *     video.src = this.toURL();
+         *     var blob = this.getBlob();
+         * });
+         */
+        stopRecording: stopRecording,
+
+        /**
+         * This method pauses the recording. You can resume recording using "resumeRecording" method.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @todo Firefox is unable to pause the recording. Fix it.
+         * @example
+         * recorder.pauseRecording();  // pause the recording
+         * recorder.resumeRecording(); // resume again
+         */
+        pauseRecording: pauseRecording,
+
+        /**
+         * This method resumes the recording.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.pauseRecording();  // first of all, pause the recording
+         * recorder.resumeRecording(); // now resume it
+         */
+        resumeRecording: resumeRecording,
+
+        /**
+         * This method initializes the recording.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @todo This method should be deprecated.
+         * @example
+         * recorder.initRecorder();
+         */
+        initRecorder: initRecorder,
+
+        /**
+         * Ask RecordRTC to auto-stop the recording after 5 minutes.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * var fiveMinutes = 5 * 1000 * 60;
+         * recorder.setRecordingDuration(fiveMinutes, function() {
+         *    var blob = this.getBlob();
+         *    video.src = this.toURL();
+         * });
+         * 
+         * // or otherwise
+         * recorder.setRecordingDuration(fiveMinutes).onRecordingStopped(function() {
+         *    var blob = this.getBlob();
+         *    video.src = this.toURL();
+         * });
+         */
+        setRecordingDuration: function(recordingDuration, callback) {
+            if (typeof recordingDuration === 'undefined') {
+                throw 'recordingDuration is required.';
+            }
+
+            if (typeof recordingDuration !== 'number') {
+                throw 'recordingDuration must be a number.';
+            }
+
+            self.recordingDuration = recordingDuration;
+            self.onRecordingStopped = callback || function() {};
+
+            return {
+                onRecordingStopped: function(callback) {
+                    self.onRecordingStopped = callback;
+                }
+            };
+        },
+
+        /**
+         * This method can be used to clear/reset all the recorded data.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @todo Figure out the difference between "reset" and "clearRecordedData" methods.
+         * @example
+         * recorder.clearRecordedData();
+         */
+        clearRecordedData: function() {
+            if (!mediaRecorder) {
+                warningLog();
+                return;
+            }
+
+            mediaRecorder.clearRecordedData();
+
+            if (!config.disableLogs) {
+                console.log('Cleared old recorded data.');
+            }
+        },
+
+        /**
+         * Get the recorded blob. Use this method inside the "stopRecording" callback.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.stopRecording(function() {
+         *     var blob = this.getBlob();
+         *
+         *     var file = new File([blob], 'filename.webm', {
+         *         type: 'video/webm'
+         *     });
+         *
+         *     var formData = new FormData();
+         *     formData.append('file', file); // upload "File" object rather than a "Blob"
+         *     uploadToServer(formData);
+         * });
+         * @returns {Blob} Returns recorded data as "Blob" object.
+         */
+        getBlob: function() {
+            if (!mediaRecorder) {
+                warningLog();
+                return;
+            }
+
+            return mediaRecorder.blob;
+        },
+
+        /**
+         * Get data-URI instead of Blob.
+         * @param {function} callback - Callback to get the Data-URI.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.stopRecording(function() {
+         *     recorder.getDataURL(function(dataURI) {
+         *         video.src = dataURI;
+         *     });
+         * });
+         */
+        getDataURL: getDataURL,
+
+        /**
+         * Get virtual/temporary URL. Usage of this URL is limited to current tab.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.stopRecording(function() {
+         *     video.src = this.toURL();
+         * });
+         * @returns {String} Returns a virtual/temporary URL for the recorded "Blob".
+         */
+        toURL: function() {
+            if (!mediaRecorder) {
+                warningLog();
+                return;
+            }
+
+            return URL.createObjectURL(mediaRecorder.blob);
+        },
+
+        /**
+         * Get internal recording object (i.e. internal module) e.g. MutliStreamRecorder, MediaStreamRecorder, StereoAudioRecorder or WhammyRecorder etc.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * var internal = recorder.getInternalRecorder();
+         * if(internal instanceof MultiStreamRecorder) {
+         *     internal.addStreams([newAudioStream]);
+         *     internal.resetVideoStreams([screenStream]);
+         * }
+         * @returns {Object} Returns internal recording object.
+         */
+        getInternalRecorder: function() {
+            return mediaRecorder;
+        },
+
+        /**
+         * Invoke save-as dialog to save the recorded blob into your disk.
+         * @param {string} fileName - Set your own file name.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.stopRecording(function() {
+         *     this.save('file-name');
+         *
+         *     // or manually:
+         *     invokeSaveAsDialog(this.getBlob(), 'filename.webm');
+         * });
+         */
+        save: function(fileName) {
+            if (!mediaRecorder) {
+                warningLog();
+                return;
+            }
+
+            invokeSaveAsDialog(mediaRecorder.blob, fileName);
+        },
+
+        /**
+         * This method gets a blob from indexed-DB storage.
+         * @param {function} callback - Callback to get the recorded blob.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.getFromDisk(function(dataURL) {
+         *     video.src = dataURL;
+         * });
+         */
+        getFromDisk: function(callback) {
+            if (!mediaRecorder) {
+                warningLog();
+                return;
+            }
+
+            RecordRTC.getFromDisk(config.type, callback);
+        },
+
+        /**
+         * This method appends an array of webp images to the recorded video-blob. It takes an "array" object.
+         * @type {Array.<Array>}
+         * @param {Array} arrayOfWebPImages - Array of webp images.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @todo This method should be deprecated.
+         * @example
+         * var arrayOfWebPImages = [];
+         * arrayOfWebPImages.push({
+         *     duration: index,
+         *     image: 'data:image/webp;base64,...'
+         * });
+         * recorder.setAdvertisementArray(arrayOfWebPImages);
+         */
+        setAdvertisementArray: function(arrayOfWebPImages) {
+            config.advertisement = [];
+
+            var length = arrayOfWebPImages.length;
+            for (var i = 0; i < length; i++) {
+                config.advertisement.push({
+                    duration: i,
+                    image: arrayOfWebPImages[i]
+                });
+            }
+        },
+
+        /**
+         * It is equivalent to <code class="str">"recorder.getBlob()"</code> method. Usage of "getBlob" is recommended, though.
+         * @property {Blob} blob - Recorded Blob can be accessed using this property.
+         * @memberof RecordRTC
+         * @instance
+         * @readonly
+         * @example
+         * recorder.stopRecording(function() {
+         *     var blob = this.blob;
+         *
+         *     // below one is recommended
+         *     var blob = this.getBlob();
+         * });
+         */
+        blob: null,
+
+        /**
+         * This works only with {recorderType:StereoAudioRecorder}. Use this property on "stopRecording" to verify the encoder's sample-rates.
+         * @property {number} bufferSize - Buffer-size used to encode the WAV container
+         * @memberof RecordRTC
+         * @instance
+         * @readonly
+         * @example
+         * recorder.stopRecording(function() {
+         *     alert('Recorder used this buffer-size: ' + this.bufferSize);
+         * });
+         */
+        bufferSize: 0,
+
+        /**
+         * This works only with {recorderType:StereoAudioRecorder}. Use this property on "stopRecording" to verify the encoder's sample-rates.
+         * @property {number} sampleRate - Sample-rates used to encode the WAV container
+         * @memberof RecordRTC
+         * @instance
+         * @readonly
+         * @example
+         * recorder.stopRecording(function() {
+         *     alert('Recorder used these sample-rates: ' + this.sampleRate);
+         * });
+         */
+        sampleRate: 0,
+
+        /**
+         * {recorderType:StereoAudioRecorder} returns ArrayBuffer object.
+         * @property {ArrayBuffer} buffer - Audio ArrayBuffer, supported only in Chrome.
+         * @memberof RecordRTC
+         * @instance
+         * @readonly
+         * @example
+         * recorder.stopRecording(function() {
+         *     var arrayBuffer = this.buffer;
+         *     alert(arrayBuffer.byteLength);
+         * });
+         */
+        buffer: null,
+
+        /**
+         * This method resets the recorder. So that you can reuse single recorder instance many times.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.reset();
+         * recorder.startRecording();
+         */
+        reset: function() {
+            if (mediaRecorder && typeof mediaRecorder.clearRecordedData === 'function') {
+                mediaRecorder.clearRecordedData();
+            }
+            mediaRecorder = null;
+            setState('inactive');
+            self.blob = null;
+        },
+
+        /**
+         * This method is called whenever recorder's state changes. Use this as an "event".
+         * @property {String} state - A recorder's state can be: recording, paused, stopped or inactive.
+         * @method
+         * @memberof RecordRTC
+         * @instance
+         * @example
+         * recorder.onStateChanged = function(state) {
+         *     console.log('Recorder state: ', state);
+         * };
+         */
+        onStateChanged: function(state) {
+            if (!config.disableLogs) {
+                console.log('Recorder state changed:', state);
+            }
+        },
+
+        /**
+         * A recorder can have inactive, recording, paused or stopped states.
+         * @property {String} state - A recorder's state can be: recording, paused, stopped or inactive.
+         * @memberof RecordRTC
+         * @static
+         * @readonly
+         * @example
+         * // this looper function will keep you updated about the recorder's states.
+         * (function looper() {
+         *     document.querySelector('h1').innerHTML = 'Recorder's state is: ' + recorder.state;
+         *     if(recorder.state === 'stopped') return; // ignore+stop
+         *     setTimeout(looper, 1000); // update after every 3-seconds
+         * })();
+         * recorder.startRecording();
+         */
+        state: 'inactive',
+
+        /**
+         * Get recorder's readonly state.
+         * @method
+         * @memberof RecordRTC
+         * @example
+         * var state = recorder.getState();
+         * @returns {String} Returns recording state.
+         */
+        getState: function() {
+            return self.state;
+        },
+
+        /**
+         * Destroy RecordRTC instance. Clear all recorders and objects.
+         * @method
+         * @memberof RecordRTC
+         * @example
+         * recorder.destroy();
+         */
+        destroy: function() {
+            var disableLogs = config.disableLogs;
+
+            config.disableLogs = true;
+            self.reset();
+            config = {};
+            setState('destroyed');
+            returnObject = self = null;
+
+            if (Storage.AudioContextConstructor) {
+                Storage.AudioContextConstructor.close();
+                Storage.AudioContextConstructor = null;
+            }
+
+            if (!disableLogs) {
+                console.warn('RecordRTC is destroyed.');
+            }
+        },
+
+        /**
+         * RecordRTC version number
+         * @property {String} version - Release version number.
+         * @memberof RecordRTC
+         * @static
+         * @readonly
+         * @example
+         * alert(recorder.version);
+         */
+        version: '5.4.6'
+    };
+
+    if (!this) {
+        self = returnObject;
+        return returnObject;
+    }
+
+    // if someone wants to use RecordRTC with the "new" keyword.
+    for (var prop in returnObject) {
+        this[prop] = returnObject[prop];
+    }
+
+    self = this;
+
+    return returnObject;
+}
+
+RecordRTC.version = '5.4.6';
+
+if (true /* && !!module.exports*/ ) {
+    module.exports = RecordRTC;
+}
+
+if (true) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+        return RecordRTC;
+    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}
+
+RecordRTC.getFromDisk = function(type, callback) {
+    if (!callback) {
+        throw 'callback is mandatory.';
+    }
+
+    console.log('Getting recorded ' + (type === 'all' ? 'blobs' : type + ' blob ') + ' from disk!');
+    DiskStorage.Fetch(function(dataURL, _type) {
+        if (type !== 'all' && _type === type + 'Blob' && callback) {
+            callback(dataURL);
+        }
+
+        if (type === 'all' && callback) {
+            callback(dataURL, _type.replace('Blob', ''));
+        }
+    });
+};
+
+/**
+ * This method can be used to store recorded blobs into IndexedDB storage.
+ * @param {object} options - {audio: Blob, video: Blob, gif: Blob}
+ * @method
+ * @memberof RecordRTC
+ * @example
+ * RecordRTC.writeToDisk({
+ *     audio: audioBlob,
+ *     video: videoBlob,
+ *     gif  : gifBlob
+ * });
+ */
+RecordRTC.writeToDisk = function(options) {
+    console.log('Writing recorded blob(s) to disk!');
+    options = options || {};
+    if (options.audio && options.video && options.gif) {
+        options.audio.getDataURL(function(audioDataURL) {
+            options.video.getDataURL(function(videoDataURL) {
+                options.gif.getDataURL(function(gifDataURL) {
+                    DiskStorage.Store({
+                        audioBlob: audioDataURL,
+                        videoBlob: videoDataURL,
+                        gifBlob: gifDataURL
+                    });
+                });
+            });
+        });
+    } else if (options.audio && options.video) {
+        options.audio.getDataURL(function(audioDataURL) {
+            options.video.getDataURL(function(videoDataURL) {
+                DiskStorage.Store({
+                    audioBlob: audioDataURL,
+                    videoBlob: videoDataURL
+                });
+            });
+        });
+    } else if (options.audio && options.gif) {
+        options.audio.getDataURL(function(audioDataURL) {
+            options.gif.getDataURL(function(gifDataURL) {
+                DiskStorage.Store({
+                    audioBlob: audioDataURL,
+                    gifBlob: gifDataURL
+                });
+            });
+        });
+    } else if (options.video && options.gif) {
+        options.video.getDataURL(function(videoDataURL) {
+            options.gif.getDataURL(function(gifDataURL) {
+                DiskStorage.Store({
+                    videoBlob: videoDataURL,
+                    gifBlob: gifDataURL
+                });
+            });
+        });
+    } else if (options.audio) {
+        options.audio.getDataURL(function(audioDataURL) {
+            DiskStorage.Store({
+                audioBlob: audioDataURL
+            });
+        });
+    } else if (options.video) {
+        options.video.getDataURL(function(videoDataURL) {
+            DiskStorage.Store({
+                videoBlob: videoDataURL
+            });
+        });
+    } else if (options.gif) {
+        options.gif.getDataURL(function(gifDataURL) {
+            DiskStorage.Store({
+                gifBlob: gifDataURL
+            });
+        });
+    }
+};
+
+// __________________________
+// RecordRTC-Configuration.js
+
+/**
+ * {@link RecordRTCConfiguration} is an inner/private helper for {@link RecordRTC}.
+ * @summary It configures the 2nd parameter passed over {@link RecordRTC} and returns a valid "config" object.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef RecordRTCConfiguration
+ * @class
+ * @example
+ * var options = RecordRTCConfiguration(mediaStream, options);
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.
+ * @param {object} config - {type:"video", disableLogs: true, numberOfAudioChannels: 1, bufferSize: 0, sampleRate: 0, video: HTMLVideoElement, getNativeBlob:true, etc.}
+ */
+
+function RecordRTCConfiguration(mediaStream, config) {
+    if (!config.recorderType && !config.type) {
+        if (!!config.audio && !!config.video) {
+            config.type = 'video';
+        } else if (!!config.audio && !config.video) {
+            config.type = 'audio';
+        }
+    }
+
+    if (config.recorderType && !config.type) {
+        if (config.recorderType === WhammyRecorder || config.recorderType === CanvasRecorder) {
+            config.type = 'video';
+        } else if (config.recorderType === GifRecorder) {
+            config.type = 'gif';
+        } else if (config.recorderType === StereoAudioRecorder) {
+            config.type = 'audio';
+        } else if (config.recorderType === MediaStreamRecorder) {
+            if (mediaStream.getAudioTracks().length && mediaStream.getVideoTracks().length) {
+                config.type = 'video';
+            } else if (mediaStream.getAudioTracks().length && !mediaStream.getVideoTracks().length) {
+                config.type = 'audio';
+            } else if (!mediaStream.getAudioTracks().length && mediaStream.getVideoTracks().length) {
+                config.type = 'audio';
+            } else {
+                // config.type = 'UnKnown';
+            }
+        }
+    }
+
+    if (typeof MediaStreamRecorder !== 'undefined' && typeof MediaRecorder !== 'undefined' && 'requestData' in MediaRecorder.prototype) {
+        if (!config.mimeType) {
+            config.mimeType = 'video/webm';
+        }
+
+        if (!config.type) {
+            config.type = config.mimeType.split('/')[0];
+        }
+
+        if (!config.bitsPerSecond) {
+            // config.bitsPerSecond = 128000;
+        }
+    }
+
+    // consider default type=audio
+    if (!config.type) {
+        if (config.mimeType) {
+            config.type = config.mimeType.split('/')[0];
+        }
+        if (!config.type) {
+            config.type = 'audio';
+        }
+    }
+
+    return config;
+}
+
+// __________________
+// GetRecorderType.js
+
+/**
+ * {@link GetRecorderType} is an inner/private helper for {@link RecordRTC}.
+ * @summary It returns best recorder-type available for your browser.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef GetRecorderType
+ * @class
+ * @example
+ * var RecorderType = GetRecorderType(options);
+ * var recorder = new RecorderType(options);
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.
+ * @param {object} config - {type:"video", disableLogs: true, numberOfAudioChannels: 1, bufferSize: 0, sampleRate: 0, video: HTMLVideoElement, etc.}
+ */
+
+function GetRecorderType(mediaStream, config) {
+    var recorder;
+
+    // StereoAudioRecorder can work with all three: Edge, Firefox and Chrome
+    // todo: detect if it is Edge, then auto use: StereoAudioRecorder
+    if (isChrome || isEdge || isOpera) {
+        // Media Stream Recording API has not been implemented in chrome yet;
+        // That's why using WebAudio API to record stereo audio in WAV format
+        recorder = StereoAudioRecorder;
+    }
+
+    if (typeof MediaRecorder !== 'undefined' && 'requestData' in MediaRecorder.prototype && !isChrome) {
+        recorder = MediaStreamRecorder;
+    }
+
+    // video recorder (in WebM format)
+    if (config.type === 'video' && (isChrome || isOpera)) {
+        recorder = WhammyRecorder;
+    }
+
+    // video recorder (in Gif format)
+    if (config.type === 'gif') {
+        recorder = GifRecorder;
+    }
+
+    // html2canvas recording!
+    if (config.type === 'canvas') {
+        recorder = CanvasRecorder;
+    }
+
+    if (isMediaRecorderCompatible() && recorder !== CanvasRecorder && recorder !== GifRecorder && typeof MediaRecorder !== 'undefined' && 'requestData' in MediaRecorder.prototype) {
+        if ((mediaStream.getVideoTracks && mediaStream.getVideoTracks().length) || (mediaStream.getAudioTracks && mediaStream.getAudioTracks().length)) {
+            // audio-only recording
+            if (config.type === 'audio') {
+                if (typeof MediaRecorder.isTypeSupported === 'function' && MediaRecorder.isTypeSupported('audio/webm')) {
+                    recorder = MediaStreamRecorder;
+                }
+                // else recorder = StereoAudioRecorder;
+            } else {
+                // video or screen tracks
+                if (typeof MediaRecorder.isTypeSupported === 'function' && MediaRecorder.isTypeSupported('video/webm')) {
+                    recorder = MediaStreamRecorder;
+                }
+            }
+        }
+    }
+
+    if (config.recorderType) {
+        recorder = config.recorderType;
+    }
+
+    if (mediaStream instanceof Array && mediaStream.length) {
+        recorder = MultiStreamRecorder;
+    }
+
+    if (!config.disableLogs && !!recorder && !!recorder.name) {
+        console.log('Using recorderType:', recorder.name || recorder.constructor.name);
+    }
+
+    return recorder;
+}
+
+// _____________
+// MRecordRTC.js
+
+/**
+ * MRecordRTC runs on top of {@link RecordRTC} to bring multiple recordings in a single place, by providing simple API.
+ * @summary MRecordRTC stands for "Multiple-RecordRTC".
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef MRecordRTC
+ * @class
+ * @example
+ * var recorder = new MRecordRTC();
+ * recorder.addStream(MediaStream);
+ * recorder.mediaType = {
+ *     audio: true, // or StereoAudioRecorder or MediaStreamRecorder
+ *     video: true, // or WhammyRecorder or MediaStreamRecorder
+ *     gif: true    // or GifRecorder
+ * };
+ * // mimeType is optional and should be set only in advance cases.
+ * recorder.mimeType = {
+ *     audio: 'audio/wav',
+ *     video: 'video/webm',
+ *     gif:   'image/gif'
+ * };
+ * recorder.startRecording();
+ * @see For further information:
+ * @see {@link https://github.com/muaz-khan/RecordRTC/tree/master/MRecordRTC|MRecordRTC Source Code}
+ * @param {MediaStream} mediaStream - MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.
+ * @requires {@link RecordRTC}
+ */
+
+function MRecordRTC(mediaStream) {
+
+    /**
+     * This method attaches MediaStream object to {@link MRecordRTC}.
+     * @param {MediaStream} mediaStream - A MediaStream object, either fetched using getUserMedia API, or generated using captureStreamUntilEnded or WebAudio API.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.addStream(MediaStream);
+     */
+    this.addStream = function(_mediaStream) {
+        if (_mediaStream) {
+            mediaStream = _mediaStream;
+        }
+    };
+
+    /**
+     * This property can be used to set the recording type e.g. audio, or video, or gif, or canvas.
+     * @property {object} mediaType - {audio: true, video: true, gif: true}
+     * @memberof MRecordRTC
+     * @example
+     * var recorder = new MRecordRTC();
+     * recorder.mediaType = {
+     *     audio: true, // TRUE or StereoAudioRecorder or MediaStreamRecorder
+     *     video: true, // TRUE or WhammyRecorder or MediaStreamRecorder
+     *     gif  : true  // TRUE or GifRecorder
+     * };
+     */
+    this.mediaType = {
+        audio: true,
+        video: true
+    };
+
+    /**
+     * This method starts recording.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.startRecording();
+     */
+    this.startRecording = function() {
+        var mediaType = this.mediaType;
+        var recorderType;
+        var mimeType = this.mimeType || {
+            audio: null,
+            video: null,
+            gif: null
+        };
+
+        if (typeof mediaType.audio !== 'function' && isMediaRecorderCompatible() && mediaStream.getAudioTracks && !mediaStream.getAudioTracks().length) {
+            mediaType.audio = false;
+        }
+
+        if (typeof mediaType.video !== 'function' && isMediaRecorderCompatible() && mediaStream.getVideoTracks && !mediaStream.getVideoTracks().length) {
+            mediaType.video = false;
+        }
+
+        if (typeof mediaType.gif !== 'function' && isMediaRecorderCompatible() && mediaStream.getVideoTracks && !mediaStream.getVideoTracks().length) {
+            mediaType.gif = false;
+        }
+
+        if (!mediaType.audio && !mediaType.video && !mediaType.gif) {
+            throw 'MediaStream must have either audio or video tracks.';
+        }
+
+        if (!!mediaType.audio) {
+            recorderType = null;
+            if (typeof mediaType.audio === 'function') {
+                recorderType = mediaType.audio;
+            }
+
+            this.audioRecorder = new RecordRTC(mediaStream, {
+                type: 'audio',
+                bufferSize: this.bufferSize,
+                sampleRate: this.sampleRate,
+                numberOfAudioChannels: this.numberOfAudioChannels || 2,
+                disableLogs: this.disableLogs,
+                recorderType: recorderType,
+                mimeType: mimeType.audio,
+                timeSlice: this.timeSlice,
+                onTimeStamp: this.onTimeStamp
+            });
+
+            if (!mediaType.video) {
+                this.audioRecorder.startRecording();
+            }
+        }
+
+        if (!!mediaType.video) {
+            recorderType = null;
+            if (typeof mediaType.video === 'function') {
+                recorderType = mediaType.video;
+            }
+
+            var newStream = mediaStream;
+
+            if (isMediaRecorderCompatible() && !!mediaType.audio && typeof mediaType.audio === 'function') {
+                var videoTrack = mediaStream.getVideoTracks()[0];
+
+                if (!!navigator.mozGetUserMedia) {
+                    newStream = new MediaStream();
+                    newStream.addTrack(videoTrack);
+
+                    if (recorderType && recorderType === WhammyRecorder) {
+                        // Firefox does NOT support webp-encoding yet
+                        recorderType = MediaStreamRecorder;
+                    }
+                } else {
+                    newStream = new MediaStream([videoTrack]);
+                }
+            }
+
+            this.videoRecorder = new RecordRTC(newStream, {
+                type: 'video',
+                video: this.video,
+                canvas: this.canvas,
+                frameInterval: this.frameInterval || 10,
+                disableLogs: this.disableLogs,
+                recorderType: recorderType,
+                mimeType: mimeType.video,
+                timeSlice: this.timeSlice,
+                onTimeStamp: this.onTimeStamp
+            });
+
+            if (!mediaType.audio) {
+                this.videoRecorder.startRecording();
+            }
+        }
+
+        if (!!mediaType.audio && !!mediaType.video) {
+            var self = this;
+
+            // this line prevents StereoAudioRecorder
+            // todo: fix it
+            if (isMediaRecorderCompatible() /* && !this.audioRecorder */ ) {
+                self.audioRecorder = null;
+                self.videoRecorder.startRecording();
+            } else {
+                self.videoRecorder.initRecorder(function() {
+                    self.audioRecorder.initRecorder(function() {
+                        // Both recorders are ready to record things accurately
+                        self.videoRecorder.startRecording();
+                        self.audioRecorder.startRecording();
+                    });
+                });
+            }
+        }
+
+        if (!!mediaType.gif) {
+            recorderType = null;
+            if (typeof mediaType.gif === 'function') {
+                recorderType = mediaType.gif;
+            }
+            this.gifRecorder = new RecordRTC(mediaStream, {
+                type: 'gif',
+                frameRate: this.frameRate || 200,
+                quality: this.quality || 10,
+                disableLogs: this.disableLogs,
+                recorderType: recorderType,
+                mimeType: mimeType.gif
+            });
+            this.gifRecorder.startRecording();
+        }
+    };
+
+    /**
+     * This method stops recording.
+     * @param {function} callback - Callback function is invoked when all encoders finished their jobs.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.stopRecording(function(recording){
+     *     var audioBlob = recording.audio;
+     *     var videoBlob = recording.video;
+     *     var gifBlob   = recording.gif;
+     * });
+     */
+    this.stopRecording = function(callback) {
+        callback = callback || function() {};
+
+        if (this.audioRecorder) {
+            this.audioRecorder.stopRecording(function(blobURL) {
+                callback(blobURL, 'audio');
+            });
+        }
+
+        if (this.videoRecorder) {
+            this.videoRecorder.stopRecording(function(blobURL) {
+                callback(blobURL, 'video');
+            });
+        }
+
+        if (this.gifRecorder) {
+            this.gifRecorder.stopRecording(function(blobURL) {
+                callback(blobURL, 'gif');
+            });
+        }
+    };
+
+    /**
+     * This method pauses recording.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.pauseRecording();
+     */
+    this.pauseRecording = function() {
+        if (this.audioRecorder) {
+            this.audioRecorder.pauseRecording();
+        }
+
+        if (this.videoRecorder) {
+            this.videoRecorder.pauseRecording();
+        }
+
+        if (this.gifRecorder) {
+            this.gifRecorder.pauseRecording();
+        }
+    };
+
+    /**
+     * This method resumes recording.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.resumeRecording();
+     */
+    this.resumeRecording = function() {
+        if (this.audioRecorder) {
+            this.audioRecorder.resumeRecording();
+        }
+
+        if (this.videoRecorder) {
+            this.videoRecorder.resumeRecording();
+        }
+
+        if (this.gifRecorder) {
+            this.gifRecorder.resumeRecording();
+        }
+    };
+
+    /**
+     * This method can be used to manually get all recorded blobs.
+     * @param {function} callback - All recorded blobs are passed back to the "callback" function.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.getBlob(function(recording){
+     *     var audioBlob = recording.audio;
+     *     var videoBlob = recording.video;
+     *     var gifBlob   = recording.gif;
+     * });
+     * // or
+     * var audioBlob = recorder.getBlob().audio;
+     * var videoBlob = recorder.getBlob().video;
+     */
+    this.getBlob = function(callback) {
+        var output = {};
+
+        if (this.audioRecorder) {
+            output.audio = this.audioRecorder.getBlob();
+        }
+
+        if (this.videoRecorder) {
+            output.video = this.videoRecorder.getBlob();
+        }
+
+        if (this.gifRecorder) {
+            output.gif = this.gifRecorder.getBlob();
+        }
+
+        if (callback) {
+            callback(output);
+        }
+
+        return output;
+    };
+
+    /**
+     * Destroy all recorder instances.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.destroy();
+     */
+    this.destroy = function() {
+        if (this.audioRecorder) {
+            this.audioRecorder.destroy();
+            this.audioRecorder = null;
+        }
+
+        if (this.videoRecorder) {
+            this.videoRecorder.destroy();
+            this.videoRecorder = null;
+        }
+
+        if (this.gifRecorder) {
+            this.gifRecorder.destroy();
+            this.gifRecorder = null;
+        }
+    };
+
+    /**
+     * This method can be used to manually get all recorded blobs' DataURLs.
+     * @param {function} callback - All recorded blobs' DataURLs are passed back to the "callback" function.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.getDataURL(function(recording){
+     *     var audioDataURL = recording.audio;
+     *     var videoDataURL = recording.video;
+     *     var gifDataURL   = recording.gif;
+     * });
+     */
+    this.getDataURL = function(callback) {
+        this.getBlob(function(blob) {
+            if (blob.audio && blob.video) {
+                getDataURL(blob.audio, function(_audioDataURL) {
+                    getDataURL(blob.video, function(_videoDataURL) {
+                        callback({
+                            audio: _audioDataURL,
+                            video: _videoDataURL
+                        });
+                    });
+                });
+            } else if (blob.audio) {
+                getDataURL(blob.audio, function(_audioDataURL) {
+                    callback({
+                        audio: _audioDataURL
+                    });
+                });
+            } else if (blob.video) {
+                getDataURL(blob.video, function(_videoDataURL) {
+                    callback({
+                        video: _videoDataURL
+                    });
+                });
+            }
+        });
+
+        function getDataURL(blob, callback00) {
+            if (typeof Worker !== 'undefined') {
+                var webWorker = processInWebWorker(function readFile(_blob) {
+                    postMessage(new FileReaderSync().readAsDataURL(_blob));
+                });
+
+                webWorker.onmessage = function(event) {
+                    callback00(event.data);
+                };
+
+                webWorker.postMessage(blob);
+            } else {
+                var reader = new FileReader();
+                reader.readAsDataURL(blob);
+                reader.onload = function(event) {
+                    callback00(event.target.result);
+                };
+            }
+        }
+
+        function processInWebWorker(_function) {
+            var blob = URL.createObjectURL(new Blob([_function.toString(),
+                'this.onmessage =  function (e) {' + _function.name + '(e.data);}'
+            ], {
+                type: 'application/javascript'
+            }));
+
+            var worker = new Worker(blob);
+            var url;
+            if (typeof URL !== 'undefined') {
+                url = URL;
+            } else if (typeof webkitURL !== 'undefined') {
+                url = webkitURL;
+            } else {
+                throw 'Neither URL nor webkitURL detected.';
+            }
+            url.revokeObjectURL(blob);
+            return worker;
+        }
+    };
+
+    /**
+     * This method can be used to ask {@link MRecordRTC} to write all recorded blobs into IndexedDB storage.
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.writeToDisk();
+     */
+    this.writeToDisk = function() {
+        RecordRTC.writeToDisk({
+            audio: this.audioRecorder,
+            video: this.videoRecorder,
+            gif: this.gifRecorder
+        });
+    };
+
+    /**
+     * This method can be used to invoke a save-as dialog for all recorded blobs.
+     * @param {object} args - {audio: 'audio-name', video: 'video-name', gif: 'gif-name'}
+     * @method
+     * @memberof MRecordRTC
+     * @example
+     * recorder.save({
+     *     audio: 'audio-file-name',
+     *     video: 'video-file-name',
+     *     gif  : 'gif-file-name'
+     * });
+     */
+    this.save = function(args) {
+        args = args || {
+            audio: true,
+            video: true,
+            gif: true
+        };
+
+        if (!!args.audio && this.audioRecorder) {
+            this.audioRecorder.save(typeof args.audio === 'string' ? args.audio : '');
+        }
+
+        if (!!args.video && this.videoRecorder) {
+            this.videoRecorder.save(typeof args.video === 'string' ? args.video : '');
+        }
+        if (!!args.gif && this.gifRecorder) {
+            this.gifRecorder.save(typeof args.gif === 'string' ? args.gif : '');
+        }
+    };
+}
+
+/**
+ * This method can be used to get all recorded blobs from IndexedDB storage.
+ * @param {string} type - 'all' or 'audio' or 'video' or 'gif'
+ * @param {function} callback - Callback function to get all stored blobs.
+ * @method
+ * @memberof MRecordRTC
+ * @example
+ * MRecordRTC.getFromDisk('all', function(dataURL, type){
+ *     if(type === 'audio') { }
+ *     if(type === 'video') { }
+ *     if(type === 'gif')   { }
+ * });
+ */
+MRecordRTC.getFromDisk = RecordRTC.getFromDisk;
+
+/**
+ * This method can be used to store recorded blobs into IndexedDB storage.
+ * @param {object} options - {audio: Blob, video: Blob, gif: Blob}
+ * @method
+ * @memberof MRecordRTC
+ * @example
+ * MRecordRTC.writeToDisk({
+ *     audio: audioBlob,
+ *     video: videoBlob,
+ *     gif  : gifBlob
+ * });
+ */
+MRecordRTC.writeToDisk = RecordRTC.writeToDisk;
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.MRecordRTC = MRecordRTC;
+}
+
+var browserFakeUserAgent = 'Fake/5.0 (FakeOS) AppleWebKit/123 (KHTML, like Gecko) Fake/12.3.4567.89 Fake/123.45';
+
+(function(that) {
+    if (!that) {
+        return;
+    }
+
+    if (typeof window !== 'undefined') {
+        return;
+    }
+
+    if (typeof global === 'undefined') {
+        return;
+    }
+
+    global.navigator = {
+        userAgent: browserFakeUserAgent,
+        getUserMedia: function() {}
+    };
+
+    if (!global.console) {
+        global.console = {};
+    }
+
+    if (typeof global.console.log === 'undefined' || typeof global.console.error === 'undefined') {
+        global.console.error = global.console.log = global.console.log || function() {
+            console.log(arguments);
+        };
+    }
+
+    if (typeof document === 'undefined') {
+        /*global document:true */
+        that.document = {};
+
+        document.createElement = document.captureStream = document.mozCaptureStream = function() {
+            var obj = {
+                getContext: function() {
+                    return obj;
+                },
+                play: function() {},
+                pause: function() {},
+                drawImage: function() {},
+                toDataURL: function() {
+                    return '';
+                }
+            };
+            return obj;
+        };
+
+        that.HTMLVideoElement = function() {};
+    }
+
+    if (typeof location === 'undefined') {
+        /*global location:true */
+        that.location = {
+            protocol: 'file:',
+            href: '',
+            hash: ''
+        };
+    }
+
+    if (typeof screen === 'undefined') {
+        /*global screen:true */
+        that.screen = {
+            width: 0,
+            height: 0
+        };
+    }
+
+    if (typeof URL === 'undefined') {
+        /*global screen:true */
+        that.URL = {
+            createObjectURL: function() {
+                return '';
+            },
+            revokeObjectURL: function() {
+                return '';
+            }
+        };
+    }
+
+    /*global window:true */
+    that.window = global;
+})(typeof global !== 'undefined' ? global : null);
+
+// _____________________________
+// Cross-Browser-Declarations.js
+
+// animation-frame used in WebM recording
+
+/*jshint -W079 */
+var requestAnimationFrame = window.requestAnimationFrame;
+if (typeof requestAnimationFrame === 'undefined') {
+    if (typeof webkitRequestAnimationFrame !== 'undefined') {
+        /*global requestAnimationFrame:true */
+        requestAnimationFrame = webkitRequestAnimationFrame;
+    } else if (typeof mozRequestAnimationFrame !== 'undefined') {
+        /*global requestAnimationFrame:true */
+        requestAnimationFrame = mozRequestAnimationFrame;
+    } else if (typeof msRequestAnimationFrame !== 'undefined') {
+        /*global requestAnimationFrame:true */
+        requestAnimationFrame = msRequestAnimationFrame;
+    } else if (typeof requestAnimationFrame === 'undefined') {
+        // via: https://gist.github.com/paulirish/1579671
+        var lastTime = 0;
+
+        /*global requestAnimationFrame:true */
+        requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = setTimeout(function() {
+                callback(currTime + timeToCall);
+            }, timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+    }
+}
+
+/*jshint -W079 */
+var cancelAnimationFrame = window.cancelAnimationFrame;
+if (typeof cancelAnimationFrame === 'undefined') {
+    if (typeof webkitCancelAnimationFrame !== 'undefined') {
+        /*global cancelAnimationFrame:true */
+        cancelAnimationFrame = webkitCancelAnimationFrame;
+    } else if (typeof mozCancelAnimationFrame !== 'undefined') {
+        /*global cancelAnimationFrame:true */
+        cancelAnimationFrame = mozCancelAnimationFrame;
+    } else if (typeof msCancelAnimationFrame !== 'undefined') {
+        /*global cancelAnimationFrame:true */
+        cancelAnimationFrame = msCancelAnimationFrame;
+    } else if (typeof cancelAnimationFrame === 'undefined') {
+        /*global cancelAnimationFrame:true */
+        cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+    }
+}
+
+// WebAudio API representer
+var AudioContext = window.AudioContext;
+
+if (typeof AudioContext === 'undefined') {
+    if (typeof webkitAudioContext !== 'undefined') {
+        /*global AudioContext:true */
+        AudioContext = webkitAudioContext;
+    }
+
+    if (typeof mozAudioContext !== 'undefined') {
+        /*global AudioContext:true */
+        AudioContext = mozAudioContext;
+    }
+}
+
+/*jshint -W079 */
+var URL = window.URL;
+
+if (typeof URL === 'undefined' && typeof webkitURL !== 'undefined') {
+    /*global URL:true */
+    URL = webkitURL;
+}
+
+if (typeof navigator !== 'undefined' && typeof navigator.getUserMedia === 'undefined') { // maybe window.navigator?
+    if (typeof navigator.webkitGetUserMedia !== 'undefined') {
+        navigator.getUserMedia = navigator.webkitGetUserMedia;
+    }
+
+    if (typeof navigator.mozGetUserMedia !== 'undefined') {
+        navigator.getUserMedia = navigator.mozGetUserMedia;
+    }
+}
+
+var isEdge = navigator.userAgent.indexOf('Edge') !== -1 && (!!navigator.msSaveBlob || !!navigator.msSaveOrOpenBlob);
+var isOpera = !!window.opera || navigator.userAgent.indexOf('OPR/') !== -1;
+var isSafari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
+var isChrome = (!isOpera && !isEdge && !!navigator.webkitGetUserMedia) || isElectron() || isSafari;
+
+var MediaStream = window.MediaStream;
+
+if (typeof MediaStream === 'undefined' && typeof webkitMediaStream !== 'undefined') {
+    MediaStream = webkitMediaStream;
+}
+
+/*global MediaStream:true */
+if (typeof MediaStream !== 'undefined') {
+    if (!('getVideoTracks' in MediaStream.prototype)) {
+        MediaStream.prototype.getVideoTracks = function() {
+            if (!this.getTracks) {
+                return [];
+            }
+
+            var tracks = [];
+            this.getTracks().forEach(function(track) {
+                if (track.kind.toString().indexOf('video') !== -1) {
+                    tracks.push(track);
+                }
+            });
+            return tracks;
+        };
+
+        MediaStream.prototype.getAudioTracks = function() {
+            if (!this.getTracks) {
+                return [];
+            }
+
+            var tracks = [];
+            this.getTracks().forEach(function(track) {
+                if (track.kind.toString().indexOf('audio') !== -1) {
+                    tracks.push(track);
+                }
+            });
+            return tracks;
+        };
+    }
+
+    // override "stop" method for all browsers
+    if (typeof MediaStream.prototype.stop === 'undefined') {
+        MediaStream.prototype.stop = function() {
+            this.getTracks().forEach(function(track) {
+                track.stop();
+            });
+        };
+    }
+}
+
+// below function via: http://goo.gl/B3ae8c
+/**
+ * @param {number} bytes - Pass bytes and get formafted string.
+ * @returns {string} - formafted string
+ * @example
+ * bytesToSize(1024*1024*5) === '5 GB'
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ */
+function bytesToSize(bytes) {
+    var k = 1000;
+    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    if (bytes === 0) {
+        return '0 Bytes';
+    }
+    var i = parseInt(Math.floor(Math.log(bytes) / Math.log(k)), 10);
+    return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+}
+
+/**
+ * @param {Blob} file - File or Blob object. This parameter is required.
+ * @param {string} fileName - Optional file name e.g. "Recorded-Video.webm"
+ * @example
+ * invokeSaveAsDialog(blob or file, [optional] fileName);
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ */
+function invokeSaveAsDialog(file, fileName) {
+    if (!file) {
+        throw 'Blob object is required.';
+    }
+
+    if (!file.type) {
+        try {
+            file.type = 'video/webm';
+        } catch (e) {}
+    }
+
+    var fileExtension = (file.type || 'video/webm').split('/')[1];
+
+    if (fileName && fileName.indexOf('.') !== -1) {
+        var splitted = fileName.split('.');
+        fileName = splitted[0];
+        fileExtension = splitted[1];
+    }
+
+    var fileFullName = (fileName || (Math.round(Math.random() * 9999999999) + 888888888)) + '.' + fileExtension;
+
+    if (typeof navigator.msSaveOrOpenBlob !== 'undefined') {
+        return navigator.msSaveOrOpenBlob(file, fileFullName);
+    } else if (typeof navigator.msSaveBlob !== 'undefined') {
+        return navigator.msSaveBlob(file, fileFullName);
+    }
+
+    var hyperlink = document.createElement('a');
+    hyperlink.href = URL.createObjectURL(file);
+    hyperlink.download = fileFullName;
+
+    hyperlink.style = 'display:none;opacity:0;color:transparent;';
+    (document.body || document.documentElement).appendChild(hyperlink);
+
+    if (typeof hyperlink.click === 'function') {
+        hyperlink.click();
+    } else {
+        hyperlink.target = '_blank';
+        hyperlink.dispatchEvent(new MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: true
+        }));
+    }
+
+    URL.revokeObjectURL(hyperlink.href);
+}
+
+/**
+ * from: https://github.com/cheton/is-electron/blob/master/index.js
+ **/
+function isElectron() {
+    // Renderer process
+    if (typeof window !== 'undefined' && typeof window.process === 'object' && window.process.type === 'renderer') {
+        return true;
+    }
+
+    // Main process
+    if (typeof process !== 'undefined' && typeof process.versions === 'object' && !!process.versions.electron) {
+        return true;
+    }
+
+    // Detect the user agent when the `nodeIntegration` option is set to true
+    if (typeof navigator === 'object' && typeof navigator.userAgent === 'string' && navigator.userAgent.indexOf('Electron') >= 0) {
+        return true;
+    }
+
+    return false;
+}
+
+function setSrcObject(stream, element, ignoreCreateObjectURL) {
+    if ('createObjectURL' in URL && !ignoreCreateObjectURL) {
+        try {
+            element.src = URL.createObjectURL(stream);
+        } catch (e) {
+            setSrcObject(stream, element, true);
+            return;
+        }
+    } else if ('srcObject' in element) {
+        element.srcObject = stream;
+    } else if ('mozSrcObject' in element) {
+        element.mozSrcObject = stream;
+    } else {
+        alert('createObjectURL/srcObject both are not supported.');
+    }
+}
+
+// __________ (used to handle stuff like http://goo.gl/xmE5eg) issue #129
+// Storage.js
+
+/**
+ * Storage is a standalone object used by {@link RecordRTC} to store reusable objects e.g. "new AudioContext".
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @example
+ * Storage.AudioContext === webkitAudioContext
+ * @property {webkitAudioContext} AudioContext - Keeps a reference to AudioContext object.
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ */
+
+var Storage = {};
+
+if (typeof AudioContext !== 'undefined') {
+    Storage.AudioContext = AudioContext;
+} else if (typeof webkitAudioContext !== 'undefined') {
+    Storage.AudioContext = webkitAudioContext;
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.Storage = Storage;
+}
+
+function isMediaRecorderCompatible() {
+    var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+    var isChrome = (!!window.chrome && !isOpera) || isElectron();
+    var isFirefox = typeof window.InstallTrigger !== 'undefined';
+
+    if (isFirefox) {
+        return true;
+    }
+
+    var nVer = navigator.appVersion;
+    var nAgt = navigator.userAgent;
+    var fullVersion = '' + parseFloat(navigator.appVersion);
+    var majorVersion = parseInt(navigator.appVersion, 10);
+    var nameOffset, verOffset, ix;
+
+    if (isChrome || isOpera) {
+        verOffset = nAgt.indexOf('Chrome');
+        fullVersion = nAgt.substring(verOffset + 7);
+    }
+
+    // trim the fullVersion string at semicolon/space if present
+    if ((ix = fullVersion.indexOf(';')) !== -1) {
+        fullVersion = fullVersion.substring(0, ix);
+    }
+
+    if ((ix = fullVersion.indexOf(' ')) !== -1) {
+        fullVersion = fullVersion.substring(0, ix);
+    }
+
+    majorVersion = parseInt('' + fullVersion, 10);
+
+    if (isNaN(majorVersion)) {
+        fullVersion = '' + parseFloat(navigator.appVersion);
+        majorVersion = parseInt(navigator.appVersion, 10);
+    }
+
+    return majorVersion >= 49;
+}
+
+// ______________________
+// MediaStreamRecorder.js
+
+/**
+ * MediaStreamRecorder is an abstraction layer for {@link https://w3c.github.io/mediacapture-record/MediaRecorder.html|MediaRecorder API}. It is used by {@link RecordRTC} to record MediaStream(s) in both Chrome and Firefox.
+ * @summary Runs top over {@link https://w3c.github.io/mediacapture-record/MediaRecorder.html|MediaRecorder API}.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link https://github.com/muaz-khan|Muaz Khan}
+ * @typedef MediaStreamRecorder
+ * @class
+ * @example
+ * var config = {
+ *     mimeType: 'video/webm', // vp8, vp9, h264, mkv, opus/vorbis
+ *     audioBitsPerSecond : 256 * 8 * 1024,
+ *     videoBitsPerSecond : 256 * 8 * 1024,
+ *     bitsPerSecond: 256 * 8 * 1024,  // if this is provided, skip above two
+ *     checkForInactiveTracks: true,
+ *     timeSlice: 1000, // concatenate intervals based blobs
+ *     ondataavailable: function() {}, // get intervals based blobs
+ *     ignoreMutedMedia: true
+ * }
+ * var recorder = new MediaStreamRecorder(mediaStream, config);
+ * recorder.record();
+ * recorder.stop(function(blob) {
+ *     video.src = URL.createObjectURL(blob);
+ *
+ *     // or
+ *     var blob = recorder.blob;
+ * });
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.
+ * @param {object} config - {disableLogs:true, initCallback: function, mimeType: "video/webm", timeSlice: 1000}
+ * @throws Will throw an error if first argument "MediaStream" is missing. Also throws error if "MediaRecorder API" are not supported by the browser.
+ */
+
+function MediaStreamRecorder(mediaStream, config) {
+    var self = this;
+
+    if (typeof mediaStream === 'undefined') {
+        throw 'First argument "MediaStream" is required.';
+    }
+
+    if (typeof MediaRecorder === 'undefined') {
+        throw 'Your browser does not supports Media Recorder API. Please try other modules e.g. WhammyRecorder or StereoAudioRecorder.';
+    }
+
+    config = config || {
+        // bitsPerSecond: 256 * 8 * 1024,
+        mimeType: 'video/webm'
+    };
+
+    if (config.type === 'audio') {
+        if (mediaStream.getVideoTracks().length && mediaStream.getAudioTracks().length) {
+            var stream;
+            if (!!navigator.mozGetUserMedia) {
+                stream = new MediaStream();
+                stream.addTrack(mediaStream.getAudioTracks()[0]);
+            } else {
+                // webkitMediaStream
+                stream = new MediaStream(mediaStream.getAudioTracks());
+            }
+            mediaStream = stream;
+        }
+
+        if (!config.mimeType || config.mimeType.toString().toLowerCase().indexOf('audio') === -1) {
+            config.mimeType = isChrome ? 'audio/webm' : 'audio/ogg';
+        }
+
+        if (config.mimeType && config.mimeType.toString().toLowerCase() !== 'audio/ogg' && !!navigator.mozGetUserMedia) {
+            // forcing better codecs on Firefox (via #166)
+            config.mimeType = 'audio/ogg';
+        }
+    }
+
+    var arrayOfBlobs = [];
+
+    /**
+     * This method returns array of blobs. Use only with "timeSlice". Its useful to preview recording anytime, without using the "stop" method.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * var arrayOfBlobs = recorder.getArrayOfBlobs();
+     * @returns {Array} Returns array of recorded blobs.
+     */
+    this.getArrayOfBlobs = function() {
+        return arrayOfBlobs;
+    };
+
+    /**
+     * This method records MediaStream.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * recorder.record();
+     */
+    this.record = function() {
+        // set defaults
+        self.blob = null;
+        self.clearRecordedData();
+        self.timestamps = [];
+        allStates = [];
+        arrayOfBlobs = [];
+
+        var recorderHints = config;
+
+        if (!config.disableLogs) {
+            console.log('Passing following config over MediaRecorder API.', recorderHints);
+        }
+
+        if (mediaRecorder) {
+            // mandatory to make sure Firefox doesn't fails to record streams 3-4 times without reloading the page.
+            mediaRecorder = null;
+        }
+
+        if (isChrome && !isMediaRecorderCompatible()) {
+            // to support video-only recording on stable
+            recorderHints = 'video/vp8';
+        }
+
+        if (typeof MediaRecorder.isTypeSupported === 'function' && recorderHints.mimeType) {
+            if (!MediaRecorder.isTypeSupported(recorderHints.mimeType)) {
+                if (!config.disableLogs) {
+                    console.warn('MediaRecorder API seems unable to record mimeType:', recorderHints.mimeType);
+                }
+
+                recorderHints.mimeType = config.type === 'audio' ? 'audio/webm' : 'video/webm';
+            }
+        }
+
+        // using MediaRecorder API here
+        try {
+            mediaRecorder = new MediaRecorder(mediaStream, recorderHints);
+
+            // reset
+            config.mimeType = recorderHints.mimeType;
+        } catch (e) {
+            // chrome-based fallback
+            mediaRecorder = new MediaRecorder(mediaStream);
+        }
+
+        // old hack?
+        if (recorderHints.mimeType && !MediaRecorder.isTypeSupported && 'canRecordMimeType' in mediaRecorder && mediaRecorder.canRecordMimeType(recorderHints.mimeType) === false) {
+            if (!config.disableLogs) {
+                console.warn('MediaRecorder API seems unable to record mimeType:', recorderHints.mimeType);
+            }
+        }
+
+        // ignore muted/disabled/inactive tracks
+        mediaRecorder.ignoreMutedMedia = config.ignoreMutedMedia === true;
+
+        // Dispatching OnDataAvailable Handler
+        mediaRecorder.ondataavailable = function(e) {
+            if (e.data) {
+                allStates.push('ondataavailable: ' + bytesToSize(e.data.size));
+            }
+
+            if (typeof config.timeSlice === 'number') {
+                if (e.data && e.data.size && e.data.size > 100) {
+                    arrayOfBlobs.push(e.data);
+                    updateTimeStamp();
+
+                    if (typeof config.ondataavailable === 'function') {
+                        // intervals based blobs
+                        var blob = config.getNativeBlob ? e.data : new Blob([e.data], {
+                            type: getMimeType(recorderHints)
+                        });
+                        config.ondataavailable(blob);
+                    }
+                }
+                return;
+            }
+
+            if (!e.data || !e.data.size || e.data.size < 100 || self.blob) {
+                // make sure that stopRecording always getting fired
+                // even if there is invalid data
+                if (self.recordingCallback) {
+                    self.recordingCallback(new Blob([], {
+                        type: getMimeType(recorderHints)
+                    }));
+                    self.recordingCallback = null;
+                }
+                return;
+            }
+
+            self.blob = config.getNativeBlob ? e.data : new Blob([e.data], {
+                type: getMimeType(recorderHints)
+            });
+
+            if (self.recordingCallback) {
+                self.recordingCallback(self.blob);
+                self.recordingCallback = null;
+            }
+        };
+
+        mediaRecorder.onstart = function() {
+            allStates.push('started');
+        };
+
+        mediaRecorder.onpause = function() {
+            allStates.push('paused');
+        };
+
+        mediaRecorder.onresume = function() {
+            allStates.push('resumed');
+        };
+
+        mediaRecorder.onstop = function() {
+            allStates.push('stopped');
+        };
+
+        mediaRecorder.onerror = function(error) {
+            allStates.push('error: ' + error);
+
+            if (!config.disableLogs) {
+                // via: https://w3c.github.io/mediacapture-record/MediaRecorder.html#exception-summary
+                if (error.name.toString().toLowerCase().indexOf('invalidstate') !== -1) {
+                    console.error('The MediaRecorder is not in a state in which the proposed operation is allowed to be executed.', error);
+                } else if (error.name.toString().toLowerCase().indexOf('notsupported') !== -1) {
+                    console.error('MIME type (', recorderHints.mimeType, ') is not supported.', error);
+                } else if (error.name.toString().toLowerCase().indexOf('security') !== -1) {
+                    console.error('MediaRecorder security error', error);
+                }
+
+                // older code below
+                else if (error.name === 'OutOfMemory') {
+                    console.error('The UA has exhaused the available memory. User agents SHOULD provide as much additional information as possible in the message attribute.', error);
+                } else if (error.name === 'IllegalStreamModification') {
+                    console.error('A modification to the stream has occurred that makes it impossible to continue recording. An example would be the addition of a Track while recording is occurring. User agents SHOULD provide as much additional information as possible in the message attribute.', error);
+                } else if (error.name === 'OtherRecordingError') {
+                    console.error('Used for an fatal error other than those listed above. User agents SHOULD provide as much additional information as possible in the message attribute.', error);
+                } else if (error.name === 'GenericError') {
+                    console.error('The UA cannot provide the codec or recording option that has been requested.', error);
+                } else {
+                    console.error('MediaRecorder Error', error);
+                }
+            }
+
+            (function(looper) {
+                if (!self.manuallyStopped && mediaRecorder && mediaRecorder.state === 'inactive') {
+                    delete config.timeslice;
+
+                    // 10 minutes, enough?
+                    mediaRecorder.start(10 * 60 * 1000);
+                    return;
+                }
+
+                setTimeout(looper, 1000);
+            })();
+
+            if (mediaRecorder.state !== 'inactive' && mediaRecorder.state !== 'stopped') {
+                mediaRecorder.stop();
+            }
+        };
+
+        if (typeof config.timeSlice === 'number') {
+            updateTimeStamp();
+            mediaRecorder.start(config.timeSlice);
+        } else {
+            // default is 60 minutes; enough?
+            // use config => {timeSlice: 1000} otherwise
+
+            mediaRecorder.start(3.6e+6);
+        }
+
+        if (config.initCallback) {
+            config.initCallback(); // old code
+        }
+    };
+
+    /**
+     * @property {Array} timestamps - Array of time stamps
+     * @memberof MediaStreamRecorder
+     * @example
+     * console.log(recorder.timestamps);
+     */
+    this.timestamps = [];
+
+    function updateTimeStamp() {
+        self.timestamps.push(new Date().getTime());
+
+        if (typeof config.onTimeStamp === 'function') {
+            config.onTimeStamp(self.timestamps[self.timestamps.length - 1], self.timestamps);
+        }
+    }
+
+    function getMimeType(secondObject) {
+        if (mediaRecorder && mediaRecorder.mimeType) {
+            return mediaRecorder.mimeType;
+        }
+
+        return secondObject.mimeType || 'video/webm';
+    }
+
+    /**
+     * This method stops recording MediaStream.
+     * @param {function} callback - Callback function, that is used to pass recorded blob back to the callee.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * recorder.stop(function(blob) {
+     *     video.src = URL.createObjectURL(blob);
+     * });
+     */
+    this.stop = function(callback) {
+        callback = callback || function() {};
+
+        self.manuallyStopped = true; // used inside the mediaRecorder.onerror
+
+        if (!mediaRecorder) {
+            return;
+        }
+
+        this.recordingCallback = callback;
+
+        if (mediaRecorder.state === 'recording') {
+            mediaRecorder.stop();
+        }
+
+        if (typeof config.timeSlice === 'number') {
+            setTimeout(function() {
+                self.blob = new Blob(arrayOfBlobs, {
+                    type: getMimeType(config)
+                });
+
+                self.recordingCallback(self.blob);
+            }, 100);
+        }
+    };
+
+    /**
+     * This method pauses the recording process.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * recorder.pause();
+     */
+    this.pause = function() {
+        if (!mediaRecorder) {
+            return;
+        }
+
+        if (mediaRecorder.state === 'recording') {
+            mediaRecorder.pause();
+        }
+    };
+
+    /**
+     * This method resumes the recording process.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * recorder.resume();
+     */
+    this.resume = function() {
+        if (!mediaRecorder) {
+            return;
+        }
+
+        if (mediaRecorder.state === 'paused') {
+            mediaRecorder.resume();
+        }
+    };
+
+    /**
+     * This method resets currently recorded data.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * recorder.clearRecordedData();
+     */
+    this.clearRecordedData = function() {
+        if (mediaRecorder && mediaRecorder.state === 'recording') {
+            self.stop(clearRecordedDataCB);
+        }
+
+        clearRecordedDataCB();
+    };
+
+    function clearRecordedDataCB() {
+        arrayOfBlobs = [];
+        mediaRecorder = null;
+        self.timestamps = [];
+    }
+
+    // Reference to "MediaRecorder" object
+    var mediaRecorder;
+
+    /**
+     * Access to native MediaRecorder API
+     * @method
+     * @memberof MediaStreamRecorder
+     * @instance
+     * @example
+     * var internal = recorder.getInternalRecorder();
+     * internal.ondataavailable = function() {}; // override
+     * internal.stream, internal.onpause, internal.onstop, etc.
+     * @returns {Object} Returns internal recording object.
+     */
+    this.getInternalRecorder = function() {
+        return mediaRecorder;
+    };
+
+    function isMediaStreamActive() {
+        if ('active' in mediaStream) {
+            if (!mediaStream.active) {
+                return false;
+            }
+        } else if ('ended' in mediaStream) { // old hack
+            if (mediaStream.ended) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * @property {Blob} blob - Recorded data as "Blob" object.
+     * @memberof MediaStreamRecorder
+     * @example
+     * recorder.stop(function() {
+     *     var blob = recorder.blob;
+     * });
+     */
+    this.blob = null;
+
+
+    /**
+     * Get MediaRecorder readonly state.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * var state = recorder.getState();
+     * @returns {String} Returns recording state.
+     */
+    this.getState = function() {
+        if (!mediaRecorder) {
+            return 'inactive';
+        }
+
+        return mediaRecorder.state || 'inactive';
+    };
+
+    // list of all recording states
+    var allStates = [];
+
+    /**
+     * Get MediaRecorder all recording states.
+     * @method
+     * @memberof MediaStreamRecorder
+     * @example
+     * var state = recorder.getAllStates();
+     * @returns {Array} Returns all recording states
+     */
+    this.getAllStates = function() {
+        return allStates;
+    };
+
+    // if any Track within the MediaStream is muted or not enabled at any time, 
+    // the browser will only record black frames 
+    // or silence since that is the content produced by the Track
+    // so we need to stopRecording as soon as any single track ends.
+    if (typeof config.checkForInactiveTracks === 'undefined') {
+        config.checkForInactiveTracks = false; // disable to minimize CPU usage
+    }
+
+    var self = this;
+
+    // this method checks if media stream is stopped
+    // or if any track is ended.
+    (function looper() {
+        if (!mediaRecorder || config.checkForInactiveTracks === false) {
+            return;
+        }
+
+        if (isMediaStreamActive() === false) {
+            if (!config.disableLogs) {
+                console.log('MediaStream seems stopped.');
+            }
+            self.stop();
+            return;
+        }
+
+        setTimeout(looper, 1000); // check every second
+    })();
+
+    // for debugging
+    this.name = 'MediaStreamRecorder';
+    this.toString = function() {
+        return this.name;
+    };
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.MediaStreamRecorder = MediaStreamRecorder;
+}
+
+// source code from: http://typedarray.org/wp-content/projects/WebAudioRecorder/script.js
+// https://github.com/mattdiamond/Recorderjs#license-mit
+// ______________________
+// StereoAudioRecorder.js
+
+/**
+ * StereoAudioRecorder is a standalone class used by {@link RecordRTC} to bring "stereo" audio-recording in chrome.
+ * @summary JavaScript standalone object for stereo audio recording.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef StereoAudioRecorder
+ * @class
+ * @example
+ * var recorder = new StereoAudioRecorder(MediaStream, {
+ *     sampleRate: 44100,
+ *     bufferSize: 4096
+ * });
+ * recorder.record();
+ * recorder.stop(function(blob) {
+ *     video.src = URL.createObjectURL(blob);
+ * });
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.
+ * @param {object} config - {sampleRate: 44100, bufferSize: 4096, numberOfAudioChannels: 1, etc.}
+ */
+
+function StereoAudioRecorder(mediaStream, config) {
+    if (!mediaStream.getAudioTracks().length) {
+        throw 'Your stream has no audio tracks.';
+    }
+
+    config = config || {};
+
+    var self = this;
+
+    // variables
+    var leftchannel = [];
+    var rightchannel = [];
+    var recording = false;
+    var recordingLength = 0;
+    var jsAudioNode;
+
+    var numberOfAudioChannels = 2;
+
+    /**
+     * Set sample rates such as 8K or 16K. Reference: http://stackoverflow.com/a/28977136/552182
+     * @property {number} desiredSampRate - Desired Bits per sample * 1000
+     * @memberof StereoAudioRecorder
+     * @instance
+     * @example
+     * var recorder = StereoAudioRecorder(mediaStream, {
+     *   desiredSampRate: 16 * 1000 // bits-per-sample * 1000
+     * });
+     */
+    var desiredSampRate = config.desiredSampRate;
+
+    // backward compatibility
+    if (config.leftChannel === true) {
+        numberOfAudioChannels = 1;
+    }
+
+    if (config.numberOfAudioChannels === 1) {
+        numberOfAudioChannels = 1;
+    }
+
+    if (!numberOfAudioChannels || numberOfAudioChannels < 1) {
+        numberOfAudioChannels = 2;
+    }
+
+    if (!config.disableLogs) {
+        console.log('StereoAudioRecorder is set to record number of channels: ', numberOfAudioChannels);
+    }
+
+    // if any Track within the MediaStream is muted or not enabled at any time, 
+    // the browser will only record black frames 
+    // or silence since that is the content produced by the Track
+    // so we need to stopRecording as soon as any single track ends.
+    if (typeof config.checkForInactiveTracks === 'undefined') {
+        config.checkForInactiveTracks = true;
+    }
+
+    function isMediaStreamActive() {
+        if (config.checkForInactiveTracks === false) {
+            // always return "true"
+            return true;
+        }
+
+        if ('active' in mediaStream) {
+            if (!mediaStream.active) {
+                return false;
+            }
+        } else if ('ended' in mediaStream) { // old hack
+            if (mediaStream.ended) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * This method records MediaStream.
+     * @method
+     * @memberof StereoAudioRecorder
+     * @example
+     * recorder.record();
+     */
+    this.record = function() {
+        if (isMediaStreamActive() === false) {
+            throw 'Please make sure MediaStream is active.';
+        }
+
+        resetVariables();
+
+        isAudioProcessStarted = isPaused = false;
+        recording = true;
+
+        if (typeof config.timeSlice !== 'undefined') {
+            looper();
+        }
+    };
+
+    function mergeLeftRightBuffers(config, callback) {
+        function mergeAudioBuffers(config, cb) {
+            var numberOfAudioChannels = config.numberOfAudioChannels;
+
+            // todo: "slice(0)" --- is it causes loop? Should be removed?
+            var leftBuffers = config.leftBuffers.slice(0);
+            var rightBuffers = config.rightBuffers.slice(0);
+            var sampleRate = config.sampleRate;
+            var internalInterleavedLength = config.internalInterleavedLength;
+            var desiredSampRate = config.desiredSampRate;
+
+            if (numberOfAudioChannels === 2) {
+                leftBuffers = mergeBuffers(leftBuffers, internalInterleavedLength);
+                rightBuffers = mergeBuffers(rightBuffers, internalInterleavedLength);
+
+                if (desiredSampRate) {
+                    leftBuffers = interpolateArray(leftBuffers, desiredSampRate, sampleRate);
+                    rightBuffers = interpolateArray(rightBuffers, desiredSampRate, sampleRate);
+                }
+            }
+
+            if (numberOfAudioChannels === 1) {
+                leftBuffers = mergeBuffers(leftBuffers, internalInterleavedLength);
+
+                if (desiredSampRate) {
+                    leftBuffers = interpolateArray(leftBuffers, desiredSampRate, sampleRate);
+                }
+            }
+
+            // set sample rate as desired sample rate
+            if (desiredSampRate) {
+                sampleRate = desiredSampRate;
+            }
+
+            // for changing the sampling rate, reference:
+            // http://stackoverflow.com/a/28977136/552182
+            function interpolateArray(data, newSampleRate, oldSampleRate) {
+                var fitCount = Math.round(data.length * (newSampleRate / oldSampleRate));
+                var newData = [];
+                var springFactor = Number((data.length - 1) / (fitCount - 1));
+                newData[0] = data[0];
+                for (var i = 1; i < fitCount - 1; i++) {
+                    var tmp = i * springFactor;
+                    var before = Number(Math.floor(tmp)).toFixed();
+                    var after = Number(Math.ceil(tmp)).toFixed();
+                    var atPoint = tmp - before;
+                    newData[i] = linearInterpolate(data[before], data[after], atPoint);
+                }
+                newData[fitCount - 1] = data[data.length - 1];
+                return newData;
+            }
+
+            function linearInterpolate(before, after, atPoint) {
+                return before + (after - before) * atPoint;
+            }
+
+            function mergeBuffers(channelBuffer, rLength) {
+                var result = new Float64Array(rLength);
+                var offset = 0;
+                var lng = channelBuffer.length;
+
+                for (var i = 0; i < lng; i++) {
+                    var buffer = channelBuffer[i];
+                    result.set(buffer, offset);
+                    offset += buffer.length;
+                }
+
+                return result;
+            }
+
+            function interleave(leftChannel, rightChannel) {
+                var length = leftChannel.length + rightChannel.length;
+
+                var result = new Float64Array(length);
+
+                var inputIndex = 0;
+
+                for (var index = 0; index < length;) {
+                    result[index++] = leftChannel[inputIndex];
+                    result[index++] = rightChannel[inputIndex];
+                    inputIndex++;
+                }
+                return result;
+            }
+
+            function writeUTFBytes(view, offset, string) {
+                var lng = string.length;
+                for (var i = 0; i < lng; i++) {
+                    view.setUint8(offset + i, string.charCodeAt(i));
+                }
+            }
+
+            // interleave both channels together
+            var interleaved;
+
+            if (numberOfAudioChannels === 2) {
+                interleaved = interleave(leftBuffers, rightBuffers);
+            }
+
+            if (numberOfAudioChannels === 1) {
+                interleaved = leftBuffers;
+            }
+
+            var interleavedLength = interleaved.length;
+
+            // create wav file
+            var resultingBufferLength = 44 + interleavedLength * 2;
+
+            var buffer = new ArrayBuffer(resultingBufferLength);
+
+            var view = new DataView(buffer);
+
+            // RIFF chunk descriptor/identifier 
+            writeUTFBytes(view, 0, 'RIFF');
+
+            // RIFF chunk length
+            view.setUint32(4, 44 + interleavedLength * 2, true);
+
+            // RIFF type 
+            writeUTFBytes(view, 8, 'WAVE');
+
+            // format chunk identifier 
+            // FMT sub-chunk
+            writeUTFBytes(view, 12, 'fmt ');
+
+            // format chunk length 
+            view.setUint32(16, 16, true);
+
+            // sample format (raw)
+            view.setUint16(20, 1, true);
+
+            // stereo (2 channels)
+            view.setUint16(22, numberOfAudioChannels, true);
+
+            // sample rate 
+            view.setUint32(24, sampleRate, true);
+
+            // byte rate (sample rate * block align)
+            view.setUint32(28, sampleRate * 2, true);
+
+            // block align (channel count * bytes per sample) 
+            view.setUint16(32, numberOfAudioChannels * 2, true);
+
+            // bits per sample 
+            view.setUint16(34, 16, true);
+
+            // data sub-chunk
+            // data chunk identifier 
+            writeUTFBytes(view, 36, 'data');
+
+            // data chunk length 
+            view.setUint32(40, interleavedLength * 2, true);
+
+            // write the PCM samples
+            var lng = interleavedLength;
+            var index = 44;
+            var volume = 1;
+            for (var i = 0; i < lng; i++) {
+                view.setInt16(index, interleaved[i] * (0x7FFF * volume), true);
+                index += 2;
+            }
+
+            if (cb) {
+                return cb({
+                    buffer: buffer,
+                    view: view
+                });
+            }
+
+            postMessage({
+                buffer: buffer,
+                view: view
+            });
+        }
+
+        if (isEdge || isOpera || isSafari || config.noWorker) {
+            mergeAudioBuffers(config, function(data) {
+                callback(data.buffer, data.view);
+            });
+            return;
+        }
+
+
+        var webWorker = processInWebWorker(mergeAudioBuffers);
+
+        webWorker.onmessage = function(event) {
+            callback(event.data.buffer, event.data.view);
+
+            // release memory
+            URL.revokeObjectURL(webWorker.workerURL);
+        };
+
+        webWorker.postMessage(config);
+    }
+
+    function processInWebWorker(_function) {
+        var workerURL = URL.createObjectURL(new Blob([_function.toString(),
+            ';this.onmessage =  function (e) {' + _function.name + '(e.data);}'
+        ], {
+            type: 'application/javascript'
+        }));
+
+        var worker = new Worker(workerURL);
+        worker.workerURL = workerURL;
+        return worker;
+    }
+
+    /**
+     * This method stops recording MediaStream.
+     * @param {function} callback - Callback function, that is used to pass recorded blob back to the callee.
+     * @method
+     * @memberof StereoAudioRecorder
+     * @example
+     * recorder.stop(function(blob) {
+     *     video.src = URL.createObjectURL(blob);
+     * });
+     */
+    this.stop = function(callback) {
+        callback = callback || function() {};
+
+        // stop recording
+        recording = false;
+
+        mergeLeftRightBuffers({
+            desiredSampRate: desiredSampRate,
+            sampleRate: sampleRate,
+            numberOfAudioChannels: numberOfAudioChannels,
+            internalInterleavedLength: recordingLength,
+            leftBuffers: leftchannel,
+            rightBuffers: numberOfAudioChannels === 1 ? [] : rightchannel
+        }, function(buffer, view) {
+            /**
+             * @property {Blob} blob - The recorded blob object.
+             * @memberof StereoAudioRecorder
+             * @example
+             * recorder.stop(function(){
+             *     var blob = recorder.blob;
+             * });
+             */
+            self.blob = new Blob([view], {
+                type: 'audio/wav'
+            });
+
+            /**
+             * @property {ArrayBuffer} buffer - The recorded buffer object.
+             * @memberof StereoAudioRecorder
+             * @example
+             * recorder.stop(function(){
+             *     var buffer = recorder.buffer;
+             * });
+             */
+            self.buffer = new ArrayBuffer(view.buffer.byteLength);
+
+            /**
+             * @property {DataView} view - The recorded data-view object.
+             * @memberof StereoAudioRecorder
+             * @example
+             * recorder.stop(function(){
+             *     var view = recorder.view;
+             * });
+             */
+            self.view = view;
+
+            self.sampleRate = desiredSampRate || sampleRate;
+            self.bufferSize = bufferSize;
+
+            // recorded audio length
+            self.length = recordingLength;
+
+            isAudioProcessStarted = false;
+
+            if (callback) {
+                callback(self.blob);
+            }
+        });
+    };
+
+    if (!Storage.AudioContextConstructor) {
+        Storage.AudioContextConstructor = new Storage.AudioContext();
+    }
+
+    var context = Storage.AudioContextConstructor;
+
+    // creates an audio node from the microphone incoming stream
+    var audioInput = context.createMediaStreamSource(mediaStream);
+
+    var legalBufferValues = [0, 256, 512, 1024, 2048, 4096, 8192, 16384];
+
+    /**
+     * From the spec: This value controls how frequently the audioprocess event is
+     * dispatched and how many sample-frames need to be processed each call.
+     * Lower values for buffer size will result in a lower (better) latency.
+     * Higher values will be necessary to avoid audio breakup and glitches
+     * The size of the buffer (in sample-frames) which needs to
+     * be processed each time onprocessaudio is called.
+     * Legal values are (256, 512, 1024, 2048, 4096, 8192, 16384).
+     * @property {number} bufferSize - Buffer-size for how frequently the audioprocess event is dispatched.
+     * @memberof StereoAudioRecorder
+     * @example
+     * recorder = new StereoAudioRecorder(mediaStream, {
+     *     bufferSize: 4096
+     * });
+     */
+
+    // "0" means, let chrome decide the most accurate buffer-size for current platform.
+    var bufferSize = typeof config.bufferSize === 'undefined' ? 4096 : config.bufferSize;
+
+    if (legalBufferValues.indexOf(bufferSize) === -1) {
+        if (!config.disableLogs) {
+            console.warn('Legal values for buffer-size are ' + JSON.stringify(legalBufferValues, null, '\t'));
+        }
+    }
+
+    if (context.createJavaScriptNode) {
+        jsAudioNode = context.createJavaScriptNode(bufferSize, numberOfAudioChannels, numberOfAudioChannels);
+    } else if (context.createScriptProcessor) {
+        jsAudioNode = context.createScriptProcessor(bufferSize, numberOfAudioChannels, numberOfAudioChannels);
+    } else {
+        throw 'WebAudio API has no support on this browser.';
+    }
+
+    // connect the stream to the script processor
+    audioInput.connect(jsAudioNode);
+
+    if (!config.bufferSize) {
+        bufferSize = jsAudioNode.bufferSize; // device buffer-size
+    }
+
+    /**
+     * The sample rate (in sample-frames per second) at which the
+     * AudioContext handles audio. It is assumed that all AudioNodes
+     * in the context run at this rate. In making this assumption,
+     * sample-rate converters or "varispeed" processors are not supported
+     * in real-time processing.
+     * The sampleRate parameter describes the sample-rate of the
+     * linear PCM audio data in the buffer in sample-frames per second.
+     * An implementation must support sample-rates in at least
+     * the range 22050 to 96000.
+     * @property {number} sampleRate - Buffer-size for how frequently the audioprocess event is dispatched.
+     * @memberof StereoAudioRecorder
+     * @example
+     * recorder = new StereoAudioRecorder(mediaStream, {
+     *     sampleRate: 44100
+     * });
+     */
+    var sampleRate = typeof config.sampleRate !== 'undefined' ? config.sampleRate : context.sampleRate || 44100;
+
+    if (sampleRate < 22050 || sampleRate > 96000) {
+        // Ref: http://stackoverflow.com/a/26303918/552182
+        if (!config.disableLogs) {
+            console.warn('sample-rate must be under range 22050 and 96000.');
+        }
+    }
+
+    if (!config.disableLogs) {
+        console.log('sample-rate', sampleRate);
+        console.log('buffer-size', bufferSize);
+
+        if (config.desiredSampRate) {
+            console.log('Desired sample-rate', config.desiredSampRate);
+        }
+    }
+
+    var isPaused = false;
+    /**
+     * This method pauses the recording process.
+     * @method
+     * @memberof StereoAudioRecorder
+     * @example
+     * recorder.pause();
+     */
+    this.pause = function() {
+        isPaused = true;
+    };
+
+    /**
+     * This method resumes the recording process.
+     * @method
+     * @memberof StereoAudioRecorder
+     * @example
+     * recorder.resume();
+     */
+    this.resume = function() {
+        if (isMediaStreamActive() === false) {
+            throw 'Please make sure MediaStream is active.';
+        }
+
+        if (!recording) {
+            if (!config.disableLogs) {
+                console.log('Seems recording has been restarted.');
+            }
+            this.record();
+            return;
+        }
+
+        isPaused = false;
+    };
+
+    /**
+     * This method resets currently recorded data.
+     * @method
+     * @memberof StereoAudioRecorder
+     * @example
+     * recorder.clearRecordedData();
+     */
+    this.clearRecordedData = function() {
+        config.checkForInactiveTracks = false;
+
+        if (recording) {
+            this.stop(clearRecordedDataCB);
+        }
+
+        clearRecordedDataCB();
+    };
+
+    function resetVariables() {
+        leftchannel = [];
+        rightchannel = [];
+        recordingLength = 0;
+        isAudioProcessStarted = false;
+        recording = false;
+        isPaused = false;
+        context = null;
+
+        self.leftchannel = leftchannel;
+        self.rightchannel = rightchannel;
+        self.numberOfAudioChannels = numberOfAudioChannels;
+        self.desiredSampRate = desiredSampRate;
+        self.sampleRate = sampleRate;
+        self.recordingLength = recordingLength;
+
+        intervalsBasedBuffers = {
+            left: [],
+            right: [],
+            recordingLength: 0
+        };
+    }
+
+    function clearRecordedDataCB() {
+        if (jsAudioNode) {
+            jsAudioNode.onaudioprocess = null;
+            jsAudioNode.disconnect();
+            jsAudioNode = null;
+        }
+
+        if (audioInput) {
+            audioInput.disconnect();
+            audioInput = null;
+        }
+
+        resetVariables();
+    }
+
+    // for debugging
+    this.name = 'StereoAudioRecorder';
+    this.toString = function() {
+        return this.name;
+    };
+
+    var isAudioProcessStarted = false;
+
+    function onAudioProcessDataAvailable(e) {
+        if (isPaused) {
+            return;
+        }
+
+        if (isMediaStreamActive() === false) {
+            if (!config.disableLogs) {
+                console.log('MediaStream seems stopped.');
+            }
+            jsAudioNode.disconnect();
+            recording = false;
+        }
+
+        if (!recording) {
+            if (audioInput) {
+                audioInput.disconnect();
+                audioInput = null;
+            }
+            return;
+        }
+
+        /**
+         * This method is called on "onaudioprocess" event's first invocation.
+         * @method {function} onAudioProcessStarted
+         * @memberof StereoAudioRecorder
+         * @example
+         * recorder.onAudioProcessStarted: function() { };
+         */
+        if (!isAudioProcessStarted) {
+            isAudioProcessStarted = true;
+            if (config.onAudioProcessStarted) {
+                config.onAudioProcessStarted();
+            }
+
+            if (config.initCallback) {
+                config.initCallback();
+            }
+        }
+
+        var left = e.inputBuffer.getChannelData(0);
+
+        // we clone the samples
+        var chLeft = new Float32Array(left);
+        leftchannel.push(chLeft);
+
+        if (numberOfAudioChannels === 2) {
+            var right = e.inputBuffer.getChannelData(1);
+            var chRight = new Float32Array(right);
+            rightchannel.push(chRight);
+        }
+
+        recordingLength += bufferSize;
+
+        // export raw PCM
+        self.recordingLength = recordingLength;
+
+        if (typeof config.timeSlice !== 'undefined') {
+            intervalsBasedBuffers.recordingLength += bufferSize;
+            intervalsBasedBuffers.left.push(chLeft);
+
+            if (numberOfAudioChannels === 2) {
+                intervalsBasedBuffers.right.push(chRight);
+            }
+        }
+    }
+
+    jsAudioNode.onaudioprocess = onAudioProcessDataAvailable;
+
+    // to prevent self audio to be connected with speakers
+    jsAudioNode.connect(context.destination);
+
+    // export raw PCM
+    this.leftchannel = leftchannel;
+    this.rightchannel = rightchannel;
+    this.numberOfAudioChannels = numberOfAudioChannels;
+    this.desiredSampRate = desiredSampRate;
+    this.sampleRate = sampleRate;
+    self.recordingLength = recordingLength;
+
+    // helper for intervals based blobs
+    var intervalsBasedBuffers = {
+        left: [],
+        right: [],
+        recordingLength: 0
+    };
+
+    // this looper is used to support intervals based blobs (via timeSlice+ondataavailable)
+    function looper() {
+        if (!recording || typeof config.ondataavailable !== 'function' || typeof config.timeSlice === 'undefined') {
+            return;
+        }
+
+        if (intervalsBasedBuffers.left.length) {
+            mergeLeftRightBuffers({
+                desiredSampRate: desiredSampRate,
+                sampleRate: sampleRate,
+                numberOfAudioChannels: numberOfAudioChannels,
+                internalInterleavedLength: intervalsBasedBuffers.recordingLength,
+                leftBuffers: intervalsBasedBuffers.left,
+                rightBuffers: numberOfAudioChannels === 1 ? [] : intervalsBasedBuffers.right
+            }, function(buffer, view) {
+                var blob = new Blob([view], {
+                    type: 'audio/wav'
+                });
+                config.ondataavailable(blob);
+
+                setTimeout(looper, config.timeSlice);
+            });
+
+            intervalsBasedBuffers = {
+                left: [],
+                right: [],
+                recordingLength: 0
+            };
+        } else {
+            setTimeout(looper, config.timeSlice);
+        }
+    }
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.StereoAudioRecorder = StereoAudioRecorder;
+}
+
+// _________________
+// CanvasRecorder.js
+
+/**
+ * CanvasRecorder is a standalone class used by {@link RecordRTC} to bring HTML5-Canvas recording into video WebM. It uses HTML2Canvas library and runs top over {@link Whammy}.
+ * @summary HTML2Canvas recording into video WebM.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef CanvasRecorder
+ * @class
+ * @example
+ * var recorder = new CanvasRecorder(htmlElement, { disableLogs: true, useWhammyRecorder: true });
+ * recorder.record();
+ * recorder.stop(function(blob) {
+ *     video.src = URL.createObjectURL(blob);
+ * });
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {HTMLElement} htmlElement - querySelector/getElementById/getElementsByTagName[0]/etc.
+ * @param {object} config - {disableLogs:true, initCallback: function}
+ */
+
+function CanvasRecorder(htmlElement, config) {
+    if (typeof html2canvas === 'undefined') {
+        throw 'Please link: https://cdn.webrtc-experiment.com/screenshot.js';
+    }
+
+    config = config || {};
+    if (!config.frameInterval) {
+        config.frameInterval = 10;
+    }
+
+    // via DetectRTC.js
+    var isCanvasSupportsStreamCapturing = false;
+    ['captureStream', 'mozCaptureStream', 'webkitCaptureStream'].forEach(function(item) {
+        if (item in document.createElement('canvas')) {
+            isCanvasSupportsStreamCapturing = true;
+        }
+    });
+
+    var _isChrome = (!!window.webkitRTCPeerConnection || !!window.webkitGetUserMedia) && !!window.chrome;
+
+    var chromeVersion = 50;
+    var matchArray = navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./);
+    if (_isChrome && matchArray && matchArray[2]) {
+        chromeVersion = parseInt(matchArray[2], 10);
+    }
+
+    if (_isChrome && chromeVersion < 52) {
+        isCanvasSupportsStreamCapturing = false;
+    }
+
+    var globalCanvas, mediaStreamRecorder;
+
+    if (isCanvasSupportsStreamCapturing) {
+        if (!config.disableLogs) {
+            console.log('Your browser supports both MediRecorder API and canvas.captureStream!');
+        }
+
+        if (htmlElement instanceof HTMLCanvasElement) {
+            globalCanvas = htmlElement;
+        } else if (htmlElement instanceof CanvasRenderingContext2D) {
+            globalCanvas = htmlElement.canvas;
+        } else {
+            throw 'Please pass either HTMLCanvasElement or CanvasRenderingContext2D.';
+        }
+    } else if (!!navigator.mozGetUserMedia) {
+        if (!config.disableLogs) {
+            console.error('Canvas recording is NOT supported in Firefox.');
+        }
+    }
+
+    var isRecording;
+
+    /**
+     * This method records Canvas.
+     * @method
+     * @memberof CanvasRecorder
+     * @example
+     * recorder.record();
+     */
+    this.record = function() {
+        isRecording = true;
+
+        if (isCanvasSupportsStreamCapturing && !config.useWhammyRecorder) {
+            // CanvasCaptureMediaStream
+            var canvasMediaStream;
+            if ('captureStream' in globalCanvas) {
+                canvasMediaStream = globalCanvas.captureStream(25); // 25 FPS
+            } else if ('mozCaptureStream' in globalCanvas) {
+                canvasMediaStream = globalCanvas.mozCaptureStream(25);
+            } else if ('webkitCaptureStream' in globalCanvas) {
+                canvasMediaStream = globalCanvas.webkitCaptureStream(25);
+            }
+
+            try {
+                var mdStream = new MediaStream();
+                mdStream.addTrack(canvasMediaStream.getVideoTracks()[0]);
+                canvasMediaStream = mdStream;
+            } catch (e) {}
+
+            if (!canvasMediaStream) {
+                throw 'captureStream API are NOT available.';
+            }
+
+            // Note: Jan 18, 2016 status is that, 
+            // Firefox MediaRecorder API can't record CanvasCaptureMediaStream object.
+            mediaStreamRecorder = new MediaStreamRecorder(canvasMediaStream, {
+                mimeType: 'video/webm'
+            });
+            mediaStreamRecorder.record();
+        } else {
+            whammy.frames = [];
+            lastTime = new Date().getTime();
+            drawCanvasFrame();
+        }
+
+        if (config.initCallback) {
+            config.initCallback();
+        }
+    };
+
+    this.getWebPImages = function(callback) {
+        if (htmlElement.nodeName.toLowerCase() !== 'canvas') {
+            callback();
+            return;
+        }
+
+        var framesLength = whammy.frames.length;
+        whammy.frames.forEach(function(frame, idx) {
+            var framesRemaining = framesLength - idx;
+            if (!config.disableLogs) {
+                console.log(framesRemaining + '/' + framesLength + ' frames remaining');
+            }
+
+            if (config.onEncodingCallback) {
+                config.onEncodingCallback(framesRemaining, framesLength);
+            }
+
+            var webp = frame.image.toDataURL('image/webp', 1);
+            whammy.frames[idx].image = webp;
+        });
+
+        if (!config.disableLogs) {
+            console.log('Generating WebM');
+        }
+
+        callback();
+    };
+
+    /**
+     * This method stops recording Canvas.
+     * @param {function} callback - Callback function, that is used to pass recorded blob back to the callee.
+     * @method
+     * @memberof CanvasRecorder
+     * @example
+     * recorder.stop(function(blob) {
+     *     video.src = URL.createObjectURL(blob);
+     * });
+     */
+    this.stop = function(callback) {
+        isRecording = false;
+
+        var that = this;
+
+        if (isCanvasSupportsStreamCapturing && mediaStreamRecorder) {
+            mediaStreamRecorder.stop(callback);
+            return;
+        }
+
+        this.getWebPImages(function() {
+            /**
+             * @property {Blob} blob - Recorded frames in video/webm blob.
+             * @memberof CanvasRecorder
+             * @example
+             * recorder.stop(function() {
+             *     var blob = recorder.blob;
+             * });
+             */
+            whammy.compile(function(blob) {
+                if (!config.disableLogs) {
+                    console.log('Recording finished!');
+                }
+
+                that.blob = blob;
+
+                if (that.blob.forEach) {
+                    that.blob = new Blob([], {
+                        type: 'video/webm'
+                    });
+                }
+
+                if (callback) {
+                    callback(that.blob);
+                }
+
+                whammy.frames = [];
+            });
+        });
+    };
+
+    var isPausedRecording = false;
+
+    /**
+     * This method pauses the recording process.
+     * @method
+     * @memberof CanvasRecorder
+     * @example
+     * recorder.pause();
+     */
+    this.pause = function() {
+        isPausedRecording = true;
+
+        if (mediaStreamRecorder instanceof MediaStreamRecorder) {
+            mediaStreamRecorder.pause();
+            return;
+        }
+    };
+
+    /**
+     * This method resumes the recording process.
+     * @method
+     * @memberof CanvasRecorder
+     * @example
+     * recorder.resume();
+     */
+    this.resume = function() {
+        isPausedRecording = false;
+
+        if (mediaStreamRecorder instanceof MediaStreamRecorder) {
+            mediaStreamRecorder.resume();
+            return;
+        }
+
+        if (!isRecording) {
+            this.record();
+        }
+    };
+
+    /**
+     * This method resets currently recorded data.
+     * @method
+     * @memberof CanvasRecorder
+     * @example
+     * recorder.clearRecordedData();
+     */
+    this.clearRecordedData = function() {
+        if (isRecording) {
+            this.stop(clearRecordedDataCB);
+        }
+        clearRecordedDataCB();
+    };
+
+    function clearRecordedDataCB() {
+        whammy.frames = [];
+        isRecording = false;
+        isPausedRecording = false;
+    }
+
+    // for debugging
+    this.name = 'CanvasRecorder';
+    this.toString = function() {
+        return this.name;
+    };
+
+    function cloneCanvas() {
+        //create a new canvas
+        var newCanvas = document.createElement('canvas');
+        var context = newCanvas.getContext('2d');
+
+        //set dimensions
+        newCanvas.width = htmlElement.width;
+        newCanvas.height = htmlElement.height;
+
+        //apply the old canvas to the new one
+        context.drawImage(htmlElement, 0, 0);
+
+        //return the new canvas
+        return newCanvas;
+    }
+
+    function drawCanvasFrame() {
+        if (isPausedRecording) {
+            lastTime = new Date().getTime();
+            return setTimeout(drawCanvasFrame, 500);
+        }
+
+        if (htmlElement.nodeName.toLowerCase() === 'canvas') {
+            var duration = new Date().getTime() - lastTime;
+            // via #206, by Jack i.e. @Seymourr
+            lastTime = new Date().getTime();
+
+            whammy.frames.push({
+                image: cloneCanvas(),
+                duration: duration
+            });
+
+            if (isRecording) {
+                setTimeout(drawCanvasFrame, config.frameInterval);
+            }
+            return;
+        }
+
+        html2canvas(htmlElement, {
+            grabMouse: typeof config.showMousePointer === 'undefined' || config.showMousePointer,
+            onrendered: function(canvas) {
+                var duration = new Date().getTime() - lastTime;
+                if (!duration) {
+                    return setTimeout(drawCanvasFrame, config.frameInterval);
+                }
+
+                // via #206, by Jack i.e. @Seymourr
+                lastTime = new Date().getTime();
+
+                whammy.frames.push({
+                    image: canvas.toDataURL('image/webp', 1),
+                    duration: duration
+                });
+
+                if (isRecording) {
+                    setTimeout(drawCanvasFrame, config.frameInterval);
+                }
+            }
+        });
+    }
+
+    var lastTime = new Date().getTime();
+
+    var whammy = new Whammy.Video(100);
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.CanvasRecorder = CanvasRecorder;
+}
+
+// _________________
+// WhammyRecorder.js
+
+/**
+ * WhammyRecorder is a standalone class used by {@link RecordRTC} to bring video recording in Chrome. It runs top over {@link Whammy}.
+ * @summary Video recording feature in Chrome.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef WhammyRecorder
+ * @class
+ * @example
+ * var recorder = new WhammyRecorder(mediaStream);
+ * recorder.record();
+ * recorder.stop(function(blob) {
+ *     video.src = URL.createObjectURL(blob);
+ * });
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.
+ * @param {object} config - {disableLogs: true, initCallback: function, video: HTMLVideoElement, etc.}
+ */
+
+function WhammyRecorder(mediaStream, config) {
+
+    config = config || {};
+
+    if (!config.frameInterval) {
+        config.frameInterval = 10;
+    }
+
+    if (!config.disableLogs) {
+        console.log('Using frames-interval:', config.frameInterval);
+    }
+
+    /**
+     * This method records video.
+     * @method
+     * @memberof WhammyRecorder
+     * @example
+     * recorder.record();
+     */
+    this.record = function() {
+        if (!config.width) {
+            config.width = 320;
+        }
+
+        if (!config.height) {
+            config.height = 240;
+        }
+
+        if (!config.video) {
+            config.video = {
+                width: config.width,
+                height: config.height
+            };
+        }
+
+        if (!config.canvas) {
+            config.canvas = {
+                width: config.width,
+                height: config.height
+            };
+        }
+
+        canvas.width = config.canvas.width || 320;
+        canvas.height = config.canvas.height || 240;
+
+        context = canvas.getContext('2d');
+
+        // setting defaults
+        if (config.video && config.video instanceof HTMLVideoElement) {
+            video = config.video.cloneNode();
+
+            if (config.initCallback) {
+                config.initCallback();
+            }
+        } else {
+            video = document.createElement('video');
+
+            setSrcObject(mediaStream, video);
+
+            video.onloadedmetadata = function() { // "onloadedmetadata" may NOT work in FF?
+                if (config.initCallback) {
+                    config.initCallback();
+                }
+            };
+
+            video.width = config.video.width;
+            video.height = config.video.height;
+        }
+
+        video.muted = true;
+        video.play();
+
+        lastTime = new Date().getTime();
+        whammy = new Whammy.Video();
+
+        if (!config.disableLogs) {
+            console.log('canvas resolutions', canvas.width, '*', canvas.height);
+            console.log('video width/height', video.width || canvas.width, '*', video.height || canvas.height);
+        }
+
+        drawFrames(config.frameInterval);
+    };
+
+    /**
+     * Draw and push frames to Whammy
+     * @param {integer} frameInterval - set minimum interval (in milliseconds) between each time we push a frame to Whammy
+     */
+    function drawFrames(frameInterval) {
+        frameInterval = typeof frameInterval !== 'undefined' ? frameInterval : 10;
+
+        var duration = new Date().getTime() - lastTime;
+        if (!duration) {
+            return setTimeout(drawFrames, frameInterval, frameInterval);
+        }
+
+        if (isPausedRecording) {
+            lastTime = new Date().getTime();
+            return setTimeout(drawFrames, 100);
+        }
+
+        // via #206, by Jack i.e. @Seymourr
+        lastTime = new Date().getTime();
+
+        if (video.paused) {
+            // via: https://github.com/muaz-khan/WebRTC-Experiment/pull/316
+            // Tweak for Android Chrome
+            video.play();
+        }
+
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        whammy.frames.push({
+            duration: duration,
+            image: canvas.toDataURL('image/webp')
+        });
+
+        if (!isStopDrawing) {
+            setTimeout(drawFrames, frameInterval, frameInterval);
+        }
+    }
+
+    function asyncLoop(o) {
+        var i = -1,
+            length = o.length;
+
+        (function loop() {
+            i++;
+            if (i === length) {
+                o.callback();
+                return;
+            }
+
+            // "setTimeout" added by Jim McLeod
+            setTimeout(function() {
+                o.functionToLoop(loop, i);
+            }, 1);
+        })();
+    }
+
+
+    /**
+     * remove black frames from the beginning to the specified frame
+     * @param {Array} _frames - array of frames to be checked
+     * @param {number} _framesToCheck - number of frame until check will be executed (-1 - will drop all frames until frame not matched will be found)
+     * @param {number} _pixTolerance - 0 - very strict (only black pixel color) ; 1 - all
+     * @param {number} _frameTolerance - 0 - very strict (only black frame color) ; 1 - all
+     * @returns {Array} - array of frames
+     */
+    // pull#293 by @volodalexey
+    function dropBlackFrames(_frames, _framesToCheck, _pixTolerance, _frameTolerance, callback) {
+        var localCanvas = document.createElement('canvas');
+        localCanvas.width = canvas.width;
+        localCanvas.height = canvas.height;
+        var context2d = localCanvas.getContext('2d');
+        var resultFrames = [];
+
+        var checkUntilNotBlack = _framesToCheck === -1;
+        var endCheckFrame = (_framesToCheck && _framesToCheck > 0 && _framesToCheck <= _frames.length) ?
+            _framesToCheck : _frames.length;
+        var sampleColor = {
+            r: 0,
+            g: 0,
+            b: 0
+        };
+        var maxColorDifference = Math.sqrt(
+            Math.pow(255, 2) +
+            Math.pow(255, 2) +
+            Math.pow(255, 2)
+        );
+        var pixTolerance = _pixTolerance && _pixTolerance >= 0 && _pixTolerance <= 1 ? _pixTolerance : 0;
+        var frameTolerance = _frameTolerance && _frameTolerance >= 0 && _frameTolerance <= 1 ? _frameTolerance : 0;
+        var doNotCheckNext = false;
+
+        asyncLoop({
+            length: endCheckFrame,
+            functionToLoop: function(loop, f) {
+                var matchPixCount, endPixCheck, maxPixCount;
+
+                var finishImage = function() {
+                    if (!doNotCheckNext && maxPixCount - matchPixCount <= maxPixCount * frameTolerance) {
+                        // console.log('removed black frame : ' + f + ' ; frame duration ' + _frames[f].duration);
+                    } else {
+                        // console.log('frame is passed : ' + f);
+                        if (checkUntilNotBlack) {
+                            doNotCheckNext = true;
+                        }
+                        resultFrames.push(_frames[f]);
+                    }
+                    loop();
+                };
+
+                if (!doNotCheckNext) {
+                    var image = new Image();
+                    image.onload = function() {
+                        context2d.drawImage(image, 0, 0, canvas.width, canvas.height);
+                        var imageData = context2d.getImageData(0, 0, canvas.width, canvas.height);
+                        matchPixCount = 0;
+                        endPixCheck = imageData.data.length;
+                        maxPixCount = imageData.data.length / 4;
+
+                        for (var pix = 0; pix < endPixCheck; pix += 4) {
+                            var currentColor = {
+                                r: imageData.data[pix],
+                                g: imageData.data[pix + 1],
+                                b: imageData.data[pix + 2]
+                            };
+                            var colorDifference = Math.sqrt(
+                                Math.pow(currentColor.r - sampleColor.r, 2) +
+                                Math.pow(currentColor.g - sampleColor.g, 2) +
+                                Math.pow(currentColor.b - sampleColor.b, 2)
+                            );
+                            // difference in color it is difference in color vectors (r1,g1,b1) <=> (r2,g2,b2)
+                            if (colorDifference <= maxColorDifference * pixTolerance) {
+                                matchPixCount++;
+                            }
+                        }
+                        finishImage();
+                    };
+                    image.src = _frames[f].image;
+                } else {
+                    finishImage();
+                }
+            },
+            callback: function() {
+                resultFrames = resultFrames.concat(_frames.slice(endCheckFrame));
+
+                if (resultFrames.length <= 0) {
+                    // at least one last frame should be available for next manipulation
+                    // if total duration of all frames will be < 1000 than ffmpeg doesn't work well...
+                    resultFrames.push(_frames[_frames.length - 1]);
+                }
+                callback(resultFrames);
+            }
+        });
+    }
+
+    var isStopDrawing = false;
+
+    /**
+     * This method stops recording video.
+     * @param {function} callback - Callback function, that is used to pass recorded blob back to the callee.
+     * @method
+     * @memberof WhammyRecorder
+     * @example
+     * recorder.stop(function(blob) {
+     *     video.src = URL.createObjectURL(blob);
+     * });
+     */
+    this.stop = function(callback) {
+        callback = callback || function() {};
+
+        isStopDrawing = true;
+
+        var _this = this;
+        // analyse of all frames takes some time!
+        setTimeout(function() {
+            // e.g. dropBlackFrames(frames, 10, 1, 1) - will cut all 10 frames
+            // e.g. dropBlackFrames(frames, 10, 0.5, 0.5) - will analyse 10 frames
+            // e.g. dropBlackFrames(frames, 10) === dropBlackFrames(frames, 10, 0, 0) - will analyse 10 frames with strict black color
+            dropBlackFrames(whammy.frames, -1, null, null, function(frames) {
+                whammy.frames = frames;
+
+                // to display advertisement images!
+                if (config.advertisement && config.advertisement.length) {
+                    whammy.frames = config.advertisement.concat(whammy.frames);
+                }
+
+                /**
+                 * @property {Blob} blob - Recorded frames in video/webm blob.
+                 * @memberof WhammyRecorder
+                 * @example
+                 * recorder.stop(function() {
+                 *     var blob = recorder.blob;
+                 * });
+                 */
+                whammy.compile(function(blob) {
+                    _this.blob = blob;
+
+                    if (_this.blob.forEach) {
+                        _this.blob = new Blob([], {
+                            type: 'video/webm'
+                        });
+                    }
+
+                    if (callback) {
+                        callback(_this.blob);
+                    }
+                });
+            });
+        }, 10);
+    };
+
+    var isPausedRecording = false;
+
+    /**
+     * This method pauses the recording process.
+     * @method
+     * @memberof WhammyRecorder
+     * @example
+     * recorder.pause();
+     */
+    this.pause = function() {
+        isPausedRecording = true;
+    };
+
+    /**
+     * This method resumes the recording process.
+     * @method
+     * @memberof WhammyRecorder
+     * @example
+     * recorder.resume();
+     */
+    this.resume = function() {
+        isPausedRecording = false;
+
+        if (isStopDrawing) {
+            this.record();
+        }
+    };
+
+    /**
+     * This method resets currently recorded data.
+     * @method
+     * @memberof WhammyRecorder
+     * @example
+     * recorder.clearRecordedData();
+     */
+    this.clearRecordedData = function() {
+        if (!isStopDrawing) {
+            this.stop(clearRecordedDataCB);
+        }
+        clearRecordedDataCB();
+    };
+
+    function clearRecordedDataCB() {
+        whammy.frames = [];
+        isStopDrawing = true;
+        isPausedRecording = false;
+    }
+
+    // for debugging
+    this.name = 'WhammyRecorder';
+    this.toString = function() {
+        return this.name;
+    };
+
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+
+    var video;
+    var lastTime;
+    var whammy;
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.WhammyRecorder = WhammyRecorder;
+}
+
+// https://github.com/antimatter15/whammy/blob/master/LICENSE
+// _________
+// Whammy.js
+
+// todo: Firefox now supports webp for webm containers!
+// their MediaRecorder implementation works well!
+// should we provide an option to record via Whammy.js or MediaRecorder API is a better solution?
+
+/**
+ * Whammy is a standalone class used by {@link RecordRTC} to bring video recording in Chrome. It is written by {@link https://github.com/antimatter15|antimatter15}
+ * @summary A real time javascript webm encoder based on a canvas hack.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef Whammy
+ * @class
+ * @example
+ * var recorder = new Whammy().Video(15);
+ * recorder.add(context || canvas || dataURL);
+ * var output = recorder.compile();
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ */
+
+var Whammy = (function() {
+    // a more abstract-ish API
+
+    function WhammyVideo(duration) {
+        this.frames = [];
+        this.duration = duration || 1;
+        this.quality = 0.8;
+    }
+
+    /**
+     * Pass Canvas or Context or image/webp(string) to {@link Whammy} encoder.
+     * @method
+     * @memberof Whammy
+     * @example
+     * recorder = new Whammy().Video(0.8, 100);
+     * recorder.add(canvas || context || 'image/webp');
+     * @param {string} frame - Canvas || Context || image/webp
+     * @param {number} duration - Stick a duration (in milliseconds)
+     */
+    WhammyVideo.prototype.add = function(frame, duration) {
+        if ('canvas' in frame) { //CanvasRenderingContext2D
+            frame = frame.canvas;
+        }
+
+        if ('toDataURL' in frame) {
+            frame = frame.toDataURL('image/webp', this.quality);
+        }
+
+        if (!(/^data:image\/webp;base64,/ig).test(frame)) {
+            throw 'Input must be formatted properly as a base64 encoded DataURI of type image/webp';
+        }
+        this.frames.push({
+            image: frame,
+            duration: duration || this.duration
+        });
+    };
+
+    function processInWebWorker(_function) {
+        var blob = URL.createObjectURL(new Blob([_function.toString(),
+            'this.onmessage =  function (e) {' + _function.name + '(e.data);}'
+        ], {
+            type: 'application/javascript'
+        }));
+
+        var worker = new Worker(blob);
+        URL.revokeObjectURL(blob);
+        return worker;
+    }
+
+    function whammyInWebWorker(frames) {
+        function ArrayToWebM(frames) {
+            var info = checkFrames(frames);
+            if (!info) {
+                return [];
+            }
+
+            var clusterMaxDuration = 30000;
+
+            var EBML = [{
+                'id': 0x1a45dfa3, // EBML
+                'data': [{
+                    'data': 1,
+                    'id': 0x4286 // EBMLVersion
+                }, {
+                    'data': 1,
+                    'id': 0x42f7 // EBMLReadVersion
+                }, {
+                    'data': 4,
+                    'id': 0x42f2 // EBMLMaxIDLength
+                }, {
+                    'data': 8,
+                    'id': 0x42f3 // EBMLMaxSizeLength
+                }, {
+                    'data': 'webm',
+                    'id': 0x4282 // DocType
+                }, {
+                    'data': 2,
+                    'id': 0x4287 // DocTypeVersion
+                }, {
+                    'data': 2,
+                    'id': 0x4285 // DocTypeReadVersion
+                }]
+            }, {
+                'id': 0x18538067, // Segment
+                'data': [{
+                    'id': 0x1549a966, // Info
+                    'data': [{
+                        'data': 1e6, //do things in millisecs (num of nanosecs for duration scale)
+                        'id': 0x2ad7b1 // TimecodeScale
+                    }, {
+                        'data': 'whammy',
+                        'id': 0x4d80 // MuxingApp
+                    }, {
+                        'data': 'whammy',
+                        'id': 0x5741 // WritingApp
+                    }, {
+                        'data': doubleToString(info.duration),
+                        'id': 0x4489 // Duration
+                    }]
+                }, {
+                    'id': 0x1654ae6b, // Tracks
+                    'data': [{
+                        'id': 0xae, // TrackEntry
+                        'data': [{
+                            'data': 1,
+                            'id': 0xd7 // TrackNumber
+                        }, {
+                            'data': 1,
+                            'id': 0x73c5 // TrackUID
+                        }, {
+                            'data': 0,
+                            'id': 0x9c // FlagLacing
+                        }, {
+                            'data': 'und',
+                            'id': 0x22b59c // Language
+                        }, {
+                            'data': 'V_VP8',
+                            'id': 0x86 // CodecID
+                        }, {
+                            'data': 'VP8',
+                            'id': 0x258688 // CodecName
+                        }, {
+                            'data': 1,
+                            'id': 0x83 // TrackType
+                        }, {
+                            'id': 0xe0, // Video
+                            'data': [{
+                                'data': info.width,
+                                'id': 0xb0 // PixelWidth
+                            }, {
+                                'data': info.height,
+                                'id': 0xba // PixelHeight
+                            }]
+                        }]
+                    }]
+                }]
+            }];
+
+            //Generate clusters (max duration)
+            var frameNumber = 0;
+            var clusterTimecode = 0;
+            while (frameNumber < frames.length) {
+
+                var clusterFrames = [];
+                var clusterDuration = 0;
+                do {
+                    clusterFrames.push(frames[frameNumber]);
+                    clusterDuration += frames[frameNumber].duration;
+                    frameNumber++;
+                } while (frameNumber < frames.length && clusterDuration < clusterMaxDuration);
+
+                var clusterCounter = 0;
+                var cluster = {
+                    'id': 0x1f43b675, // Cluster
+                    'data': getClusterData(clusterTimecode, clusterCounter, clusterFrames)
+                }; //Add cluster to segment
+                EBML[1].data.push(cluster);
+                clusterTimecode += clusterDuration;
+            }
+
+            return generateEBML(EBML);
+        }
+
+        function getClusterData(clusterTimecode, clusterCounter, clusterFrames) {
+            return [{
+                'data': clusterTimecode,
+                'id': 0xe7 // Timecode
+            }].concat(clusterFrames.map(function(webp) {
+                var block = makeSimpleBlock({
+                    discardable: 0,
+                    frame: webp.data.slice(4),
+                    invisible: 0,
+                    keyframe: 1,
+                    lacing: 0,
+                    trackNum: 1,
+                    timecode: Math.round(clusterCounter)
+                });
+                clusterCounter += webp.duration;
+                return {
+                    data: block,
+                    id: 0xa3
+                };
+            }));
+        }
+
+        // sums the lengths of all the frames and gets the duration
+
+        function checkFrames(frames) {
+            if (!frames[0]) {
+                postMessage({
+                    error: 'Something went wrong. Maybe WebP format is not supported in the current browser.'
+                });
+                return;
+            }
+
+            var width = frames[0].width,
+                height = frames[0].height,
+                duration = frames[0].duration;
+
+            for (var i = 1; i < frames.length; i++) {
+                duration += frames[i].duration;
+            }
+            return {
+                duration: duration,
+                width: width,
+                height: height
+            };
+        }
+
+        function numToBuffer(num) {
+            var parts = [];
+            while (num > 0) {
+                parts.push(num & 0xff);
+                num = num >> 8;
+            }
+            return new Uint8Array(parts.reverse());
+        }
+
+        function strToBuffer(str) {
+            return new Uint8Array(str.split('').map(function(e) {
+                return e.charCodeAt(0);
+            }));
+        }
+
+        function bitsToBuffer(bits) {
+            var data = [];
+            var pad = (bits.length % 8) ? (new Array(1 + 8 - (bits.length % 8))).join('0') : '';
+            bits = pad + bits;
+            for (var i = 0; i < bits.length; i += 8) {
+                data.push(parseInt(bits.substr(i, 8), 2));
+            }
+            return new Uint8Array(data);
+        }
+
+        function generateEBML(json) {
+            var ebml = [];
+            for (var i = 0; i < json.length; i++) {
+                var data = json[i].data;
+
+                if (typeof data === 'object') {
+                    data = generateEBML(data);
+                }
+
+                if (typeof data === 'number') {
+                    data = bitsToBuffer(data.toString(2));
+                }
+
+                if (typeof data === 'string') {
+                    data = strToBuffer(data);
+                }
+
+                var len = data.size || data.byteLength || data.length;
+                var zeroes = Math.ceil(Math.ceil(Math.log(len) / Math.log(2)) / 8);
+                var sizeToString = len.toString(2);
+                var padded = (new Array((zeroes * 7 + 7 + 1) - sizeToString.length)).join('0') + sizeToString;
+                var size = (new Array(zeroes)).join('0') + '1' + padded;
+
+                ebml.push(numToBuffer(json[i].id));
+                ebml.push(bitsToBuffer(size));
+                ebml.push(data);
+            }
+
+            return new Blob(ebml, {
+                type: 'video/webm'
+            });
+        }
+
+        function toBinStrOld(bits) {
+            var data = '';
+            var pad = (bits.length % 8) ? (new Array(1 + 8 - (bits.length % 8))).join('0') : '';
+            bits = pad + bits;
+            for (var i = 0; i < bits.length; i += 8) {
+                data += String.fromCharCode(parseInt(bits.substr(i, 8), 2));
+            }
+            return data;
+        }
+
+        function makeSimpleBlock(data) {
+            var flags = 0;
+
+            if (data.keyframe) {
+                flags |= 128;
+            }
+
+            if (data.invisible) {
+                flags |= 8;
+            }
+
+            if (data.lacing) {
+                flags |= (data.lacing << 1);
+            }
+
+            if (data.discardable) {
+                flags |= 1;
+            }
+
+            if (data.trackNum > 127) {
+                throw 'TrackNumber > 127 not supported';
+            }
+
+            var out = [data.trackNum | 0x80, data.timecode >> 8, data.timecode & 0xff, flags].map(function(e) {
+                return String.fromCharCode(e);
+            }).join('') + data.frame;
+
+            return out;
+        }
+
+        function parseWebP(riff) {
+            var VP8 = riff.RIFF[0].WEBP[0];
+
+            var frameStart = VP8.indexOf('\x9d\x01\x2a'); // A VP8 keyframe starts with the 0x9d012a header
+            for (var i = 0, c = []; i < 4; i++) {
+                c[i] = VP8.charCodeAt(frameStart + 3 + i);
+            }
+
+            var width, height, tmp;
+
+            //the code below is literally copied verbatim from the bitstream spec
+            tmp = (c[1] << 8) | c[0];
+            width = tmp & 0x3FFF;
+            tmp = (c[3] << 8) | c[2];
+            height = tmp & 0x3FFF;
+            return {
+                width: width,
+                height: height,
+                data: VP8,
+                riff: riff
+            };
+        }
+
+        function getStrLength(string, offset) {
+            return parseInt(string.substr(offset + 4, 4).split('').map(function(i) {
+                var unpadded = i.charCodeAt(0).toString(2);
+                return (new Array(8 - unpadded.length + 1)).join('0') + unpadded;
+            }).join(''), 2);
+        }
+
+        function parseRIFF(string) {
+            var offset = 0;
+            var chunks = {};
+
+            while (offset < string.length) {
+                var id = string.substr(offset, 4);
+                var len = getStrLength(string, offset);
+                var data = string.substr(offset + 4 + 4, len);
+                offset += 4 + 4 + len;
+                chunks[id] = chunks[id] || [];
+
+                if (id === 'RIFF' || id === 'LIST') {
+                    chunks[id].push(parseRIFF(data));
+                } else {
+                    chunks[id].push(data);
+                }
+            }
+            return chunks;
+        }
+
+        function doubleToString(num) {
+            return [].slice.call(
+                new Uint8Array((new Float64Array([num])).buffer), 0).map(function(e) {
+                return String.fromCharCode(e);
+            }).reverse().join('');
+        }
+
+        var webm = new ArrayToWebM(frames.map(function(frame) {
+            var webp = parseWebP(parseRIFF(atob(frame.image.slice(23))));
+            webp.duration = frame.duration;
+            return webp;
+        }));
+
+        postMessage(webm);
+    }
+
+    /**
+     * Encodes frames in WebM container. It uses WebWorkinvoke to invoke 'ArrayToWebM' method.
+     * @param {function} callback - Callback function, that is used to pass recorded blob back to the callee.
+     * @method
+     * @memberof Whammy
+     * @example
+     * recorder = new Whammy().Video(0.8, 100);
+     * recorder.compile(function(blob) {
+     *    // blob.size - blob.type
+     * });
+     */
+    WhammyVideo.prototype.compile = function(callback) {
+        var webWorker = processInWebWorker(whammyInWebWorker);
+
+        webWorker.onmessage = function(event) {
+            if (event.data.error) {
+                console.error(event.data.error);
+                return;
+            }
+            callback(event.data);
+        };
+
+        webWorker.postMessage(this.frames);
+    };
+
+    return {
+        /**
+         * A more abstract-ish API.
+         * @method
+         * @memberof Whammy
+         * @example
+         * recorder = new Whammy().Video(0.8, 100);
+         * @param {?number} speed - 0.8
+         * @param {?number} quality - 100
+         */
+        Video: WhammyVideo
+    };
+})();
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.Whammy = Whammy;
+}
+
+// ______________ (indexed-db)
+// DiskStorage.js
+
+/**
+ * DiskStorage is a standalone object used by {@link RecordRTC} to store recorded blobs in IndexedDB storage.
+ * @summary Writing blobs into IndexedDB.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @example
+ * DiskStorage.Store({
+ *     audioBlob: yourAudioBlob,
+ *     videoBlob: yourVideoBlob,
+ *     gifBlob  : yourGifBlob
+ * });
+ * DiskStorage.Fetch(function(dataURL, type) {
+ *     if(type === 'audioBlob') { }
+ *     if(type === 'videoBlob') { }
+ *     if(type === 'gifBlob')   { }
+ * });
+ * // DiskStorage.dataStoreName = 'recordRTC';
+ * // DiskStorage.onError = function(error) { };
+ * @property {function} init - This method must be called once to initialize IndexedDB ObjectStore. Though, it is auto-used internally.
+ * @property {function} Fetch - This method fetches stored blobs from IndexedDB.
+ * @property {function} Store - This method stores blobs in IndexedDB.
+ * @property {function} onError - This function is invoked for any known/unknown error.
+ * @property {string} dataStoreName - Name of the ObjectStore created in IndexedDB storage.
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ */
+
+
+var DiskStorage = {
+    /**
+     * This method must be called once to initialize IndexedDB ObjectStore. Though, it is auto-used internally.
+     * @method
+     * @memberof DiskStorage
+     * @internal
+     * @example
+     * DiskStorage.init();
+     */
+    init: function() {
+        var self = this;
+
+        if (typeof indexedDB === 'undefined' || typeof indexedDB.open === 'undefined') {
+            console.error('IndexedDB API are not available in this browser.');
+            return;
+        }
+
+        var dbVersion = 1;
+        var dbName = this.dbName || location.href.replace(/\/|:|#|%|\.|\[|\]/g, ''),
+            db;
+        var request = indexedDB.open(dbName, dbVersion);
+
+        function createObjectStore(dataBase) {
+            dataBase.createObjectStore(self.dataStoreName);
+        }
+
+        function putInDB() {
+            var transaction = db.transaction([self.dataStoreName], 'readwrite');
+
+            if (self.videoBlob) {
+                transaction.objectStore(self.dataStoreName).put(self.videoBlob, 'videoBlob');
+            }
+
+            if (self.gifBlob) {
+                transaction.objectStore(self.dataStoreName).put(self.gifBlob, 'gifBlob');
+            }
+
+            if (self.audioBlob) {
+                transaction.objectStore(self.dataStoreName).put(self.audioBlob, 'audioBlob');
+            }
+
+            function getFromStore(portionName) {
+                transaction.objectStore(self.dataStoreName).get(portionName).onsuccess = function(event) {
+                    if (self.callback) {
+                        self.callback(event.target.result, portionName);
+                    }
+                };
+            }
+
+            getFromStore('audioBlob');
+            getFromStore('videoBlob');
+            getFromStore('gifBlob');
+        }
+
+        request.onerror = self.onError;
+
+        request.onsuccess = function() {
+            db = request.result;
+            db.onerror = self.onError;
+
+            if (db.setVersion) {
+                if (db.version !== dbVersion) {
+                    var setVersion = db.setVersion(dbVersion);
+                    setVersion.onsuccess = function() {
+                        createObjectStore(db);
+                        putInDB();
+                    };
+                } else {
+                    putInDB();
+                }
+            } else {
+                putInDB();
+            }
+        };
+        request.onupgradeneeded = function(event) {
+            createObjectStore(event.target.result);
+        };
+    },
+    /**
+     * This method fetches stored blobs from IndexedDB.
+     * @method
+     * @memberof DiskStorage
+     * @internal
+     * @example
+     * DiskStorage.Fetch(function(dataURL, type) {
+     *     if(type === 'audioBlob') { }
+     *     if(type === 'videoBlob') { }
+     *     if(type === 'gifBlob')   { }
+     * });
+     */
+    Fetch: function(callback) {
+        this.callback = callback;
+        this.init();
+
+        return this;
+    },
+    /**
+     * This method stores blobs in IndexedDB.
+     * @method
+     * @memberof DiskStorage
+     * @internal
+     * @example
+     * DiskStorage.Store({
+     *     audioBlob: yourAudioBlob,
+     *     videoBlob: yourVideoBlob,
+     *     gifBlob  : yourGifBlob
+     * });
+     */
+    Store: function(config) {
+        this.audioBlob = config.audioBlob;
+        this.videoBlob = config.videoBlob;
+        this.gifBlob = config.gifBlob;
+
+        this.init();
+
+        return this;
+    },
+    /**
+     * This function is invoked for any known/unknown error.
+     * @method
+     * @memberof DiskStorage
+     * @internal
+     * @example
+     * DiskStorage.onError = function(error){
+     *     alerot( JSON.stringify(error) );
+     * };
+     */
+    onError: function(error) {
+        console.error(JSON.stringify(error, null, '\t'));
+    },
+
+    /**
+     * @property {string} dataStoreName - Name of the ObjectStore created in IndexedDB storage.
+     * @memberof DiskStorage
+     * @internal
+     * @example
+     * DiskStorage.dataStoreName = 'recordRTC';
+     */
+    dataStoreName: 'recordRTC',
+    dbName: null
+};
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.DiskStorage = DiskStorage;
+}
+
+// ______________
+// GifRecorder.js
+
+/**
+ * GifRecorder is standalone calss used by {@link RecordRTC} to record video or canvas into animated gif.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef GifRecorder
+ * @class
+ * @example
+ * var recorder = new GifRecorder(mediaStream || canvas || context, { onGifPreview: function, onGifRecordingStarted: function, width: 1280, height: 720, frameRate: 200, quality: 10 });
+ * recorder.record();
+ * recorder.stop(function(blob) {
+ *     img.src = URL.createObjectURL(blob);
+ * });
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - MediaStream object or HTMLCanvasElement or CanvasRenderingContext2D.
+ * @param {object} config - {disableLogs:true, initCallback: function, width: 320, height: 240, frameRate: 200, quality: 10}
+ */
+
+function GifRecorder(mediaStream, config) {
+    if (typeof GIFEncoder === 'undefined') {
+        var script = document.createElement('script');
+        script.src = 'https://cdn.webrtc-experiment.com/gif-recorder.js';
+        (document.body || document.documentElement).appendChild(script);
+    }
+
+    config = config || {};
+
+    var isHTMLObject = mediaStream instanceof CanvasRenderingContext2D || mediaStream instanceof HTMLCanvasElement;
+
+    /**
+     * This method records MediaStream.
+     * @method
+     * @memberof GifRecorder
+     * @example
+     * recorder.record();
+     */
+    this.record = function() {
+        if (typeof GIFEncoder === 'undefined') {
+            setTimeout(self.record, 1000);
+            return;
+        }
+
+        if (!isLoadedMetaData) {
+            setTimeout(self.record, 1000);
+            return;
+        }
+
+        if (!isHTMLObject) {
+            if (!config.width) {
+                config.width = video.offsetWidth || 320;
+            }
+
+            if (!config.height) {
+                config.height = video.offsetHeight || 240;
+            }
+
+            if (!config.video) {
+                config.video = {
+                    width: config.width,
+                    height: config.height
+                };
+            }
+
+            if (!config.canvas) {
+                config.canvas = {
+                    width: config.width,
+                    height: config.height
+                };
+            }
+
+            canvas.width = config.canvas.width || 320;
+            canvas.height = config.canvas.height || 240;
+
+            video.width = config.video.width || 320;
+            video.height = config.video.height || 240;
+        }
+
+        // external library to record as GIF images
+        gifEncoder = new GIFEncoder();
+
+        // void setRepeat(int iter) 
+        // Sets the number of times the set of GIF frames should be played. 
+        // Default is 1; 0 means play indefinitely.
+        gifEncoder.setRepeat(0);
+
+        // void setFrameRate(Number fps) 
+        // Sets frame rate in frames per second. 
+        // Equivalent to setDelay(1000/fps).
+        // Using "setDelay" instead of "setFrameRate"
+        gifEncoder.setDelay(config.frameRate || 200);
+
+        // void setQuality(int quality) 
+        // Sets quality of color quantization (conversion of images to the 
+        // maximum 256 colors allowed by the GIF specification). 
+        // Lower values (minimum = 1) produce better colors, 
+        // but slow processing significantly. 10 is the default, 
+        // and produces good color mapping at reasonable speeds. 
+        // Values greater than 20 do not yield significant improvements in speed.
+        gifEncoder.setQuality(config.quality || 10);
+
+        // Boolean start() 
+        // This writes the GIF Header and returns false if it fails.
+        gifEncoder.start();
+
+        if (typeof config.onGifRecordingStarted === 'function') {
+            config.onGifRecordingStarted();
+        }
+
+        startTime = Date.now();
+
+        function drawVideoFrame(time) {
+            if (self.clearedRecordedData === true) {
+                return;
+            }
+
+            if (isPausedRecording) {
+                return setTimeout(function() {
+                    drawVideoFrame(time);
+                }, 100);
+            }
+
+            lastAnimationFrame = requestAnimationFrame(drawVideoFrame);
+
+            if (typeof lastFrameTime === undefined) {
+                lastFrameTime = time;
+            }
+
+            // ~10 fps
+            if (time - lastFrameTime < 90) {
+                return;
+            }
+
+            if (!isHTMLObject && video.paused) {
+                // via: https://github.com/muaz-khan/WebRTC-Experiment/pull/316
+                // Tweak for Android Chrome
+                video.play();
+            }
+
+            if (!isHTMLObject) {
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            }
+
+            if (config.onGifPreview) {
+                config.onGifPreview(canvas.toDataURL('image/png'));
+            }
+
+            gifEncoder.addFrame(context);
+            lastFrameTime = time;
+        }
+
+        lastAnimationFrame = requestAnimationFrame(drawVideoFrame);
+
+        if (config.initCallback) {
+            config.initCallback();
+        }
+    };
+
+    /**
+     * This method stops recording MediaStream.
+     * @param {function} callback - Callback function, that is used to pass recorded blob back to the callee.
+     * @method
+     * @memberof GifRecorder
+     * @example
+     * recorder.stop(function(blob) {
+     *     img.src = URL.createObjectURL(blob);
+     * });
+     */
+    this.stop = function(callback) {
+        callback = callback || function() {};
+
+        if (lastAnimationFrame) {
+            cancelAnimationFrame(lastAnimationFrame);
+        }
+
+        endTime = Date.now();
+
+        /**
+         * @property {Blob} blob - The recorded blob object.
+         * @memberof GifRecorder
+         * @example
+         * recorder.stop(function(){
+         *     var blob = recorder.blob;
+         * });
+         */
+        this.blob = new Blob([new Uint8Array(gifEncoder.stream().bin)], {
+            type: 'image/gif'
+        });
+
+        callback(this.blob);
+
+        // bug: find a way to clear old recorded blobs
+        gifEncoder.stream().bin = [];
+    };
+
+    var isPausedRecording = false;
+
+    /**
+     * This method pauses the recording process.
+     * @method
+     * @memberof GifRecorder
+     * @example
+     * recorder.pause();
+     */
+    this.pause = function() {
+        isPausedRecording = true;
+    };
+
+    /**
+     * This method resumes the recording process.
+     * @method
+     * @memberof GifRecorder
+     * @example
+     * recorder.resume();
+     */
+    this.resume = function() {
+        isPausedRecording = false;
+    };
+
+    /**
+     * This method resets currently recorded data.
+     * @method
+     * @memberof GifRecorder
+     * @example
+     * recorder.clearRecordedData();
+     */
+    this.clearRecordedData = function() {
+        self.clearedRecordedData = true;
+        clearRecordedDataCB();
+    };
+
+    function clearRecordedDataCB() {
+        if (gifEncoder) {
+            gifEncoder.stream().bin = [];
+        }
+    }
+
+    // for debugging
+    this.name = 'GifRecorder';
+    this.toString = function() {
+        return this.name;
+    };
+
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+
+    if (isHTMLObject) {
+        if (mediaStream instanceof CanvasRenderingContext2D) {
+            context = mediaStream;
+            canvas = context.canvas;
+        } else if (mediaStream instanceof HTMLCanvasElement) {
+            context = mediaStream.getContext('2d');
+            canvas = mediaStream;
+        }
+    }
+
+    var isLoadedMetaData = true;
+
+    if (!isHTMLObject) {
+        var video = document.createElement('video');
+        video.muted = true;
+        video.autoplay = true;
+
+        isLoadedMetaData = false;
+        video.onloadedmetadata = function() {
+            isLoadedMetaData = true;
+        };
+
+        setSrcObject(mediaStream, video);
+
+        video.play();
+    }
+
+    var lastAnimationFrame = null;
+    var startTime, endTime, lastFrameTime;
+
+    var gifEncoder;
+
+    var self = this;
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.GifRecorder = GifRecorder;
+}
+
+// Last time updated: 2017-09-26 7:19:00 AM UTC
+
+// ________________________
+// MultiStreamsMixer v1.0.3
+
+// Open-Sourced: https://github.com/muaz-khan/MultiStreamsMixer
+
+// --------------------------------------------------
+// Muaz Khan     - www.MuazKhan.com
+// MIT License   - www.WebRTC-Experiment.com/licence
+// --------------------------------------------------
+
+function MultiStreamsMixer(arrayOfMediaStreams) {
+
+    // requires: chrome://flags/#enable-experimental-web-platform-features
+
+    var videos = [];
+    var isStopDrawingFrames = false;
+
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+    canvas.style = 'opacity:0;position:absolute;z-index:-1;top: -100000000;left:-1000000000; margin-top:-1000000000;margin-left:-1000000000;';
+    (document.body || document.documentElement).appendChild(canvas);
+
+    this.disableLogs = false;
+    this.frameInterval = 10;
+
+    this.width = 360;
+    this.height = 240;
+
+    // use gain node to prevent echo
+    this.useGainNode = true;
+
+    var self = this;
+
+    // _____________________________
+    // Cross-Browser-Declarations.js
+
+    // WebAudio API representer
+    var AudioContext = window.AudioContext;
+
+    if (typeof AudioContext === 'undefined') {
+        if (typeof webkitAudioContext !== 'undefined') {
+            /*global AudioContext:true */
+            AudioContext = webkitAudioContext;
+        }
+
+        if (typeof mozAudioContext !== 'undefined') {
+            /*global AudioContext:true */
+            AudioContext = mozAudioContext;
+        }
+    }
+
+    /*jshint -W079 */
+    var URL = window.URL;
+
+    if (typeof URL === 'undefined' && typeof webkitURL !== 'undefined') {
+        /*global URL:true */
+        URL = webkitURL;
+    }
+
+    if (typeof navigator !== 'undefined' && typeof navigator.getUserMedia === 'undefined') { // maybe window.navigator?
+        if (typeof navigator.webkitGetUserMedia !== 'undefined') {
+            navigator.getUserMedia = navigator.webkitGetUserMedia;
+        }
+
+        if (typeof navigator.mozGetUserMedia !== 'undefined') {
+            navigator.getUserMedia = navigator.mozGetUserMedia;
+        }
+    }
+
+    var MediaStream = window.MediaStream;
+
+    if (typeof MediaStream === 'undefined' && typeof webkitMediaStream !== 'undefined') {
+        MediaStream = webkitMediaStream;
+    }
+
+    /*global MediaStream:true */
+    if (typeof MediaStream !== 'undefined') {
+        if (!('getVideoTracks' in MediaStream.prototype)) {
+            MediaStream.prototype.getVideoTracks = function() {
+                if (!this.getTracks) {
+                    return [];
+                }
+
+                var tracks = [];
+                this.getTracks.forEach(function(track) {
+                    if (track.kind.toString().indexOf('video') !== -1) {
+                        tracks.push(track);
+                    }
+                });
+                return tracks;
+            };
+
+            MediaStream.prototype.getAudioTracks = function() {
+                if (!this.getTracks) {
+                    return [];
+                }
+
+                var tracks = [];
+                this.getTracks.forEach(function(track) {
+                    if (track.kind.toString().indexOf('audio') !== -1) {
+                        tracks.push(track);
+                    }
+                });
+                return tracks;
+            };
+        }
+
+        // override "stop" method for all browsers
+        if (typeof MediaStream.prototype.stop === 'undefined') {
+            MediaStream.prototype.stop = function() {
+                this.getTracks().forEach(function(track) {
+                    track.stop();
+                });
+            };
+        }
+    }
+
+    var Storage = {};
+
+    if (typeof AudioContext !== 'undefined') {
+        Storage.AudioContext = AudioContext;
+    } else if (typeof webkitAudioContext !== 'undefined') {
+        Storage.AudioContext = webkitAudioContext;
+    }
+
+    function setSrcObject(stream, element, ignoreCreateObjectURL) {
+        if ('createObjectURL' in URL && !ignoreCreateObjectURL) {
+            try {
+                element.src = URL.createObjectURL(stream);
+            } catch (e) {
+                setSrcObject(stream, element, true);
+                return;
+            }
+        } else if ('srcObject' in element) {
+            element.srcObject = stream;
+        } else if ('mozSrcObject' in element) {
+            element.mozSrcObject = stream;
+        } else {
+            alert('createObjectURL/srcObject both are not supported.');
+        }
+    }
+
+    this.startDrawingFrames = function() {
+        drawVideosToCanvas();
+    };
+
+    function drawVideosToCanvas() {
+        if (isStopDrawingFrames) {
+            return;
+        }
+
+        var videosLength = videos.length;
+
+        var fullcanvas = false;
+        var remaining = [];
+        videos.forEach(function(video) {
+            if (!video.stream) {
+                video.stream = {};
+            }
+
+            if (video.stream.fullcanvas) {
+                fullcanvas = video;
+            } else {
+                remaining.push(video);
+            }
+        });
+
+        if (fullcanvas) {
+            canvas.width = fullcanvas.stream.width;
+            canvas.height = fullcanvas.stream.height;
+        } else if (remaining.length) {
+            canvas.width = videosLength > 1 ? remaining[0].width * 2 : remaining[0].width;
+
+            var height = 1;
+            if (videosLength === 3 || videosLength === 4) {
+                height = 2;
+            }
+            if (videosLength === 5 || videosLength === 6) {
+                height = 3;
+            }
+            if (videosLength === 7 || videosLength === 8) {
+                height = 4;
+            }
+            if (videosLength === 9 || videosLength === 10) {
+                height = 5;
+            }
+            canvas.height = remaining[0].height * height;
+        } else {
+            canvas.width = self.width || 360;
+            canvas.height = self.height || 240;
+        }
+
+        if (fullcanvas && fullcanvas instanceof HTMLVideoElement) {
+            drawImage(fullcanvas);
+        }
+
+        remaining.forEach(function(video, idx) {
+            drawImage(video, idx);
+        });
+
+        setTimeout(drawVideosToCanvas, self.frameInterval);
+    }
+
+    function drawImage(video, idx) {
+        if (isStopDrawingFrames) {
+            return;
+        }
+
+        var x = 0;
+        var y = 0;
+        var width = video.width;
+        var height = video.height;
+
+        if (idx === 1) {
+            x = video.width;
+        }
+
+        if (idx === 2) {
+            y = video.height;
+        }
+
+        if (idx === 3) {
+            x = video.width;
+            y = video.height;
+        }
+
+        if (idx === 4) {
+            y = video.height * 2;
+        }
+
+        if (idx === 5) {
+            x = video.width;
+            y = video.height * 2;
+        }
+
+        if (idx === 6) {
+            y = video.height * 3;
+        }
+
+        if (idx === 7) {
+            x = video.width;
+            y = video.height * 3;
+        }
+
+        if (typeof video.stream.left !== 'undefined') {
+            x = video.stream.left;
+        }
+
+        if (typeof video.stream.top !== 'undefined') {
+            y = video.stream.top;
+        }
+
+        if (typeof video.stream.width !== 'undefined') {
+            width = video.stream.width;
+        }
+
+        if (typeof video.stream.height !== 'undefined') {
+            height = video.stream.height;
+        }
+
+        context.drawImage(video, x, y, width, height);
+
+        if (typeof video.stream.onRender === 'function') {
+            video.stream.onRender(context, x, y, width, height, idx);
+        }
+    }
+
+    function getMixedStream() {
+        isStopDrawingFrames = false;
+        var mixedVideoStream = getMixedVideoStream();
+
+        var mixedAudioStream = getMixedAudioStream();
+        if (mixedAudioStream) {
+            mixedAudioStream.getAudioTracks().forEach(function(track) {
+                mixedVideoStream.addTrack(track);
+            });
+        }
+
+        var fullcanvas;
+        arrayOfMediaStreams.forEach(function(stream) {
+            if (stream.fullcanvas) {
+                fullcanvas = true;
+            }
+        });
+
+        return mixedVideoStream;
+    }
+
+    function getMixedVideoStream() {
+        resetVideoStreams();
+
+        var capturedStream;
+
+        if ('captureStream' in canvas) {
+            capturedStream = canvas.captureStream();
+        } else if ('mozCaptureStream' in canvas) {
+            capturedStream = canvas.mozCaptureStream();
+        } else if (!self.disableLogs) {
+            console.error('Upgrade to latest Chrome or otherwise enable this flag: chrome://flags/#enable-experimental-web-platform-features');
+        }
+
+        var videoStream = new MediaStream();
+
+        capturedStream.getVideoTracks().forEach(function(track) {
+            videoStream.addTrack(track);
+        });
+
+        canvas.stream = videoStream;
+
+        return videoStream;
+    }
+
+    function getMixedAudioStream() {
+        // via: @pehrsons
+        if (!Storage.AudioContextConstructor) {
+            Storage.AudioContextConstructor = new Storage.AudioContext();
+        }
+
+        self.audioContext = Storage.AudioContextConstructor;
+
+        self.audioSources = [];
+
+        if (self.useGainNode === true) {
+            self.gainNode = self.audioContext.createGain();
+            self.gainNode.connect(self.audioContext.destination);
+            self.gainNode.gain.value = 0; // don't hear self
+        }
+
+        var audioTracksLength = 0;
+        arrayOfMediaStreams.forEach(function(stream) {
+            if (!stream.getAudioTracks().length) {
+                return;
+            }
+
+            audioTracksLength++;
+
+            var audioSource = self.audioContext.createMediaStreamSource(stream);
+
+            if (self.useGainNode === true) {
+                audioSource.connect(self.gainNode);
+            }
+
+            self.audioSources.push(audioSource);
+        });
+
+        if (!audioTracksLength) {
+            return;
+        }
+
+        self.audioDestination = self.audioContext.createMediaStreamDestination();
+        self.audioSources.forEach(function(audioSource) {
+            audioSource.connect(self.audioDestination);
+        });
+        return self.audioDestination.stream;
+    }
+
+    function getVideo(stream) {
+        var video = document.createElement('video');
+
+        setSrcObject(stream, video);
+
+        video.muted = true;
+        video.volume = 0;
+
+        video.width = stream.width || self.width || 360;
+        video.height = stream.height || self.height || 240;
+
+        video.play();
+
+        return video;
+    }
+
+    this.appendStreams = function(streams) {
+        if (!streams) {
+            throw 'First parameter is required.';
+        }
+
+        if (!(streams instanceof Array)) {
+            streams = [streams];
+        }
+
+        arrayOfMediaStreams.concat(streams);
+
+        streams.forEach(function(stream) {
+            if (stream.getVideoTracks().length) {
+                var video = getVideo(stream);
+                video.stream = stream;
+                videos.push(video);
+            }
+
+            if (stream.getAudioTracks().length && self.audioContext) {
+                var audioSource = self.audioContext.createMediaStreamSource(stream);
+                audioSource.connect(self.audioDestination);
+                self.audioSources.push(audioSource);
+            }
+        });
+    };
+
+    this.releaseStreams = function() {
+        videos = [];
+        isStopDrawingFrames = true;
+
+        if (self.gainNode) {
+            self.gainNode.disconnect();
+            self.gainNode = null;
+        }
+
+        if (self.audioSources.length) {
+            self.audioSources.forEach(function(source) {
+                source.disconnect();
+            });
+            self.audioSources = [];
+        }
+
+        if (self.audioDestination) {
+            self.audioDestination.disconnect();
+            self.audioDestination = null;
+        }
+
+        self.audioContext = null;
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        if (canvas.stream) {
+            canvas.stream.stop();
+            canvas.stream = null;
+        }
+    };
+
+    this.resetVideoStreams = function(streams) {
+        if (streams && !(streams instanceof Array)) {
+            streams = [streams];
+        }
+
+        resetVideoStreams(streams);
+    };
+
+    function resetVideoStreams(streams) {
+        videos = [];
+        streams = streams || arrayOfMediaStreams;
+
+        // via: @adrian-ber
+        streams.forEach(function(stream) {
+            if (!stream.getVideoTracks().length) {
+                return;
+            }
+
+            var video = getVideo(stream);
+            video.stream = stream;
+            videos.push(video);
+        });
+    }
+
+    // for debugging
+    this.name = 'MultiStreamsMixer';
+    this.toString = function() {
+        return this.name;
+    };
+
+    this.getMixedStream = getMixedStream;
+
+}
+
+// ______________________
+// MultiStreamRecorder.js
+
+/*
+ * Video conference recording, using captureStream API along with WebAudio and Canvas2D API.
+ */
+
+/**
+ * MultiStreamRecorder can record multiple videos in single container.
+ * @summary Multi-videos recorder.
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef MultiStreamRecorder
+ * @class
+ * @example
+ * var options = {
+ *     mimeType: 'video/webm'
+ * }
+ * var recorder = new MultiStreamRecorder(ArrayOfMediaStreams, options);
+ * recorder.record();
+ * recorder.stop(function(blob) {
+ *     video.src = URL.createObjectURL(blob);
+ *
+ *     // or
+ *     var blob = recorder.blob;
+ * });
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStreams} mediaStreams - Array of MediaStreams.
+ * @param {object} config - {disableLogs:true, frameInterval: 1, mimeType: "video/webm"}
+ */
+
+function MultiStreamRecorder(arrayOfMediaStreams, options) {
+    arrayOfMediaStreams = arrayOfMediaStreams || [];
+    var self = this;
+
+    var mixer;
+    var mediaRecorder;
+
+    options = options || {
+        mimeType: 'video/webm',
+        video: {
+            width: 360,
+            height: 240
+        }
+    };
+
+    if (!options.frameInterval) {
+        options.frameInterval = 10;
+    }
+
+    if (!options.video) {
+        options.video = {};
+    }
+
+    if (!options.video.width) {
+        options.video.width = 360;
+    }
+
+    if (!options.video.height) {
+        options.video.height = 240;
+    }
+
+    /**
+     * This method records all MediaStreams.
+     * @method
+     * @memberof MultiStreamRecorder
+     * @example
+     * recorder.record();
+     */
+    this.record = function() {
+        // github/muaz-khan/MultiStreamsMixer
+        mixer = new MultiStreamsMixer(arrayOfMediaStreams);
+
+        if (getVideoTracks().length) {
+            mixer.frameInterval = options.frameInterval || 10;
+            mixer.width = options.video.width || 360;
+            mixer.height = options.video.height || 240;
+            mixer.startDrawingFrames();
+        }
+
+        if (options.previewStream && typeof options.previewStream === 'function') {
+            options.previewStream(mixer.getMixedStream());
+        }
+
+        // record using MediaRecorder API
+        mediaRecorder = new MediaStreamRecorder(mixer.getMixedStream(), options);
+        mediaRecorder.record();
+    };
+
+    function getVideoTracks() {
+        var tracks = [];
+        arrayOfMediaStreams.forEach(function(stream) {
+            stream.getVideoTracks().forEach(function(track) {
+                tracks.push(track);
+            });
+        });
+        return tracks;
+    }
+
+    /**
+     * This method stops recording MediaStream.
+     * @param {function} callback - Callback function, that is used to pass recorded blob back to the callee.
+     * @method
+     * @memberof MultiStreamRecorder
+     * @example
+     * recorder.stop(function(blob) {
+     *     video.src = URL.createObjectURL(blob);
+     * });
+     */
+    this.stop = function(callback) {
+        if (!mediaRecorder) {
+            return;
+        }
+
+        mediaRecorder.stop(function(blob) {
+            self.blob = blob;
+
+            callback(blob);
+
+            self.clearRecordedData();
+        });
+    };
+
+    /**
+     * This method pauses the recording process.
+     * @method
+     * @memberof MultiStreamRecorder
+     * @example
+     * recorder.pause();
+     */
+    this.pause = function() {
+        if (mediaRecorder) {
+            mediaRecorder.pause();
+        }
+    };
+
+    /**
+     * This method resumes the recording process.
+     * @method
+     * @memberof MultiStreamRecorder
+     * @example
+     * recorder.resume();
+     */
+    this.resume = function() {
+        if (mediaRecorder) {
+            mediaRecorder.resume();
+        }
+    };
+
+    /**
+     * This method resets currently recorded data.
+     * @method
+     * @memberof MultiStreamRecorder
+     * @example
+     * recorder.clearRecordedData();
+     */
+    this.clearRecordedData = function() {
+        if (mediaRecorder) {
+            mediaRecorder.clearRecordedData();
+            mediaRecorder = null;
+        }
+
+        if (mixer) {
+            mixer.releaseStreams();
+            mixer = null;
+        }
+    };
+
+    /**
+     * Add extra media-streams to existing recordings.
+     * @method
+     * @memberof MultiStreamRecorder
+     * @param {MediaStreams} mediaStreams - Array of MediaStreams
+     * @example
+     * recorder.addStreams([newAudioStream, newVideoStream]);
+     */
+    this.addStreams = function(streams) {
+        if (!streams) {
+            throw 'First parameter is required.';
+        }
+
+        if (!(streams instanceof Array)) {
+            streams = [streams];
+        }
+
+        arrayOfMediaStreams.concat(streams);
+
+        if (!mediaRecorder || !mixer) {
+            return;
+        }
+
+        mixer.appendStreams(streams);
+    };
+
+    /**
+     * Reset videos during live recording. Replace old videos e.g. replace cameras with full-screen.
+     * @method
+     * @memberof MultiStreamRecorder
+     * @param {MediaStreams} mediaStreams - Array of MediaStreams
+     * @example
+     * recorder.resetVideoStreams([newVideo1, newVideo2]);
+     */
+    this.resetVideoStreams = function(streams) {
+        if (!mixer) {
+            return;
+        }
+
+        if (streams && !(streams instanceof Array)) {
+            streams = [streams];
+        }
+
+        mixer.resetVideoStreams(streams);
+    };
+
+    // for debugging
+    this.name = 'MultiStreamRecorder';
+    this.toString = function() {
+        return this.name;
+    };
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.MultiStreamRecorder = MultiStreamRecorder;
+}
+
+// _____________________
+// RecordRTC.promises.js
+
+/**
+ * RecordRTCPromisesHandler adds promises support in {@link RecordRTC}. Try a {@link https://github.com/muaz-khan/RecordRTC/blob/master/simple-demos/RecordRTCPromisesHandler.html|demo here}
+ * @summary Promises for {@link RecordRTC}
+ * @license {@link https://github.com/muaz-khan/RecordRTC#license|MIT}
+ * @author {@link http://www.MuazKhan.com|Muaz Khan}
+ * @typedef RecordRTCPromisesHandler
+ * @class
+ * @example
+ * var recorder = new RecordRTCPromisesHandler(mediaStream, options);
+ * recorder.startRecording()
+ *         .then(successCB)
+ *         .catch(errorCB);
+ * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+ * @param {MediaStream} mediaStream - Single media-stream object, array of media-streams, html-canvas-element, etc.
+ * @param {object} config - {type:"video", recorderType: MediaStreamRecorder, disableLogs: true, numberOfAudioChannels: 1, bufferSize: 0, sampleRate: 0, video: HTMLVideoElement, etc.}
+ * @throws Will throw an error if "new" keyword is not used to initiate "RecordRTCPromisesHandler". Also throws error if first argument "MediaStream" is missing.
+ * @requires {@link RecordRTC}
+ */
+
+function RecordRTCPromisesHandler(mediaStream, options) {
+    if (!this) {
+        throw 'Use "new RecordRTCPromisesHandler()"';
+    }
+
+    if (typeof mediaStream === 'undefined') {
+        throw 'First argument "MediaStream" is required.';
+    }
+
+    var self = this;
+
+    /**
+     * @property {Blob} blob - Access/reach the native {@link RecordRTC} object.
+     * @memberof RecordRTCPromisesHandler
+     * @example
+     * var internal = recorder.recordRTC.getInternalRecorder();
+     * alert(internal instanceof MediaStreamRecorder);
+     */
+    self.recordRTC = new RecordRTC(mediaStream, options);
+
+    /**
+     * This method records MediaStream.
+     * @method
+     * @memberof RecordRTCPromisesHandler
+     * @example
+     * recorder.startRecording()
+     *         .then(successCB)
+     *         .catch(errorCB);
+     */
+    this.startRecording = function() {
+        return new Promise(function(resolve, reject) {
+            try {
+                self.recordRTC.startRecording();
+                resolve();
+            } catch (e) {
+                reject(e);
+            }
+        });
+    };
+
+    /**
+     * This method stops the recording.
+     * @method
+     * @memberof RecordRTCPromisesHandler
+     * @example
+     * recorder.stopRecording().then(function() {
+     *     var blob = recorder.getBlob();
+     * }).catch(errorCB);
+     */
+    this.stopRecording = function() {
+        return new Promise(function(resolve, reject) {
+            try {
+                self.recordRTC.stopRecording(function(url) {
+                    self.blob = self.recordRTC.getBlob();
+                    resolve(url);
+                });
+            } catch (e) {
+                reject(e);
+            }
+        });
+    };
+
+    /**
+     * This method returns data-url for the recorded blob.
+     * @method
+     * @memberof RecordRTCPromisesHandler
+     * @example
+     * recorder.stopRecording().then(function() {
+     *     recorder.getDataURL().then(function(dataURL) {
+     *         window.open(dataURL);
+     *     }).catch(errorCB);;
+     * }).catch(errorCB);
+     */
+    this.getDataURL = function(callback) {
+        return new Promise(function(resolve, reject) {
+            try {
+                self.recordRTC.getDataURL(function(dataURL) {
+                    resolve(dataURL);
+                });
+            } catch (e) {
+                reject(e);
+            }
+        });
+    };
+
+    /**
+     * This method returns the recorded blob.
+     * @method
+     * @memberof RecordRTCPromisesHandler
+     * @example
+     * recorder.stopRecording().then(function() {
+     *     var blob = recorder.getBlob();
+     * }).catch(errorCB);
+     */
+    this.getBlob = function() {
+        return self.recordRTC.getBlob();
+    };
+
+    /**
+     * @property {Blob} blob - Recorded data as "Blob" object.
+     * @memberof RecordRTCPromisesHandler
+     * @example
+     * recorder.stopRecording().then(function() {
+     *     var blob = recorder.getBlob();
+     * }).catch(errorCB);
+     */
+    this.blob = null;
+}
+
+if (typeof RecordRTC !== 'undefined') {
+    RecordRTC.RecordRTCPromisesHandler = RecordRTCPromisesHandler;
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(105), __webpack_require__(69)))
 
 /***/ })
 /******/ ]);
