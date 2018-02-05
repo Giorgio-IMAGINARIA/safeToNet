@@ -5,7 +5,6 @@ const {Wit, log} = require('node-wit');
 
 const client = new Wit({
   accessToken: 'ECTBS4WXRIEUZSDLAWSPDZILOQYS3TVY',
-
   logger: new log.Logger(log.DEBUG) // optional
 });
 
@@ -19,7 +18,6 @@ function analyseVoice(messageReceived, res) {
 
 /* POST API Address. */
 router.post('/', function(req, res, next) {
-  console.log('req: ', req);
   analyseVoice(req.body.voice, res);
 });
 
