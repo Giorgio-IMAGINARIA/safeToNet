@@ -38,18 +38,16 @@ function sendToAPI(filterObject : ManualFilterObject): void {
 }
 
 export default function(objectToSubmit : AIVoiceObject): void {
-  console.log('sendVoice');
-  console.log('objectToSubmit: ', objectToSubmit);
-
+  let data = new FormData();
+  data.append('file', objectToSubmit.voice)
   let address = '/AIVoice';
   fetch(address, {
     method: 'POST',
-    body: JSON.stringify(objectToSubmit),
-    headers: new Headers({'Content-Type': 'audio/mpeg3'})
+    body: data,
+    headers: new Headers({'Content-Type': 'audio/wav'})
   }).then((response) => {
     return response.json()
   }).then((json) => {
-      console.log('response: ', json);
     let endObject: ManualFilterObject = {
       state: '',
       sort: '',

@@ -20,7 +20,7 @@ import GeneralStyle from '../styles/GeneralStyle';
 import QueryStyle from '../styles/QueryStyle';
 import AIQueryStyle from '../styles/AIQueryStyle';
 // Other libraries
-import 'recordrtc';
+import RecordRTC from 'recordrtc';
 
 interface AITextObject {
   text: string
@@ -50,6 +50,8 @@ class AIQueryPanel extends React.Component {
 
     this.isRecording = false;
     this.stream = null;
+    this.recordRTC = null;
+    this.recordedBlob = null;
 
   }
 
@@ -76,7 +78,6 @@ class AIQueryPanel extends React.Component {
   }
 
   timedButtonUndisabling() {
-
     setTimeout(() => {
       if (this.state.typeInputDisabled) {
         this.setState({micButtonDisabled: false});
@@ -99,25 +100,24 @@ class AIQueryPanel extends React.Component {
   }
 
   gotLocalStream(localStream) {
-    this.stream = localStream;
-    console.log('localstream: ', localStream);
-
-    // let localAudio = document.getElementById('aubrtest-localAudio');
-    // localAudio.src = window.URL.createObjectURL(localStream);
-    // localAudio.onloadedmetadata = (e) => {
-    //   localAudio.play();
-    // };
-    // document.getElementById("aubrtest-localAudioVisual").style["background-color"] = "#2e7d32";
+    let StereoAudioRecorder = RecordRTC.StereoAudioRecorder;
+    this.recordRTC = new StereoAudioRecorder(localStream, {
+      type: 'audio',
+      recorderType: StereoAudioRecorder,
+      numberOfAudioChannels: 1
+    });
+    this.recordRTC.record();
   }
 
   stopLocalAudio() {
-    console.log('stop audio');
-    this.stream.getTracks().forEach(track => track.stop());
+    this.recordRTC.stop((blob) => {
+      console.log('this.recordRTC: ', this.recordRTC);
+      this.recordedBlob = blob;
+      console.log('this.recordedBlob: ', this.recordedBlob);
+    });
   }
 
   startLocalAudio() {
-    console.log('start audio');
-
     // Older browsers might not implement mediaDevices at all, so we set an empty object first
     if (navigator.mediaDevices === undefined) {
       navigator.mediaDevices = {};
@@ -127,16 +127,13 @@ class AIQueryPanel extends React.Component {
     // Here, we will just add the getUserMedia property if it's missing.
     if (navigator.mediaDevices.getUserMedia === undefined) {
       navigator.mediaDevices.getUserMedia = (constraints) => {
-
         // First get ahold of the legacy getUserMedia, if present
         var getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia);
-
         // Some browsers just don't implement it - return a rejected promise with an error
         // to keep a consistent interface
         if (!getUserMedia) {
           return Promise.reject(new Error('getUserMedia is not implemented in this browser'));
         }
-
         // Otherwise, wrap the call to the old navigator.getUserMedia with a Promise
         return new Promise((resolve, reject) => {
           getUserMedia.call(navigator, constraints, resolve, reject);
@@ -156,7 +153,7 @@ class AIQueryPanel extends React.Component {
   validateDetails() {
     !this.state.typeInputDisabled
       ? ActionCreatorSendText({text: this.state.typeInputValue})
-      : ActionCreatorSendVoice({voice: this.stream});
+      : ActionCreatorSendVoice({voice: this.recordedBlob});
   }
 
   render() {
